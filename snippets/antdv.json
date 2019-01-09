@@ -1,6 +1,6 @@
 {
   "message-success": {
-    "prefix": "$message-success",
+    "prefix": "message-success",
     "body": [
       "this.\\$message.success('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -9,7 +9,7 @@
     "description": "message success"
   },
   "message-error": {
-    "prefix": "$message-error",
+    "prefix": "message-error",
     "body": [
       "this.\\$message.error('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -18,7 +18,7 @@
     "description": "message error"
   },
   "message-info": {
-    "prefix": "$message-info",
+    "prefix": "message-info",
     "body": [
       "this.\\$message.info('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -27,7 +27,7 @@
     "description": "message info"
   },
   "message-warning": {
-    "prefix": "$message-warning",
+    "prefix": "message-warning",
     "body": [
       "this.\\$message.warning('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -36,7 +36,7 @@
     "description": "message warning"
   },
   "message-warn": {
-    "prefix": "$message-warn",
+    "prefix": "message-warn",
     "body": [
       "this.\\$message.warn('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -45,7 +45,7 @@
     "description": "message alias of warning"
   },
   "message-loading": {
-    "prefix": "$message-loading",
+    "prefix": "message-loading",
     "body": [
       "this.\\$message.loading('${2:content}', '${3:[duration]}',",
       "\t() => {}",
@@ -54,7 +54,7 @@
     "description": "message loading"
   },
   "notification": {
-    "prefix": "$notification",
+    "prefix": "notification",
     "body": [
       "this.\\$notification['${1:[type]}']({",
       "\tmessage: '${2:message}',",
@@ -64,7 +64,7 @@
     "description": "notification"
   },
   "modal-success": {
-    "prefix": "$modal-success",
+    "prefix": "modal-success",
     "body": [
       "this.\\$success({",
       "\ttitle: '${1:title}',",
@@ -74,7 +74,7 @@
     "description": "modal success"
   },
   "modal-info": {
-    "prefix": "$modal-info",
+    "prefix": "modal-info",
     "body": [
       "this.\\$info({",
       "\ttitle: '${1:title}',",
@@ -84,7 +84,7 @@
     "description": "modal info"
   },
   "modal-error": {
-    "prefix": "$modal-error",
+    "prefix": "modal-error",
     "body": [
       "this.\\$error({",
       "\ttitle: '${1:title}',",
@@ -94,7 +94,7 @@
     "description": "modal error"
   },
   "modal-warning": {
-    "prefix": "$modal-warning",
+    "prefix": "modal-warning",
     "body": [
       "this.\\$warning({",
       "\ttitle: '${1:title}',",
@@ -104,7 +104,7 @@
     "description": "modal warning"
   },
   "modal-confirm": {
-    "prefix": "$modal-confirm",
+    "prefix": "modal-confirm",
     "body": [
       "this.\\$success({",
       "\ttitle: '${1:title}',",
