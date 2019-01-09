@@ -7,7 +7,7 @@
 		"engines": {
 				"vscode": "^1.30.0"
 		},
-		"icon": "./antdv.png",
+		"icon": "antdv.png",
 		"categories": [
 			"Snippets",
 			"Other"
