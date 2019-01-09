@@ -1,0 +1,38 @@
+{
+	"a-input-number/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-input-number/defaultValue": {
+		"description": "initial value"
+	},
+	"a-input-number/disabled": {
+		"description": "disable the input"
+	},
+	"a-input-number/formatter": {
+		"description": "Specifies the format of the value presented"
+	},
+	"a-input-number/max": {
+		"description": "max value"
+	},
+	"a-input-number/min": {
+		"description": "min value"
+	},
+	"a-input-number/parser": {
+		"description": "Specifies the value extracted from formatter"
+	},
+	"a-input-number/precision": {
+		"description": "precision of input value"
+	},
+	"a-input-number/decimalSeparator": {
+		"description": "decimal separator"
+	},
+	"a-input-number/size": {
+		"description": "width of input box"
+	},
+	"a-input-number/step": {
+		"description": "The number to which the current value is increased or decreased. It can be an integer or decimal."
+	},
+	"a-input-number/value": {
+		"description": "current value"
+	}
+}

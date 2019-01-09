@@ -1,0 +1,23 @@
+{
+	"a-radio-group/defaultValue": {
+		"description": "Default selected value"
+	},
+	"a-radio-group/disabled": {
+		"description": "Disable all radio buttons"
+	},
+	"a-radio-group/name": {
+		"description": "The name property of all input[type=\"radio\"] children"
+	},
+	"a-radio-group/options": {
+		"description": "set children optional"
+	},
+	"a-radio-group/size": {
+		"description": "size for radio button style"
+	},
+	"a-radio-group/value": {
+		"description": "Used for setting the currently selected value."
+	},
+	"a-radio-group/buttonStyle": {
+		"description": "style type of radio button"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"a-divider/dashed": {
+		"description": "whether line is dashed"
+	},
+	"a-divider/orientation": {
+    "options": ["left", "right", "center"],
+		"description": "position of title inside divider"
+	},
+	"a-divider/type": {
+    "options": ["horizontal", "vertical"],
+		"description": "direction type of divider"
+  }
+}

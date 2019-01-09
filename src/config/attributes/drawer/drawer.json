@@ -1,0 +1,45 @@
+{
+	"a-drawer/closable": {
+		"description": "Whether a close (x) button is visible on top right of the Drawer dialog or not."
+	},
+	"a-drawer/destroyOnClose": {
+		"description": "Whether to unmount child components on closing drawer or not."
+	},
+	"a-drawer/getContainer": {
+		"description": "Return the mounted node for Drawer."
+	},
+	"a-drawer/mask": {
+		"description": "Whether to show mask or not."
+	},
+	"a-drawer/maskClosable": {
+		"description": "Clicking on the mask (area outside the Drawer) to close the Drawer or not."
+	},
+	"a-drawer/maskStyle": {
+		"description": "Style for Drawer's mask element."
+	},
+	"a-drawer/title": {
+		"description": "The title for Drawer."
+	},
+	"a-drawer/visible": {
+		"description": "Whether the Drawer dialog is visible or not."
+	},
+	"a-drawer/wrapClassName": {
+		"description": "The class name of the container of the Drawer dialog."
+	},
+	"a-drawer/width": {
+		"description": "Width of the Drawer dialog."
+	},
+	"a-drawer/height": {
+		"description": "placement is top or bottom, height of the Drawer dialog."
+	},
+	"a-drawer/className": {
+		"description": "The class name of the container of the Drawer dialog."
+	},
+	"a-drawer/zIndex": {
+		"description": "The z-index of the Drawer."
+	},
+	"a-drawer/placement": {
+    "options": ["top", "left", "bottom", "right"],
+		"description": "The placement of the Drawer."
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"a-input-group/compact": {
+		"description": "Whether use compact style"
+	},
+	"a-input-group/size": {
+		"description": "The size of Input.Group specifies the size of the included Input fields. Available: large default small"
+	}
+}

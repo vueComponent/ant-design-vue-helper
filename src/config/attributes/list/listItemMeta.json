@@ -1,0 +1,11 @@
+{
+	"a-list-item-meta/avatar": {
+		"description": "The avatar of list item"
+	},
+	"a-list-item-meta/description": {
+		"description": "The description of list item"
+	},
+	"a-list-item-meta/title": {
+		"description": "The title of list item"
+	}
+}

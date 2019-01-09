@@ -1,0 +1,8 @@
+{
+	"a-back-top/target": {
+		"description": "specifies the scrollable area dom node"
+	},
+	"a-back-top/visibilityHeight": {
+		"description": "the BackTop button will not show until the scroll height reaches this value"
+	}
+}

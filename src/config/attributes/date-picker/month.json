@@ -1,0 +1,59 @@
+{
+	"a-month-picker/allowClear": {
+		"description": "Whether to show clear button"
+	},
+	"a-month-picker/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-month-picker/dateRender": {
+		"description": "custom rendering function for date cells by setting a scoped slot"
+	},
+	"a-month-picker/disabled": {
+		"description": "determine whether the DatePicker is disabled"
+	},
+	"a-month-picker/disabledDate": {
+		"description": "specify the date that cannot be selected"
+	},
+	"a-month-picker/getCalendarContainer": {
+		"description": "to set the container of the floating layer, while the default is to create a div element in body"
+	},
+	"a-month-picker/locale": {
+		"description": "localization configuration"
+	},
+	"a-month-picker/open": {
+		"description": "open state of picker"
+	},
+	"a-month-picker/placeholder": {
+		"description": "placeholder of date input"
+	},
+	"a-month-picker/popupStyle": {
+		"description": "to customize the style of the popup calendar"
+	},
+	"a-month-picker/dropdownClassName": {
+		"description": "to customize the className of the popup calendar"
+	},
+	"a-month-picker/size": {
+		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px"
+	},
+	"a-month-picker/suffixIcon": {
+		"description": "The custom suffix icon"
+  },
+  "a-month-picker/defaultValue": {
+		"description": "to set default date"
+	},
+	"a-month-picker/defaultPickerValue": {
+		"description": "to set default picker date"
+	},
+	"a-month-picker/format": {
+		"description": "to set the date format, refer to moment.js"
+	},
+	"a-month-picker/monthCellContentRender": {
+		"description": "Custom month cell content render method by setting a scoped slot"
+	},
+	"a-month-picker/renderExtraFooter": {
+		"description": "render extra footer in panel by setting a scoped slot"
+	},
+	"a-month-picker/value": {
+		"description": "to set date"
+	}
+}

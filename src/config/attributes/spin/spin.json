@@ -1,0 +1,20 @@
+{
+	"a-spin/delay": {
+		"description": "specifies a delay in milliseconds for loading state (prevent flush)"
+	},
+	"a-spin/indicator": {
+		"description": "vue node of the spinning indicator"
+	},
+	"a-spin/size": {
+		"description": "size of Spin, options: small, default and large"
+	},
+	"a-spin/spinning": {
+		"description": "whether Spin is spinning"
+	},
+	"a-spin/tip": {
+		"description": "customize description content when Spin has children"
+	},
+	"a-spin/wrapperClassName": {
+		"description": "className of wrapper when Spin has children"
+	}
+}

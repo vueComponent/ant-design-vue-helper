@@ -1,0 +1,71 @@
+{
+	"a-time-picker/addon": {
+		"description": "some addon to timepicker panel bottom"
+	},
+	"a-time-picker/allowEmpty": {
+		"description": "allow clearing text"
+	},
+	"a-time-picker/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-time-picker/clearText": {
+		"description": "clear tooltip of icon"
+	},
+	"a-time-picker/defaultOpenValue": {
+		"description": "default open panel value, used to set utcOffset,locale if value/defaultValue absent"
+	},
+	"a-time-picker/defaultValue": {
+		"description": "to set default time"
+	},
+	"a-time-picker/disabled": {
+		"description": "determine whether the TimePicker is disabled"
+	},
+	"a-time-picker/disabledHours": {
+		"description": "to specify the hours that cannot be selected"
+	},
+	"a-time-picker/disabledMinutes": {
+		"description": "to specify the minutes that cannot be selected"
+	},
+	"a-time-picker/disabledSeconds": {
+		"description": "to specify the seconds that cannot be selected"
+	},
+	"a-time-picker/format": {
+		"description": "to set the time format"
+	},
+	"a-time-picker/getPopupContainer": {
+		"description": "to set the container of the floating layer, while the default is to create a div element in body"
+	},
+	"a-time-picker/hideDisabledOptions": {
+		"description": "hide the options that can not be selected"
+	},
+	"a-time-picker/hourStep": {
+		"description": "interval between hours in picker"
+	},
+	"a-time-picker/inputReadOnly": {
+		"description": "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)"
+	},
+	"a-time-picker/minuteStep": {
+		"description": "interval between minutes in picker"
+	},
+	"a-time-picker/open": {
+		"description": "whether to popup panel"
+	},
+	"a-time-picker/placeholder": {
+		"description": "display when there's no value"
+	},
+	"a-time-picker/popupClassName": {
+		"description": "className of panel"
+	},
+	"a-time-picker/secondStep": {
+		"description": "interval between seconds in picker"
+	},
+	"a-time-picker/suffixIcon": {
+		"description": "The custom suffix icon"
+	},
+	"a-time-picker/use12Hours": {
+		"description": "display as 12 hours format, with default format h:mm:ss a"
+	},
+	"a-time-picker/value": {
+		"description": "to set time"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"a-timeline/pending": {
+		"description": "Set the last ghost node's existence or its content"
+	},
+	"a-timeline/pendingDot": {
+		"description": "Set the dot of the last ghost node when pending is true"
+	},
+	"a-timeline/reverse": {
+		"description": "reverse nodes or not"
+	},
+	"a-timeline/mode": {
+    "options": ["left", "alternate", "right"],
+		"description": "By sending alternate the timeline will distribute the nodes to the left and right."
+	}
+}

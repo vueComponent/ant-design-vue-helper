@@ -1,0 +1,17 @@
+{
+	"a-checkbox/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-checkbox/checked": {
+		"description": "Specifies whether the checkbox is selected."
+	},
+	"a-checkbox/defaultChecked": {
+		"description": "Specifies the initial state: whether or not the checkbox is selected."
+	},
+	"a-checkbox/disabled": {
+		"description": "Disable checkbox"
+	},
+	"a-checkbox/indeterminate": {
+		"description": "indeterminate checked state of checkbox"
+	}
+}

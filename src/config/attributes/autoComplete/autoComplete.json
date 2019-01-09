@@ -1,0 +1,41 @@
+{
+	"a-auto-complete/allowClear": {
+		"description": "Show clear button, effective in multiple mode only."
+	},
+	"a-auto-complete/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-auto-complete/backfill": {
+		"description": "backfill selected item the input when using keyboard"
+	},
+	"a-auto-complete/dataSource": {
+		"description": "Data source for autocomplete"
+	},
+	"a-auto-complete/defaultActiveFirstOption": {
+		"description": "Whether active first option by default"
+	},
+	"a-auto-complete/defaultValue": {
+		"description": "Initial selected option."
+	},
+	"a-auto-complete/disabled": {
+		"description": "Whether disabled select"
+	},
+	"a-auto-complete/filterOption": {
+		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded."
+	},
+	"a-auto-complete/optionLabelProp": {
+		"description": "Which prop value of option will render as content of select."
+	},
+	"a-auto-complete/placeholder": {
+		"description": "placeholder of input"
+	},
+	"a-auto-complete/value": {
+		"description": "selected option"
+	},
+	"a-auto-complete/defaultOpen": {
+		"description": "Initial open state of dropdown"
+	},
+	"a-auto-complete/open": {
+		"description": "Controlled open state of dropdown"
+	}
+}

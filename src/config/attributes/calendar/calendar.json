@@ -1,0 +1,35 @@
+{
+	"a-calendar/dateCellRender": {
+		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will be appended to the cell"
+	},
+	"a-calendar/dateFullCellRender": {
+		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will override the cell"
+	},
+	"a-calendar/defaultValue": {
+		"description": "The date selected by default"
+	},
+	"a-calendar/disabledDate": {
+		"description": "Function that specifies the dates that cannot be selected"
+	},
+	"a-calendar/fullscreen": {
+		"description": "Whether to display in full-screen"
+	},
+	"a-calendar/locale": {
+		"description": "The calendar's locale"
+	},
+	"a-calendar/mode": {
+		"description": "The display mode of the calendar"
+	},
+	"a-calendar/monthCellRender": {
+		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will be appended to the cell"
+	},
+	"a-calendar/monthFullCellRender": {
+		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will override the cell"
+	},
+	"a-calendar/validRange": {
+		"description": "to set valid range"
+	},
+	"a-calendar/value": {
+		"description": "The current selected date"
+	}
+}

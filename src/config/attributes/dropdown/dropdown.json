@@ -1,0 +1,18 @@
+{
+	"a-dropdown/disabled": {
+		"description": "whether the dropdown menu is disabled"
+	},
+	"a-dropdown/getPopupContainer": {
+		"description": "to set the container of the dropdown menu. The default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition. example"
+	},
+	"a-dropdown/placement": {
+	  "options": ["bottomLeft", "bottomCenter", "bottomRight", "topLeft", "topCenter", "topRight"],
+		"description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight"
+	},
+	"a-dropdown/trigger": {
+		"description": "the trigger mode which executes the drop-down action"
+	},
+	"a-dropdown/visible": {
+		"description": "whether the dropdown menu is visible"
+	}
+}

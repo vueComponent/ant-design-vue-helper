@@ -1,0 +1,14 @@
+{
+	"a-breadcrumb/itemRender": {
+		"description": "Custom item renderer, slot=\"itemRender\" and slot-scope=\"{route, params, routes, paths}\""
+	},
+	"a-breadcrumb/params": {
+		"description": "Routing parameters"
+	},
+	"a-breadcrumb/routes": {
+		"description": "The routing stack information of router"
+	},
+	"a-breadcrumb/separator": {
+		"description": "Custom separator"
+	}
+}

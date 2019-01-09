@@ -1,0 +1,8 @@
+{
+	"a-list-item/actions": {
+		"description": "The actions content of list item. If itemLayout is vertical, shows the content on bottom, otherwise shows content on the far right."
+	},
+	"a-list-item/extra": {
+		"description": "The extra content of list item. If itemLayout is vertical, shows the content on right, otherwise shows content on the far right."
+	}
+}

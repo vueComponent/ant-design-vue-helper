@@ -1,0 +1,21 @@
+{
+	"a-dropdown-button/disabled": {
+		"description": "whether the dropdown menu is disabled"
+	},
+	"a-dropdown-button/placement": {
+		"options": ["bottomLeft", "bottomCenter", "bottomRight", "topLeft", "topCenter", "topRight"],
+		"description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight"
+	},
+	"a-dropdown-button/size": {
+		"description": "size of the button, the same as Button"
+	},
+	"a-dropdown-button/trigger": {
+		"description": "the trigger mode which executes the drop-down action"
+	},
+	"a-dropdown-button/type": {
+		"description": "type of the button, the same as Button"
+	},
+	"a-dropdown-button/visible": {
+		"description": "whether the dropdown menu is visible"
+	}
+}

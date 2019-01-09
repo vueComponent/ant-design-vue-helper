@@ -1,0 +1,26 @@
+{
+	"a-rate/allowClear": {
+		"description": "whether to allow clear when click again"
+	},
+	"a-rate/allowHalf": {
+		"description": "whether to allow semi selection"
+	},
+	"a-rate/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-rate/character": {
+		"description": "custom character of rate"
+	},
+	"a-rate/count": {
+		"description": "star count"
+	},
+	"a-rate/defaultValue": {
+		"description": "default value"
+	},
+	"a-rate/disabled": {
+		"description": "read only, unable to interact"
+	},
+	"a-rate/value": {
+		"description": "current value"
+	}
+}

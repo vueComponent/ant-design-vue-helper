@@ -1,0 +1,14 @@
+{
+	"a-tag/afterClose": {
+		"description": "Callback executed when close animation is completed"
+	},
+	"a-tag/closable": {
+		"description": "Whether the Tag can be closed"
+	},
+	"a-tag/color": {
+		"description": "Color of the Tag"
+	},
+	"a-tag/visible": {
+		"description": "Whether the Tag is closed or not"
+	}
+}

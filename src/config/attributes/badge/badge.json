@@ -1,0 +1,30 @@
+{
+	"a-badge/count": {
+		"description": "Number to show in badge"
+	},
+	"a-badge/dot": {
+		"description": "Whether to display a red dot instead of count"
+	},
+	"a-badge/offset": {
+		"description": "set offset of the badge dot, like [x, y]"
+	},
+	"a-badge/overflowCount": {
+		"description": "Max count to show"
+	},
+	"a-badge/showZero": {
+		"description": "Whether to show badge when count is zero"
+	},
+	"a-badge/status": {
+    "options": ["success", "processing", "default", "error","warning"],
+		"description": "Set Badge as a status dot"
+	},
+	"a-badge/text": {
+		"description": "If status is set, text sets the display text of the status dot"
+	},
+	"a-badge/numberStyle": {
+		"description": "sets the display style of the status dot"
+	},
+	"a-badge/title": {
+		"description": "Text to show when hovering over the badge"
+	}
+}

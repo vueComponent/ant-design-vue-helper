@@ -1,0 +1,32 @@
+{
+	"a-input/addonAfter": {
+		"description": "The label text displayed after (on the right side of) the input field."
+	},
+	"a-input/addonBefore": {
+		"description": "The label text displayed before (on the left side of) the input field."
+	},
+	"a-input/defaultValue": {
+		"description": "The initial input content"
+	},
+	"a-input/disabled": {
+		"description": "Whether the input is disabled."
+	},
+	"a-input/id": {
+		"description": "The ID for input"
+	},
+	"a-input/prefix": {
+		"description": "The prefix icon for the Input."
+	},
+	"a-input/size": {
+		"description": "The size of the input box. Note: in the context of a form, the large size is used. Available: large default small"
+	},
+	"a-input/suffix": {
+		"description": "The suffix icon for the Input."
+	},
+	"a-input/type": {
+		"description": "The type of input, see: MDN(use Input.TextArea instead of type=\"textarea\")"
+	},
+	"a-input/value": {
+		"description": "The input content value"
+	}
+}

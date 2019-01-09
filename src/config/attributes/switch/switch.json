@@ -1,0 +1,26 @@
+{
+	"a-switch/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-switch/checked": {
+		"description": "determine whether the Switch is checked"
+	},
+	"a-switch/checkedChildren": {
+		"description": "content to be shown when the state is checked"
+	},
+	"a-switch/defaultChecked": {
+		"description": "to set the initial state"
+	},
+	"a-switch/disabled": {
+		"description": "Disable switch"
+	},
+	"a-switch/loading": {
+		"description": "loading state of switch"
+	},
+	"a-switch/size": {
+		"description": "the size of the Switch, options: default small"
+	},
+	"a-switch/unCheckedChildren": {
+		"description": "content to be shown when the state is unchecked"
+	}
+}

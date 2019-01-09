@@ -1,0 +1,11 @@
+{
+	"a-tab-pane/forceRender": {
+		"description": "Forced render of content in tabs, not lazy render after clicking on tabs"
+	},
+	"a-tab-pane/key": {
+		"description": "TabPane's key"
+	},
+	"a-tab-pane/tab": {
+		"description": "Show text in TabPane's head."
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"a-alert/afterClose": {
+		"description": "Called when close animation is finished"
+	},
+	"a-alert/banner": {
+		"description": "Whether to show as banner"
+	},
+	"a-alert/closable": {
+		"description": "Whether Alert can be closed"
+	},
+	"a-alert/closeText": {
+		"description": "Close text to show"
+	},
+	"a-alert/description": {
+		"description": "Additional content of Alert"
+	},
+	"a-alert/icon": {
+		"description": "Custom icon, effective when showIcon is true"
+	},
+	"a-alert/message": {
+		"description": "Content of Alert"
+	},
+	"a-alert/showIcon": {
+		"description": "Whether to show icon"
+	},
+	"a-alert/type": {
+    "options": ["success", "info", "warning", "error"],
+		"description": "Type of Alert styles, options: success, info, warning, error"
+	}
+}

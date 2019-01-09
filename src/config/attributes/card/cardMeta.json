@@ -1,0 +1,11 @@
+{
+	"a-card-meta/avatar": {
+		"description": "avatar or icon"
+	},
+	"a-card-meta/description": {
+		"description": "description content"
+	},
+	"a-card-meta/title": {
+		"description": "title content"
+	}
+}

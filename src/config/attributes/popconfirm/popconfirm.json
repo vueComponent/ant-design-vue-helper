@@ -1,0 +1,17 @@
+{
+	"a-popconfirm/cancelText": {
+		"description": "text of the Cancel button"
+	},
+	"a-popconfirm/okText": {
+		"description": "text of the Confirm button"
+	},
+	"a-popconfirm/okType": {
+		"description": "Button type of the Confirm button"
+	},
+	"a-popconfirm/title": {
+		"description": "title of the confirmation box"
+	},
+	"a-popconfirm/icon": {
+		"description": "customize icon of confirmation"
+	}
+}

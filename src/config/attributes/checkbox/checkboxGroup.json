@@ -1,0 +1,14 @@
+{
+	"a-checkbox-group/defaultValue": {
+		"description": "Default selected value"
+	},
+	"a-checkbox-group/disabled": {
+		"description": "Disable all checkboxes"
+	},
+	"a-checkbox-group/options": {
+		"description": "Specifies options"
+	},
+	"a-checkbox-group/value": {
+		"description": "Used for setting the currently selected value."
+	}
+}

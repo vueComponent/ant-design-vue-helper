@@ -1,0 +1,68 @@
+{
+	"a-range-picker/allowClear": {
+		"description": "Whether to show clear button"
+	},
+	"a-range-picker/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-range-picker/dateRender": {
+		"description": "custom rendering function for date cells by setting a scoped slot"
+	},
+	"a-range-picker/disabled": {
+		"description": "determine whether the DatePicker is disabled"
+	},
+	"a-range-picker/disabledDate": {
+		"description": "specify the date that cannot be selected"
+	},
+	"a-range-picker/getCalendarContainer": {
+		"description": "to set the container of the floating layer, while the default is to create a div element in body"
+	},
+	"a-range-picker/locale": {
+		"description": "localization configuration"
+	},
+	"a-range-picker/open": {
+		"description": "open state of picker"
+	},
+	"a-range-picker/placeholder": {
+		"description": "placeholder of date input"
+	},
+	"a-range-picker/popupStyle": {
+		"description": "to customize the style of the popup calendar"
+	},
+	"a-range-picker/dropdownClassName": {
+		"description": "to customize the className of the popup calendar"
+	},
+	"a-range-picker/size": {
+		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px"
+	},
+	"a-range-picker/suffixIcon": {
+		"description": "The custom suffix icon"
+  },
+  "a-range-picker/defaultValue": {
+		"description": "to set default date"
+	},
+	"a-range-picker/defaultPickerValue": {
+		"description": "to set default picker date"
+	},
+	"a-range-picker/disabledTime": {
+		"description": "to specify the time that cannot be selected"
+	},
+	"a-range-picker/format": {
+		"description": "to set the date format"
+	},
+	"a-range-picker/ranges": {
+		"description": "preseted ranges for quick selection"
+	},
+	"a-range-picker/renderExtraFooter": {
+		"description": "render extra footer in panel by setting a scoped slot"
+	},
+	"a-range-picker/showTime": {
+		"description": "to provide an additional time selection"
+	},
+	"a-range-picker/showTime.defaultValue": {
+		"description": "to set default time of selected date, demo"
+	},
+	"a-range-picker/value": {
+		"description": "to set date"
+	}
+}

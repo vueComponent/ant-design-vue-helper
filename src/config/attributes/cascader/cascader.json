@@ -1,0 +1,65 @@
+{
+	"a-cascader/allowClear": {
+		"description": "whether allow clear"
+	},
+	"a-cascader/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-cascader/changeOnSelect": {
+		"description": "change value on each selection if set to true, see above demo for details"
+	},
+	"a-cascader/defaultValue": {
+		"description": "initial selected value"
+	},
+	"a-cascader/disabled": {
+		"description": "whether disabled select"
+	},
+	"a-cascader/displayRender": {
+		"description": "render function of displaying selected options, you can use slot=\"displayRender\" and slot-scope=\"{labels, selectedOptions}\""
+	},
+	"a-cascader/expandTrigger": {
+		"description": "expand current item when click or hover, one of 'click' 'hover'"
+	},
+	"a-cascader/fieldNames": {
+		"description": "custom field name for label and value and children"
+	},
+	"a-cascader/getPopupContainer": {
+		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative."
+	},
+	"a-cascader/loadData": {
+		"description": "To load option lazily, and it cannot work with showSearch"
+	},
+	"a-cascader/notFoundContent": {
+		"description": "Specify content to show when no result matches."
+	},
+	"a-cascader/options": {
+		"description": "data options of cascade"
+	},
+	"a-cascader/placeholder": {
+		"description": "input placeholder"
+	},
+	"a-cascader/popupClassName": {
+		"description": "additional className of popup overlay"
+	},
+	"a-cascader/popupStyle": {
+		"description": "additional style of popup overlay"
+	},
+	"a-cascader/popupPlacement": {
+		"description": "use preset popup align config from builtinPlacements：bottomLeft bottomRight topLeft topRight"
+	},
+	"a-cascader/popupVisible": {
+		"description": "set visible of cascader popup"
+	},
+	"a-cascader/showSearch": {
+		"description": "Whether show search input in single mode."
+	},
+	"a-cascader/size": {
+		"description": "input size, one of large default small"
+	},
+	"a-cascader/suffixIcon": {
+		"description": "The custom suffix icon"
+	},
+	"a-cascader/value": {
+		"description": "selected value"
+	}
+}

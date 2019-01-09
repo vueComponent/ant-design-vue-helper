@@ -1,0 +1,17 @@
+{
+	"a-collapse/accordion": {
+		"description": "If true, Collapse renders as Accordion"
+	},
+	"a-collapse/activeKey": {
+		"description": "Key of the active panel"
+	},
+	"a-collapse/bordered": {
+		"description": "Toggles rendering of the border around the collapse block"
+	},
+	"a-collapse/defaultActiveKey": {
+		"description": "Key of the initial active panel"
+	},
+	"a-collapse/destroyInactivePanel": {
+		"description": "Destroy Inactive Panel"
+	}
+}

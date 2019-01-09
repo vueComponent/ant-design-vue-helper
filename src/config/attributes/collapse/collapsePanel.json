@@ -1,0 +1,17 @@
+{
+	"a-collapse-panel/disabled": {
+		"description": "If true, panel cannot be opened or closed"
+	},
+	"a-collapse-panel/forceRender": {
+		"description": "Forced render of content on panel, instead of lazy rending after clicking on header"
+	},
+	"a-collapse-panel/header": {
+		"description": "Title of the panel"
+	},
+	"a-collapse-panel/key": {
+		"description": "Unique key identifying the panel from among its siblings"
+	},
+	"a-collapse-panel/showArrow": {
+		"description": "If false, panel will not show arrow icon"
+	}
+}

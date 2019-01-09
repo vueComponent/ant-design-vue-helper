@@ -1,0 +1,14 @@
+{
+	"a-row/align": {
+		"description": "the vertical alignment of the flex layout: top middle bottom"
+	},
+	"a-row/gutter": {
+		"description": "spacing between grids, could be a number or a object like { xs: 8, sm: 16, md: 24}"
+	},
+	"a-row/justify": {
+		"description": "horizontal arrangement of the flex layout: start end center space-around space-between"
+	},
+	"a-row/type": {
+		"description": "layout mode, optional flex, browser support"
+	}
+}

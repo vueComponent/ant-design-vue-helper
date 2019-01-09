@@ -1,0 +1,45 @@
+{
+  "a-popover/content": {
+		"description": "Content of the card"
+  },
+  "a-popover/title": {
+		"description": "Title of the card"
+	},
+	"a-popover/arrowPointAtCenter": {
+		"description": "Whether the arrow is pointed at the center of target"
+	},
+	"a-popover/autoAdjustOverflow": {
+		"description": "Whether to adjust popup placement automatically when popup is off screen"
+	},
+	"a-popover/defaultVisible": {
+		"description": "Whether the floating tooltip card is visible by default"
+	},
+	"a-popover/getPopupContainer": {
+		"description": "The DOM container of the tip, the default behavior is to create a div element in body."
+	},
+	"a-popover/mouseEnterDelay": {
+		"description": "Delay in seconds, before tooltip is shown on mouse enter"
+	},
+	"a-popover/mouseLeaveDelay": {
+		"description": "Delay in seconds, before tooltip is hidden on mouse leave"
+	},
+	"a-popover/overlayClassName": {
+		"description": "Class name of the tooltip card"
+	},
+	"a-popover/overlayStyle": {
+		"description": "Style of the tooltip card"
+	},
+	"a-popover/placement": {
+		"description": "The position of the tooltip relative to the target, which can be one of top left right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom"
+	},
+	"a-popover/trigger": {
+    "options": ["hover", "focus", "click", "contextmenu"],
+		"description": "Tooltip trigger mode"
+	},
+	"a-popover/visible": {
+		"description": "Whether the floating tooltip card is visible or not"
+	},
+	"a-popover/align": {
+		"description": "this value will be merged into placement's config, please refer to the settings dom-align"
+	}
+}

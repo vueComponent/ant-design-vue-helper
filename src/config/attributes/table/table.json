@@ -1,0 +1,74 @@
+{
+	"a-table/bordered": {
+		"description": "Whether to show all table borders"
+	},
+	"a-table/childrenColumnName": {
+		"description": "The column contains children to display"
+	},
+	"a-table/columns": {
+		"description": "Columns of table"
+	},
+	"a-table/components": {
+		"description": "Override default table elements"
+	},
+	"a-table/dataSource": {
+		"description": "Data record array to be displayed"
+	},
+	"a-table/defaultExpandAllRows": {
+		"description": "Expand all rows initially"
+	},
+	"a-table/defaultExpandedRowKeys": {
+		"description": "Initial expanded row keys"
+	},
+	"a-table/expandedRowKeys": {
+		"description": "Current expanded row keys"
+	},
+	"a-table/expandedRowRender": {
+		"description": "Expanded container render for each row"
+	},
+	"a-table/expandRowByClick": {
+		"description": "Whether to expand row by clicking anywhere in the whole row"
+	},
+	"a-table/footer": {
+		"description": "Table footer renderer"
+	},
+	"a-table/indentSize": {
+		"description": "Indent size in pixels of tree data"
+	},
+	"a-table/loading": {
+		"description": "Loading status of table"
+	},
+	"a-table/locale": {
+		"description": "i18n text including filter, sort, empty text, etc"
+	},
+	"a-table/pagination": {
+		"description": "Pagination config or [Pagination] (/ant-design-vue/components/pagination/), hide it by setting it to false"
+	},
+	"a-table/rowClassName": {
+		"description": "Row's className"
+	},
+	"a-table/rowKey": {
+		"description": "Row's unique key, could be a string or function that returns a string"
+	},
+	"a-table/rowSelection": {
+		"description": "Row selection config"
+	},
+	"a-table/scroll": {
+		"description": "Set horizontal or vertical scrolling, can also be used to specify the width and height of the scroll area. It is recommended to set a number for x, if you want to set it to true, you need to add style .ant-table td { white-space: nowrap; }."
+	},
+	"a-table/showHeader": {
+		"description": "Whether to show table header"
+	},
+	"a-table/size": {
+		"description": "Size of table"
+	},
+	"a-table/title": {
+		"description": "Table title renderer"
+	},
+	"a-table/customHeaderRow": {
+		"description": "Set props on per header row"
+	},
+	"a-table/customRow": {
+		"description": "Set props on per row"
+	}
+}

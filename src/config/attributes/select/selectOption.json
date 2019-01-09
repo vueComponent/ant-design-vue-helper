@@ -1,0 +1,17 @@
+{
+	"a-select-option/disabled": {
+		"description": "Disable this option"
+	},
+	"a-select-option/key": {
+		"description": "Same usage as value. If Vue request you to set this property, you can set it to value of option, and then omit value property."
+	},
+	"a-select-option/title": {
+		"description": "title of Select after select this Option"
+	},
+	"a-select-option/value": {
+		"description": "default to filter with this property"
+	},
+	"a-select-option/class": {
+		"description": "additional class to option"
+	}
+}

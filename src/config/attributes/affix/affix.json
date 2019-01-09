@@ -1,0 +1,11 @@
+{
+	"a-affix/offsetBottom": {
+		"description": "Pixels to offset from bottom when calculating position of scroll"
+	},
+	"a-affix/offsetTop": {
+		"description": "Pixels to offset from top when calculating position of scroll"
+	},
+	"a-affix/target": {
+		"description": "specifies the scrollable area dom node"
+	}
+}

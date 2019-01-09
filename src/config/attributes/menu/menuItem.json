@@ -1,0 +1,8 @@
+{
+	"a-menu-item/disabled": {
+		"description": "whether menu item is disabled or not"
+	},
+	"a-menu-item/key": {
+		"description": "unique id of the menu item"
+	}
+}

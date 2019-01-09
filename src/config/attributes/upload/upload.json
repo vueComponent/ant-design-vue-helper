@@ -1,0 +1,56 @@
+{
+	"a-upload/accept": {
+		"description": "File types that can be accepted. See input accept Attribute"
+	},
+	"a-upload/action": {
+		"description": "Uploading URL"
+	},
+	"a-upload/directory": {
+		"description": "support upload whole directory (caniuse)"
+	},
+	"a-upload/beforeUpload": {
+		"description": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. Warning：this function is not supported in IE9。"
+	},
+	"a-upload/customRequest": {
+		"description": "override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest"
+	},
+	"a-upload/data": {
+		"description": "Uploading params or function which can return uploading params."
+	},
+	"a-upload/defaultFileList": {
+		"description": "Default list of files that have been uploaded."
+	},
+	"a-upload/disabled": {
+		"description": "disable upload button"
+	},
+	"a-upload/fileList": {
+		"description": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it"
+	},
+	"a-upload/headers": {
+		"description": "Set request headers, valid above IE10."
+	},
+	"a-upload/listType": {
+		"description": "Built-in stylesheets, support for three types: text, picture or picture-card"
+	},
+	"a-upload/multiple": {
+		"description": "Whether to support selected multiple file. IE10+ supported. You can select multiple files with CTRL holding down while multiple is set to be true"
+	},
+	"a-upload/name": {
+		"description": "The name of uploading file"
+	},
+	"a-upload/showUploadList": {
+		"description": "Whether to show default upload list, could be an object to specify showPreviewIcon and showRemoveIcon individually"
+	},
+	"a-upload/supportServerRender": {
+		"description": "Need to be turned on while the server side is rendering."
+	},
+	"a-upload/withCredentials": {
+		"description": "ajax upload with cookie sent"
+	},
+	"a-upload/openFileDialogOnClick": {
+		"description": "click open file dialog"
+	},
+	"a-upload/remove": {
+		"description": "A callback function, will be executed when removing file button is clicked, remove event will be prevented when return value is false or a Promise which resolve(false) or reject."
+	}
+}

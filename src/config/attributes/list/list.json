@@ -1,0 +1,29 @@
+{
+	"a-list/column": {
+		"description": "column of grid"
+	},
+	"a-list/gutter": {
+		"description": "spacing between grid"
+	},
+	"a-list/size": {
+		"description": "Size of list"
+	},
+	"a-list/xs": {
+		"description": "<576px column of grid"
+	},
+	"a-list/sm": {
+		"description": "≥576px column of grid"
+	},
+	"a-list/md": {
+		"description": "≥768px column of grid"
+	},
+	"a-list/lg": {
+		"description": "≥992px column of grid"
+	},
+	"a-list/xl": {
+		"description": "≥1200px column of grid"
+	},
+	"a-list/xxl": {
+		"description": "≥1600px column of grid"
+	}
+}

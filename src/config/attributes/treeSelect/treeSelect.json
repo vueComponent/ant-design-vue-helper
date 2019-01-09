@@ -1,0 +1,83 @@
+{
+	"a-tree-select/allowClear": {
+		"description": "Whether allow clear"
+	},
+	"a-tree-select/defaultValue": {
+		"description": "To set the initial selected treeNode(s)."
+	},
+	"a-tree-select/disabled": {
+		"description": "Disabled or not"
+	},
+	"a-tree-select/dropdownClassName": {
+		"description": "className of dropdown menu"
+	},
+	"a-tree-select/dropdownMatchSelectWidth": {
+		"description": "Determine whether the dropdown menu and the select input are the same width"
+	},
+	"a-tree-select/dropdownStyle": {
+		"description": "To set the style of the dropdown menu"
+	},
+	"a-tree-select/filterTreeNode": {
+		"description": "Whether to filter treeNodes by input value. The value of treeNodeFilterProp is used for filtering by default."
+	},
+	"a-tree-select/getPopupContainer": {
+		"description": "To set the container of the dropdown menu. The default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition."
+	},
+	"a-tree-select/labelInValue": {
+		"description": "whether to embed label in value, turn the format of value from string to {value: string, label: VNode, halfChecked: string[]}"
+	},
+	"a-tree-select/loadData": {
+		"description": "Load data asynchronously."
+	},
+	"a-tree-select/multiple": {
+		"description": "Support multiple or not, will be true when enable treeCheckable."
+	},
+	"a-tree-select/placeholder": {
+		"description": "Placeholder of the select input"
+	},
+	"a-tree-select/searchPlaceholder": {
+		"description": "Placeholder of the search input"
+	},
+	"a-tree-select/showCheckedStrategy": {
+		"description": "The way show selected item in box. Default: just show child nodes. TreeSelect.SHOW_ALL: show all checked treeNodes (include parent treeNode). TreeSelect.SHOW_PARENT: show checked treeNodes (just show parent treeNode)."
+	},
+	"a-tree-select/showSearch": {
+		"description": "Whether to display a search input in the dropdown menu(valid only in the single mode)"
+	},
+	"a-tree-select/size": {
+		"description": "To set the size of the select input, options: large small"
+	},
+	"a-tree-select/suffixIcon": {
+		"description": "The custom suffix icon"
+	},
+	"a-tree-select/treeCheckable": {
+		"description": "Whether to show checkbox on the treeNodes"
+	},
+	"a-tree-select/treeCheckStrictly": {
+		"description": "Whether to check nodes precisely (in the checkable mode), means parent and child nodes are not associated, and it will make labelInValue be true"
+	},
+	"a-tree-select/treeData": {
+		"description": "Data of the treeNodes, manual construction work is no longer needed if this property has been set(ensure the Uniqueness of each value)"
+	},
+	"a-tree-select/treeDataSimpleMode": {
+		"description": "Enable simple mode of treeData.(treeData should like this: [{id:1, pId:0, value:'1', label:\"test1\",...},...], pId is parent node's id)"
+	},
+	"a-tree-select/treeDefaultExpandAll": {
+		"description": "Whether to expand all treeNodes by default"
+	},
+	"a-tree-select/treeDefaultExpandedKeys": {
+		"description": "Default expanded treeNodes"
+	},
+	"a-tree-select/treeExpandedKeys": {
+		"description": "Set expanded keys"
+	},
+	"a-tree-select/treeNodeFilterProp": {
+		"description": "Will be used for filtering if filterTreeNode returns true"
+	},
+	"a-tree-select/treeNodeLabelProp": {
+		"description": "Will render as content of select"
+	},
+	"a-tree-select/value": {
+		"description": "To set the current selected treeNode(s)."
+	}
+}

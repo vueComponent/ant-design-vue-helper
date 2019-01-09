@@ -1,0 +1,24 @@
+{
+	"a-carousel/afterChange": {
+		"description": "Callback function called after the current index changes"
+	},
+	"a-carousel/autoplay": {
+		"description": "Whether to scroll automatically"
+	},
+	"a-carousel/beforeChange": {
+		"description": "Callback function called before the current index changes"
+	},
+	"a-carousel/dots": {
+		"description": "Whether to show the dots at the bottom of the gallery"
+	},
+	"a-carousel/easing": {
+		"description": "Transition interpolation function name"
+	},
+	"a-carousel/effect": {
+    "options": ["scrollx", "fade"],
+		"description": "Transition effect"
+	},
+	"a-carousel/vertical": {
+		"description": "Whether to use a vertical display"
+	}
+}

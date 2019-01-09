@@ -1,0 +1,62 @@
+{
+	"a-tree/treeData": {
+		"description": "treeNode of tree, please use treeNodes before v1.1.4"
+	},
+	"a-tree/autoExpandParent": {
+		"description": "Whether to automatically expand a parent treeNode"
+	},
+	"a-tree/checkable": {
+		"description": "Adds a Checkbox before the treeNodes"
+	},
+	"a-tree/checkedKeys": {
+		"description": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other."
+	},
+	"a-tree/checkStrictly": {
+		"description": "Check treeNode precisely; parent treeNode and children treeNodes are not associated"
+	},
+	"a-tree/defaultCheckedKeys": {
+		"description": "Specifies the keys of the default checked treeNodes"
+	},
+	"a-tree/defaultExpandAll": {
+		"description": "Whether to expand all treeNodes by default"
+	},
+	"a-tree/defaultExpandedKeys": {
+		"description": "Specify the keys of the default expanded treeNodes"
+	},
+	"a-tree/defaultExpandParent": {
+		"description": "auto expand parent treeNodes when init"
+	},
+	"a-tree/defaultSelectedKeys": {
+		"description": "Specifies the keys of the default selected treeNodes"
+	},
+	"a-tree/disabled": {
+		"description": "whether disabled the tree"
+	},
+	"a-tree/draggable": {
+		"description": "Specifies whether this Tree is draggable (IE > 8)"
+	},
+	"a-tree/expandedKeys(.sync)": {
+		"description": "(Controlled) Specifies the keys of the expanded treeNodes"
+	},
+	"a-tree/filterTreeNode": {
+		"description": "Defines a function to filter (highlight) treeNodes. When the function returns true, the corresponding treeNode will be highlighted"
+	},
+	"a-tree/loadData": {
+		"description": "Load data asynchronously"
+	},
+	"a-tree/loadedKeys": {
+		"description": "(Controlled) Set loaded tree nodes. Need work with loadData"
+	},
+	"a-tree/multiple": {
+		"description": "Allows selecting multiple treeNodes"
+	},
+	"a-tree/selectedKeys": {
+		"description": "(Controlled) Specifies the keys of the selected treeNodes"
+	},
+	"a-tree/showIcon": {
+		"description": "Shows the icon before a TreeNode's title. There is no default style; you must set a custom style for it if set to true"
+	},
+	"a-tree/showLine": {
+		"description": "Shows a connecting line"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"a-avatar/icon": {
+		"description": "the Icon type for an icon avatar, see Icon Component"
+	},
+	"a-avatar/shape": {
+		"description": "the shape of avatar"
+	},
+	"a-avatar/size": {
+		"description": "the size of the avatar"
+	},
+	"a-avatar/src": {
+		"description": "the address of the image for an image avatar"
+	},
+	"a-avatar/alt": {
+		"description": "This attribute defines the alternative text describing the image"
+	},
+	"a-avatar/loadError": {
+		"description": "handler when img load error，return false to prevent default fallback behavior"
+	}
+}

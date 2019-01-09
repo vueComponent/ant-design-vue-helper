@@ -1,0 +1,26 @@
+{
+	"a-progress/format": {
+		"description": "template function of the content"
+	},
+	"a-progress/percent": {
+		"description": "to set the completion percentage"
+	},
+	"a-progress/showInfo": {
+		"description": "whether to display the progress value and the status icon"
+	},
+	"a-progress/status": {
+		"description": "to set the status of the Progress, options: success exception active normal"
+	},
+	"a-progress/strokeLinecap": {
+		"description": "to set the style of the progress linecap"
+	},
+	"a-progress/strokeColor": {
+		"description": "color of progress bar"
+	},
+	"a-progress/successPercent": {
+		"description": "segmented success percent, works when type=\"line\""
+	},
+	"a-progress/type": {
+		"description": "to set the type, options: line circle dashboard"
+	}
+}

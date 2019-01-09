@@ -1,0 +1,17 @@
+{
+	"a-skeleton/active": {
+		"description": "Show animation effect"
+	},
+	"a-skeleton/avatar": {
+		"description": "Show avatar placeholder"
+	},
+	"a-skeleton/loading": {
+		"description": "Display the skeleton when true"
+	},
+	"a-skeleton/paragraph": {
+		"description": "Show paragraph placeholder"
+	},
+	"a-skeleton/title": {
+		"description": "Show title placeholder"
+	}
+}

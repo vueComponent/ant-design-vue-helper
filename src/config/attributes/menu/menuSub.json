@@ -1,0 +1,14 @@
+{
+	"a-sub-menu/children": {
+		"description": "sub menus or sub menu items"
+	},
+	"a-sub-menu/disabled": {
+		"description": "whether sub menu is disabled or not"
+	},
+	"a-sub-menu/key": {
+		"description": "unique id of the sub menu"
+	},
+	"a-sub-menu/title": {
+		"description": "title of the sub menu"
+	}
+}

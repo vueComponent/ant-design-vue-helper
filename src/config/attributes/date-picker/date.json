@@ -1,0 +1,68 @@
+{
+	"a-date-picker/allowClear": {
+		"description": "Whether to show clear button"
+	},
+	"a-date-picker/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-date-picker/dateRender": {
+		"description": "custom rendering function for date cells by setting a scoped slot"
+	},
+	"a-date-picker/disabled": {
+		"description": "determine whether the DatePicker is disabled"
+	},
+	"a-date-picker/disabledDate": {
+		"description": "specify the date that cannot be selected"
+	},
+	"a-date-picker/getCalendarContainer": {
+		"description": "to set the container of the floating layer, while the default is to create a div element in body"
+	},
+	"a-date-picker/locale": {
+		"description": "localization configuration"
+	},
+	"a-date-picker/open": {
+		"description": "open state of picker"
+	},
+	"a-date-picker/placeholder": {
+		"description": "placeholder of date input"
+	},
+	"a-date-picker/popupStyle": {
+		"description": "to customize the style of the popup calendar"
+	},
+	"a-date-picker/dropdownClassName": {
+		"description": "to customize the className of the popup calendar"
+	},
+	"a-date-picker/size": {
+		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px"
+	},
+	"a-date-picker/suffixIcon": {
+		"description": "The custom suffix icon"
+  },
+  "a-date-picker/defaultValue": {
+		"description": "to set default date"
+	},
+	"a-date-picker/defaultPickerValue": {
+		"description": "to set default picker date"
+	},
+	"a-date-picker/disabledTime": {
+		"description": "to specify the time that cannot be selected"
+	},
+	"a-date-picker/format": {
+		"description": "to set the date format, refer to moment.js"
+	},
+	"a-date-picker/renderExtraFooter": {
+		"description": "render extra footer in panel by setting a scoped slot"
+	},
+	"a-date-picker/showTime": {
+		"description": "to provide an additional time selection"
+	},
+	"a-date-picker/showTime.defaultValue": {
+		"description": "to set default time of selected date"
+	},
+	"a-date-picker/showToday": {
+		"description": "whether to show \"Today\" button"
+	},
+	"a-date-picker/value": {
+		"description": "to set date"
+	}
+}

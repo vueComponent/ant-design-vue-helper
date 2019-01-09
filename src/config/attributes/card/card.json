@@ -1,0 +1,41 @@
+{
+	"a-card/actions": {
+		"description": "The action list, shows at the bottom of the Card."
+	},
+	"a-card/activeTabKey": {
+		"description": "Current TabPane's key"
+	},
+	"a-card/headStyle": {
+		"description": "Inline style to apply to the card head"
+	},
+	"a-card/bodyStyle": {
+		"description": "Inline style to apply to the card content"
+	},
+	"a-card/bordered": {
+		"description": "Toggles rendering of the border around the card"
+	},
+	"a-card/cover": {
+		"description": "Card cover"
+	},
+	"a-card/defaultActiveTabKey": {
+		"description": "Initial active TabPane's key, if activeTabKey is not set."
+	},
+	"a-card/extra": {
+		"description": "Content to render in the top-right corner of the card"
+	},
+	"a-card/hoverable": {
+		"description": "Lift up when hovering card"
+	},
+	"a-card/loading": {
+		"description": "Shows a loading indicator while the contents of the card are being fetched"
+	},
+	"a-card/tabList": {
+		"description": "List of TabPane's head, Custom tabs can be created with the scopedSlots property"
+	},
+	"a-card/title": {
+		"description": "Card title"
+	},
+	"a-card/type": {
+		"description": "Card style type, can be set to inner or not set"
+	}
+}

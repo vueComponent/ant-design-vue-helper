@@ -1,0 +1,42 @@
+{
+	"a-pagination/current": {
+		"description": "current page number"
+	},
+	"a-pagination/defaultCurrent": {
+		"description": "default initial page number"
+	},
+	"a-pagination/defaultPageSize": {
+		"description": "default number of data items per page"
+	},
+	"a-pagination/hideOnSinglePage": {
+		"description": "Whether to hide pager on single page"
+	},
+	"a-pagination/itemRender": {
+		"description": "to customize item innerHTML"
+	},
+	"a-pagination/pageSize": {
+		"description": "number of data items per page"
+	},
+	"a-pagination/pageSizeOptions": {
+		"description": "specify the sizeChanger options"
+	},
+	"a-pagination/showQuickJumper": {
+		"description": "determine whether you can jump to pages directly"
+	},
+	"a-pagination/showSizeChanger": {
+		"description": "determine whether pageSize can be changed"
+	},
+	"a-pagination/showTotal": {
+		"description": "to display the total number and range"
+	},
+	"a-pagination/simple": {
+		"description": "whether to use simple mode"
+	},
+	"a-pagination/size": {
+    "options": ["small", "large"],
+		"description": "specify the size of Pagination, can be set to small"
+	},
+	"a-pagination/total": {
+		"description": "total number of data items"
+	}
+}

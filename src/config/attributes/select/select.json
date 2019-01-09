@@ -1,0 +1,90 @@
+{
+	"a-select/allowClear": {
+		"description": "Show clear button."
+	},
+	"a-select/autoClearSearchValue": {
+		"description": "Whether the current search will be cleared on selecting an item. Only applies when mode is set to multiple or tags."
+	},
+	"a-select/autoFocus": {
+		"description": "Get focus by default"
+	},
+	"a-select/defaultActiveFirstOption": {
+		"description": "Whether active first option by default"
+	},
+	"a-select/defaultValue": {
+		"description": "Initial selected option."
+	},
+	"a-select/disabled": {
+		"description": "Whether disabled select"
+	},
+	"a-select/dropdownClassName": {
+		"description": "className of dropdown menu"
+	},
+	"a-select/dropdownMatchSelectWidth": {
+		"description": "Whether dropdown's width is same with select."
+	},
+	"a-select/dropdownStyle": {
+		"description": "style of dropdown menu"
+	},
+	"a-select/filterOption": {
+		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded."
+	},
+	"a-select/firstActiveValue": {
+		"description": "Value of action option by default"
+	},
+	"a-select/getPopupContainer": {
+		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative."
+	},
+	"a-select/labelInValue": {
+		"description": "whether to embed label in value, turn the format of value from string to {key: string, label: vNodes}"
+	},
+	"a-select/maxTagCount": {
+		"description": "Max tag count to show"
+	},
+	"a-select/maxTagPlaceholder": {
+		"description": "Placeholder for not showing tags"
+	},
+	"a-select/mode": {
+    "options": ["default", "multiple", "tags"],
+		"description": "Set mode of Select"
+	},
+	"a-select/notFoundContent": {
+		"description": "Specify content to show when no result matches.."
+	},
+	"a-select/optionFilterProp": {
+		"description": "Which prop value of option will be used for filter if filterOption is true"
+	},
+	"a-select/optionLabelProp": {
+		"description": "Which prop value of option will render as content of select."
+	},
+	"a-select/placeholder": {
+		"description": "Placeholder of select"
+	},
+	"a-select/showSearch": {
+		"description": "Whether show search input in single mode."
+	},
+	"a-select/showArrow": {
+		"description": "Whether to show the drop-down arrow"
+	},
+	"a-select/size": {
+		"description": "Size of Select input. default large small"
+	},
+	"a-select/suffixIcon": {
+		"description": "The custom suffix icon"
+	},
+	"a-select/tokenSeparators": {
+		"description": "Separator used to tokenize on tag/multiple mode"
+	},
+	"a-select/value": {
+		"description": "Current selected option."
+	},
+	"a-select/options": {
+		"description": "Data of the selectOption, manual construction work is no longer needed if this property has been set"
+	},
+	"a-select/defaultOpen": {
+		"description": "Initial open state of dropdown"
+	},
+	"a-select/open": {
+		"description": "Controlled open state of dropdown"
+	}
+}

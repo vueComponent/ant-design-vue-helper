@@ -1,0 +1,17 @@
+{
+	"a-radio/autoFocus": {
+		"description": "get focus when component mounted"
+	},
+	"a-radio/checked": {
+		"description": "Specifies whether the radio is selected."
+	},
+	"a-radio/defaultChecked": {
+		"description": "Specifies the initial state: whether or not the radio is selected."
+	},
+	"a-radio/disabled": {
+		"description": "Disable radio"
+	},
+	"a-radio/value": {
+		"description": "According to value for comparison, to determine whether the selected"
+	}
+}

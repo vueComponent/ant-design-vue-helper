@@ -1,0 +1,11 @@
+{
+	"a-layout/class": {
+		"description": "container className"
+	},
+	"a-layout/style": {
+		"description": "to customize the styles"
+	},
+	"a-layout/hasSider": {
+		"description": "whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering"
+	}
+}
