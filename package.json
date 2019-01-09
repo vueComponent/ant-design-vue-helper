@@ -1,78 +1,73 @@
 {
-	"name": "vscode-ant-design-vue-helper",
-	"displayName": "Ant Design Vue helper",
-	"description": "A vscode extension for Ant-Design-Vue",
-	"version": "0.0.1",
-	"publisher": "ant-design-vue",
-	"engines": {
-		"vscode": "^1.30.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onLanguage:html",
-		"onLanguage:vue",
-		"onCommand:antdv-helper.search"
-	],
-	"contributes": {
-		"commands": [
-      {
-        "command": "antdv-helper.search",
-        "title": "antdv-helper.search"
-      }
-    ],
-    "keybindings": [
-      {
-        "command": "antdv-helper.search",
-        "key": "ctrl+shift+z",
-        "when": "editorTextFocus"
-      }
-    ],
-		"snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/antdv.json"
-      }
-    ],
-		"configuration": {
-      "type": "object",
-      "title": "ELement Helper Configuration",
-      "properties": {
-        "antdv-helper.indent-size": {
-          "type": "number",
-          "default": 2,
-          "description": "Indentation size of snippets"
-        },
-        "antdv-helper.quotes": {
-          "type": "string",
-          "default": "double"
-        }
-      }
-    }
-	},
-	"main": "./out/extension.js",
-	"scripts": {
-		"vscode:prepublish": "sh build.sh",
-		"compile": "sh build.sh",
-		"watch": "sh build.sh --watch",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.1.4",
-		"vscode": "^1.1.25",
-		"tslint": "^5.8.0",
-		"@types/node": "^8.10.25",
-		"@types/mocha": "^2.2.42"
-	},
-	"dependencies": {
-		"gulp": "^4.0.0",
-		"gulp-markdown-to-json": "^1.1.0",
-		"list-stream": "^1.0.1",
-		"markdown-it": "^8.4.2",
-		"marked": "^0.6.0",
-		"pretty": "^2.0.0",
-		"shelljs": "^0.8.3"
-	}
+		"name": "vscode-ant-design-vue-helper",
+		"displayName": "Ant Design Vue helper",
+		"description": "A vscode extension for Ant-Design-Vue",
+		"version": "0.0.1",
+		"publisher": "ant-design-vue",
+		"engines": {
+				"vscode": "^1.30.0"
+		},
+		"categories": [
+				"Other"
+		],
+		"activationEvents": [
+				"onLanguage:html",
+				"onLanguage:vue",
+				"onCommand:antdv-helper.search"
+		],
+		"contributes": {
+				"commands": [
+						{
+								"command": "antdv-helper.search",
+								"title": "antdv-helper.search"
+						}
+				],
+				"keybindings": [
+						{
+								"command": "antdv-helper.search",
+								"key": "ctrl+shift+z",
+								"when": "editorTextFocus"
+						}
+				],
+				"snippets": [
+						{
+								"language": "javascript",
+								"path": "./snippets/antdv.json"
+						}
+				],
+				"configuration": {
+						"type": "object",
+						"title": "ELement Helper Configuration",
+						"properties": {
+								"antdv-helper.indent-size": {
+										"type": "number",
+										"default": 2,
+										"description": "Indentation size of snippets"
+								},
+								"antdv-helper.quotes": {
+										"type": "string",
+										"default": "double"
+								}
+						}
+				}
+		},
+		"main": "./out/extension.js",
+		"scripts": {
+				"vscode:prepublish": "sh build.sh",
+				"compile": "sh build.sh",
+				"watch": "sh build.sh --watch",
+				"postinstall": "node ./node_modules/vscode/bin/install",
+				"test": "npm run compile && node ./node_modules/vscode/bin/test"
+		},
+		"devDependencies": {
+				"typescript": "^3.1.4",
+				"vscode": "^1.1.25",
+				"tslint": "^5.8.0",
+				"@types/node": "^8.10.25",
+				"@types/mocha": "^2.2.42"
+		},
+		"dependencies": {
+				"pretty": "^2.0.0",
+				"shelljs": "^0.8.3"
+		}
 }
