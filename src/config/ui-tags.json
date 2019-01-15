@@ -419,12 +419,11 @@
   },
   "a-table": {
     "attributes": [
-      "bordered","childrenColumnName","columns","components",
-      "dataSource","defaultExpandAllRows","defaultExpandedRowKeys",
-      "expandedRowKeys","expandedRowRender","expandRowByClick",
-      "footer","indentSize","loading","locale","pagination",
-      "rowClassName","rowKey","rowSelection","scroll","showHeader",
-      "size","title","customHeaderRow","customRow"
+      "bordered","childrenColumnName","columns","components","dataSource",
+      "defaultExpandAllRows","defaultExpandedRowKeys","expandedRowKeys",
+      "expandedRowRender","expandIcon","expandRowByClick","footer",
+      "indentSize","loading","locale","pagination","rowClassName","rowKey",
+      "rowSelection","scroll","showHeader","size","title","customHeaderRow","customRow"
     ],
     "description": "A table displays rows of data."
   },

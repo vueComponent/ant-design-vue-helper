@@ -175,7 +175,6 @@ export class AntdvCompletionItemProvider implements CompletionItemProvider {
       suggestions.push(this.buildTagSuggestion(tag, TAGS[tag], id));
       id++;
     }
-    console.log(suggestions)
     return suggestions;
   }
 
@@ -214,13 +213,14 @@ export class AntdvCompletionItemProvider implements CompletionItemProvider {
           sug && suggestions.push(sug);
       }
     });
-    for (let attr in ATTRS) {
-      const attrItem = this.getAttrItem(tag, attr);
-      if (attrItem && attrItem.global && (!prefix.trim() || this.firstCharsEqual(attr, prefix))) {
-        const sug = this.buildAttrSuggestion({attr, tag: null, bind, method}, attrItem);
-        sug && suggestions.push(sug);
-      }
-    }
+    // for (let attr in ATTRS) {
+    //   const attrItem = this.getAttrItem(tag, attr);
+    //   if (attrItem && attrItem.global && (!prefix.trim() || this.firstCharsEqual(attr, prefix))) {
+    //     const sug = this.buildAttrSuggestion({attr, tag: null, bind, method}, attrItem);
+    //     sug && suggestions.push(sug);
+    //   }
+    // }
+    
     return suggestions;
   }
 
