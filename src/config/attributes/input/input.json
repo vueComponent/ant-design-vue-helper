@@ -1,32 +1,52 @@
 {
 	"a-input/addonAfter": {
-		"description": "The label text displayed after (on the right side of) the input field."
+		"description": "The label text displayed after (on the right side of) the input field.",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	},
 	"a-input/addonBefore": {
-		"description": "The label text displayed before (on the left side of) the input field."
+		"description": "The label text displayed before (on the left side of) the input field.",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	},
 	"a-input/defaultValue": {
-		"description": "The initial input content"
+		"description": "The initial input content",
+		"optionType": "string",
+		"defaultValue": ""
 	},
 	"a-input/disabled": {
-		"description": "Whether the input is disabled."
+		"description": "Whether the input is disabled.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-input/id": {
-		"description": "The ID for input"
+		"description": "The ID for input",
+		"optionType": "string",
+		"defaultValue": ""
 	},
 	"a-input/prefix": {
-		"description": "The prefix icon for the Input."
+		"description": "The prefix icon for the Input.",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	},
 	"a-input/size": {
-		"description": "The size of the input box. Note: in the context of a form, the large size is used. Available: large default small"
+		"description": "The size of the input box. Note: in the context of a form, the large size is used. Available: large default small",
+		"optionType": "string",
+		"defaultValue": "default"
 	},
 	"a-input/suffix": {
-		"description": "The suffix icon for the Input."
+		"description": "The suffix icon for the Input.",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	},
 	"a-input/type": {
-		"description": "The type of input, see: MDN(use Input.TextArea instead of type=\"textarea\")"
+		"description": "The type of input, see: MDN(use Input.TextArea instead of type=\"textarea\")",
+		"optionType": "string",
+		"defaultValue": "text"
 	},
 	"a-input/value": {
-		"description": "The input content value"
+		"description": "The input content value",
+		"optionType": "string",
+		"defaultValue": ""
 	}
 }

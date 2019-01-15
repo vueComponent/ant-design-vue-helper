@@ -1,20 +1,32 @@
 {
 	"a-spin/delay": {
-		"description": "specifies a delay in milliseconds for loading state (prevent flush)"
+		"description": "specifies a delay in milliseconds for loading state (prevent flush)",
+		"optionType": "number (milliseconds)",
+		"defaultValue": "-"
 	},
 	"a-spin/indicator": {
-		"description": "vue node of the spinning indicator"
+		"description": "vue node of the spinning indicator",
+		"optionType": "vNode |slot",
+		"defaultValue": "-"
 	},
 	"a-spin/size": {
-		"description": "size of Spin, options: small, default and large"
+		"description": "size of Spin, options: small, default and large",
+		"optionType": "string",
+		"defaultValue": "default"
 	},
 	"a-spin/spinning": {
-		"description": "whether Spin is spinning"
+		"description": "whether Spin is spinning",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-spin/tip": {
-		"description": "customize description content when Spin has children"
+		"description": "customize description content when Spin has children",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-spin/wrapperClassName": {
-		"description": "className of wrapper when Spin has children"
+		"description": "className of wrapper when Spin has children",
+		"optionType": "string",
+		"defaultValue": "-"
 	}
 }

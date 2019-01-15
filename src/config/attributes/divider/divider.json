@@ -1,13 +1,19 @@
 {
 	"a-divider/dashed": {
-		"description": "whether line is dashed"
+		"description": "whether line is dashed",
+		"optionType": "Boolean",
+		"defaultValue": "false"
 	},
 	"a-divider/orientation": {
-    "options": ["left", "right", "center"],
-		"description": "position of title inside divider"
+	  "options": ["left", "right", "center"],
+		"description": "position of title inside divider",
+		"optionType": "enum: left right center",
+		"defaultValue": "center"
 	},
 	"a-divider/type": {
-    "options": ["horizontal", "vertical"],
-		"description": "direction type of divider"
-  }
+	  "options": ["horizontal", "vertical"],
+		"description": "direction type of divider",
+		"optionType": "enum: horizontal vertical",
+		"defaultValue": "horizontal"
+	}
 }

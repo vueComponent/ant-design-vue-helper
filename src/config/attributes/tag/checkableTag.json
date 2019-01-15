@@ -1,5 +1,7 @@
 {
-	"a-checkable-tag/afterClose": {
-		"checked": "Checked status of Tag"
+	"a-checkable-tag/checked": {
+		"description": "Checked status of Tag",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	}
 }

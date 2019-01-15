@@ -1,62 +1,102 @@
 {
 	"a-tree/treeData": {
-		"description": "treeNode of tree, please use treeNodes before v1.1.4"
+		"description": "treeNode of tree, please use treeNodes before v1.1.4",
+		"optionType": "array",
+		"defaultValue": "-"
 	},
 	"a-tree/autoExpandParent": {
-		"description": "Whether to automatically expand a parent treeNode"
+		"description": "Whether to automatically expand a parent treeNode",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-tree/checkable": {
-		"description": "Adds a Checkbox before the treeNodes"
+		"description": "Adds a Checkbox before the treeNodes",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree/checkedKeys": {
-		"description": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other."
+		"description": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other.",
+		"optionType": "string[] | number[] | {checked: string[] | number[], halfChecked: string[] | number[]}",
+		"defaultValue": "[]"
 	},
 	"a-tree/checkStrictly": {
-		"description": "Check treeNode precisely; parent treeNode and children treeNodes are not associated"
+		"description": "Check treeNode precisely; parent treeNode and children treeNodes are not associated",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree/defaultCheckedKeys": {
-		"description": "Specifies the keys of the default checked treeNodes"
+		"description": "Specifies the keys of the default checked treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "[]"
 	},
 	"a-tree/defaultExpandAll": {
-		"description": "Whether to expand all treeNodes by default"
+		"description": "Whether to expand all treeNodes by default",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree/defaultExpandedKeys": {
-		"description": "Specify the keys of the default expanded treeNodes"
+		"description": "Specify the keys of the default expanded treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "[]"
 	},
 	"a-tree/defaultExpandParent": {
-		"description": "auto expand parent treeNodes when init"
+		"description": "auto expand parent treeNodes when init",
+		"optionType": "bool",
+		"defaultValue": "true"
 	},
 	"a-tree/defaultSelectedKeys": {
-		"description": "Specifies the keys of the default selected treeNodes"
+		"description": "Specifies the keys of the default selected treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "[]"
 	},
 	"a-tree/disabled": {
-		"description": "whether disabled the tree"
+		"description": "whether disabled the tree",
+		"optionType": "bool",
+		"defaultValue": "false"
 	},
 	"a-tree/draggable": {
-		"description": "Specifies whether this Tree is draggable (IE > 8)"
+		"description": "Specifies whether this Tree is draggable (IE > 8)",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
-	"a-tree/expandedKeys(.sync)": {
-		"description": "(Controlled) Specifies the keys of the expanded treeNodes"
+	"a-tree/expandedKeys": {
+		"description": "(Controlled) Specifies the keys of the expanded treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "[]"
 	},
 	"a-tree/filterTreeNode": {
-		"description": "Defines a function to filter (highlight) treeNodes. When the function returns true, the corresponding treeNode will be highlighted"
+		"description": "Defines a function to filter (highlight) treeNodes. When the function returns true, the corresponding treeNode will be highlighted",
+		"optionType": "function(node)",
+		"defaultValue": "-"
 	},
 	"a-tree/loadData": {
-		"description": "Load data asynchronously"
+		"description": "Load data asynchronously",
+		"optionType": "function(node)",
+		"defaultValue": "-"
 	},
 	"a-tree/loadedKeys": {
-		"description": "(Controlled) Set loaded tree nodes. Need work with loadData"
+		"description": "(Controlled) Set loaded tree nodes. Need work with loadData",
+		"optionType": "string[] | number[]",
+		"defaultValue": "[]"
 	},
 	"a-tree/multiple": {
-		"description": "Allows selecting multiple treeNodes"
+		"description": "Allows selecting multiple treeNodes",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree/selectedKeys": {
-		"description": "(Controlled) Specifies the keys of the selected treeNodes"
+		"description": "(Controlled) Specifies the keys of the selected treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "-"
 	},
 	"a-tree/showIcon": {
-		"description": "Shows the icon before a TreeNode's title. There is no default style; you must set a custom style for it if set to true"
+		"description": "Shows the icon before a TreeNode's title. There is no default style; you must set a custom style for it if set to true",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree/showLine": {
-		"description": "Shows a connecting line"
+		"description": "Shows a connecting line",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	}
 }

@@ -1,38 +1,62 @@
 {
 	"a-tree-node/class": {
-		"description": "className"
+		"description": "className",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tree-node/style": {
-		"description": "style"
+		"description": "style",
+		"optionType": "string|object",
+		"defaultValue": "-"
 	},
 	"a-tree-node/disableCheckbox": {
-		"description": "Disables the checkbox of the treeNode"
+		"description": "Disables the checkbox of the treeNode",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree-node/disabled": {
-		"description": "Disables the treeNode"
+		"description": "Disables the treeNode",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree-node/icon": {
-		"description": "customize icon. When you pass component, whose render will receive full TreeNode props as component props"
+		"description": "customize icon. When you pass component, whose render will receive full TreeNode props as component props",
+		"optionType": "slot|slot-scope",
+		"defaultValue": "-"
 	},
 	"a-tree-node/isLeaf": {
-		"description": "Determines if this is a leaf node(effective when loadData is specified)"
+		"description": "Determines if this is a leaf node(effective when loadData is specified)",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tree-node/key": {
-		"description": "Used with (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys. P.S.: It must be unique in all of treeNodes of the tree!"
+		"description": "Used with (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys. P.S.: It must be unique in all of treeNodes of the tree!",
+		"optionType": "string | number",
+		"defaultValue": "internal calculated position of treeNode"
 	},
 	"a-tree-node/selectable": {
-		"description": "Set whether the treeNode can be selected"
+		"description": "Set whether the treeNode can be selected",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-tree-node/title": {
-		"description": "Title"
+		"description": "Title",
+		"optionType": "string|slot|slot-scope",
+		"defaultValue": "'---'"
 	},
 	"a-tree-node/slots": {
-		"description": "When using treeNodes, you can use this property to configure the properties that support the slot, such as slots: { title: 'XXX'}"
+		"description": "When using treeNodes, you can use this property to configure the properties that support the slot, such as slots: { title: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-tree-node/scopedSlots": {
-		"description": "When using treeNodes, you can use this property to configure the properties that support the slot-scope, such as scopedSlots: { title: 'XXX'}"
+		"description": "When using treeNodes, you can use this property to configure the properties that support the slot-scope, such as scopedSlots: { title: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-tree-node/on": {
-		"description": "When using treeNodes, you can use this property to configure the events, such as on: { click: () => {}}"
+		"description": "When using treeNodes, you can use this property to configure the events, such as on: { click: () => {}}",
+		"optionType": "object",
+		"defaultValue": "-"
 	}
 }

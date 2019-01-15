@@ -1,8 +1,17 @@
 {
 	"a-menu-item/disabled": {
-		"description": "whether menu item is disabled or not"
+		"description": "whether menu item is disabled or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-menu-item/key": {
-		"description": "unique id of the menu item"
+		"description": "unique id of the menu item",
+		"optionType": "string",
+		"defaultValue": ""
+	},
+	"a-menu-item/title": {
+		"description": "set display title for collapsed item",
+		"optionType": "string",
+		"defaultValue": ""
 	}
 }

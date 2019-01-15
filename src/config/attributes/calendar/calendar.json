@@ -1,35 +1,57 @@
 {
 	"a-calendar/dateCellRender": {
-		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will be appended to the cell"
+		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will be appended to the cell",
+		"optionType": "function(date: moment)",
+		"defaultValue": "-"
 	},
 	"a-calendar/dateFullCellRender": {
-		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will override the cell"
+		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will override the cell",
+		"optionType": "function(date: moment)",
+		"defaultValue": "-"
 	},
 	"a-calendar/defaultValue": {
-		"description": "The date selected by default"
+		"description": "The date selected by default",
+		"optionType": "moment",
+		"defaultValue": "default date"
 	},
 	"a-calendar/disabledDate": {
-		"description": "Function that specifies the dates that cannot be selected"
+		"description": "Function that specifies the dates that cannot be selected",
+		"optionType": "(currentDate: moment) => boolean",
+		"defaultValue": "-"
 	},
 	"a-calendar/fullscreen": {
-		"description": "Whether to display in full-screen"
+		"description": "Whether to display in full-screen",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-calendar/locale": {
-		"description": "The calendar's locale"
+		"description": "The calendar's locale",
+		"optionType": "object",
+		"defaultValue": "default"
 	},
 	"a-calendar/mode": {
-		"description": "The display mode of the calendar"
+		"description": "The display mode of the calendar",
+		"optionType": "month | year",
+		"defaultValue": "month"
 	},
 	"a-calendar/monthCellRender": {
-		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will be appended to the cell"
+		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will be appended to the cell",
+		"optionType": "function(date: moment)",
+		"defaultValue": "-"
 	},
 	"a-calendar/monthFullCellRender": {
-		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will override the cell"
+		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will override the cell",
+		"optionType": "function(date: moment)",
+		"defaultValue": "-"
 	},
 	"a-calendar/validRange": {
-		"description": "to set valid range"
+		"description": "to set valid range",
+		"optionType": "[moment, moment]",
+		"defaultValue": "-"
 	},
 	"a-calendar/value": {
-		"description": "The current selected date"
+		"description": "The current selected date",
+		"optionType": "moment",
+		"defaultValue": "current date"
 	}
 }

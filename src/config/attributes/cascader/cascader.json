@@ -1,65 +1,107 @@
 {
 	"a-cascader/allowClear": {
-		"description": "whether allow clear"
+		"description": "whether allow clear",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-cascader/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-cascader/changeOnSelect": {
-		"description": "change value on each selection if set to true, see above demo for details"
+		"description": "change value on each selection if set to true, see above demo for details",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-cascader/defaultValue": {
-		"description": "initial selected value"
+		"description": "initial selected value",
+		"optionType": "string[]",
+		"defaultValue": "[]"
 	},
 	"a-cascader/disabled": {
-		"description": "whether disabled select"
+		"description": "whether disabled select",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-cascader/displayRender": {
-		"description": "render function of displaying selected options, you can use slot=\"displayRender\" and slot-scope=\"{labels, selectedOptions}\""
+		"description": "render function of displaying selected options, you can use slot=\"displayRender\" and slot-scope=\"{labels, selectedOptions}\"",
+		"optionType": "({labels, selectedOptions}) => vNode",
+		"defaultValue": "labels => labels.join(' / ')"
 	},
 	"a-cascader/expandTrigger": {
-		"description": "expand current item when click or hover, one of 'click' 'hover'"
+		"description": "expand current item when click or hover, one of 'click' 'hover'",
+		"optionType": "string",
+		"defaultValue": "'click'"
 	},
 	"a-cascader/fieldNames": {
-		"description": "custom field name for label and value and children"
+		"description": "custom field name for label and value and children",
+		"optionType": "object",
+		"defaultValue": "{ label: 'label', value: 'value', children: 'children' }"
 	},
 	"a-cascader/getPopupContainer": {
-		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative."
+		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative.",
+		"optionType": "Function(triggerNode)",
+		"defaultValue": "() => document.body"
 	},
 	"a-cascader/loadData": {
-		"description": "To load option lazily, and it cannot work with showSearch"
+		"description": "To load option lazily, and it cannot work with showSearch",
+		"optionType": "(selectedOptions) => void",
+		"defaultValue": "-"
 	},
 	"a-cascader/notFoundContent": {
-		"description": "Specify content to show when no result matches."
+		"description": "Specify content to show when no result matches.",
+		"optionType": "string",
+		"defaultValue": "'Not Found'"
 	},
 	"a-cascader/options": {
-		"description": "data options of cascade"
+		"description": "data options of cascade",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-cascader/placeholder": {
-		"description": "input placeholder"
+		"description": "input placeholder",
+		"optionType": "string",
+		"defaultValue": "'Please select'"
 	},
 	"a-cascader/popupClassName": {
-		"description": "additional className of popup overlay"
+		"description": "additional className of popup overlay",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-cascader/popupStyle": {
-		"description": "additional style of popup overlay"
+		"description": "additional style of popup overlay",
+		"optionType": "object",
+		"defaultValue": "{}"
 	},
 	"a-cascader/popupPlacement": {
-		"description": "use preset popup align config from builtinPlacements：bottomLeft bottomRight topLeft topRight"
+		"description": "use preset popup align config from builtinPlacements：bottomLeft bottomRight topLeft topRight",
+		"optionType": "string",
+		"defaultValue": "bottomLeft"
 	},
 	"a-cascader/popupVisible": {
-		"description": "set visible of cascader popup"
+		"description": "set visible of cascader popup",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-cascader/showSearch": {
-		"description": "Whether show search input in single mode."
+		"description": "Whether show search input in single mode.",
+		"optionType": "boolean|object",
+		"defaultValue": "false"
 	},
 	"a-cascader/size": {
-		"description": "input size, one of large default small"
+		"description": "input size, one of large default small",
+		"optionType": "string",
+		"defaultValue": "default"
 	},
 	"a-cascader/suffixIcon": {
-		"description": "The custom suffix icon"
+		"description": "The custom suffix icon",
+		"optionType": "string | VNode | slot",
+		"defaultValue": "-"
 	},
 	"a-cascader/value": {
-		"description": "selected value"
+		"description": "selected value",
+		"optionType": "string[]",
+		"defaultValue": "-"
 	}
 }

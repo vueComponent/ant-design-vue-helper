@@ -1,17 +1,27 @@
 {
 	"a-collapse-panel/disabled": {
-		"description": "If true, panel cannot be opened or closed"
+		"description": "If true, panel cannot be opened or closed",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-collapse-panel/forceRender": {
-		"description": "Forced render of content on panel, instead of lazy rending after clicking on header"
+		"description": "Forced render of content on panel, instead of lazy rending after clicking on header",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-collapse-panel/header": {
-		"description": "Title of the panel"
+		"description": "Title of the panel",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-collapse-panel/key": {
-		"description": "Unique key identifying the panel from among its siblings"
+		"description": "Unique key identifying the panel from among its siblings",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-collapse-panel/showArrow": {
-		"description": "If false, panel will not show arrow icon"
+		"description": "If false, panel will not show arrow icon",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	}
 }

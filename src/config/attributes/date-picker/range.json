@@ -1,68 +1,112 @@
 {
 	"a-range-picker/allowClear": {
-		"description": "Whether to show clear button"
+		"description": "Whether to show clear button",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-range-picker/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-range-picker/dateRender": {
-		"description": "custom rendering function for date cells by setting a scoped slot"
+		"description": "custom rendering function for date cells by setting a scoped slot",
+		"optionType": "slot=\"dateRender\" slot-scope=\"current, today\"",
+		"defaultValue": "-"
 	},
 	"a-range-picker/disabled": {
-		"description": "determine whether the DatePicker is disabled"
+		"description": "determine whether the DatePicker is disabled",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-range-picker/disabledDate": {
-		"description": "specify the date that cannot be selected"
+		"description": "specify the date that cannot be selected",
+		"optionType": "(currentDate: moment) => boolean",
+		"defaultValue": "-"
 	},
 	"a-range-picker/getCalendarContainer": {
-		"description": "to set the container of the floating layer, while the default is to create a div element in body"
+		"description": "to set the container of the floating layer, while the default is to create a div element in body",
+		"optionType": "function(trigger)",
+		"defaultValue": "-"
 	},
 	"a-range-picker/locale": {
-		"description": "localization configuration"
+		"description": "localization configuration",
+		"optionType": "object",
+		"defaultValue": "default"
 	},
 	"a-range-picker/open": {
-		"description": "open state of picker"
+		"description": "open state of picker",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-range-picker/placeholder": {
-		"description": "placeholder of date input"
+		"description": "placeholder of date input",
+		"optionType": "string|RangePicker[]",
+		"defaultValue": "-"
 	},
 	"a-range-picker/popupStyle": {
-		"description": "to customize the style of the popup calendar"
+		"description": "to customize the style of the popup calendar",
+		"optionType": "object",
+		"defaultValue": "{}"
 	},
 	"a-range-picker/dropdownClassName": {
-		"description": "to customize the className of the popup calendar"
+		"description": "to customize the className of the popup calendar",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-range-picker/size": {
-		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px"
+		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-range-picker/suffixIcon": {
-		"description": "The custom suffix icon"
-  },
+		"description": "The custom suffix icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
+	},
   "a-range-picker/defaultValue": {
-		"description": "to set default date"
+		"description": "to set default date",
+		"optionType": "moment[]",
+		"defaultValue": "-"
 	},
 	"a-range-picker/defaultPickerValue": {
-		"description": "to set default picker date"
+		"description": "to set default picker date",
+		"optionType": "moment[]",
+		"defaultValue": "-"
 	},
 	"a-range-picker/disabledTime": {
-		"description": "to specify the time that cannot be selected"
+		"description": "to specify the time that cannot be selected",
+		"optionType": "function(dates: [moment, moment], partial: 'start'|'end')",
+		"defaultValue": "-"
 	},
 	"a-range-picker/format": {
-		"description": "to set the date format"
+		"description": "to set the date format",
+		"optionType": "string",
+		"defaultValue": "\"YYYY-MM-DD HH:mm:ss\""
 	},
 	"a-range-picker/ranges": {
-		"description": "preseted ranges for quick selection"
+		"description": "preseted ranges for quick selection",
+		"optionType": "{ [range: string]: moment[] } | { [range: string]: () => moment[] }",
+		"defaultValue": "-"
 	},
 	"a-range-picker/renderExtraFooter": {
-		"description": "render extra footer in panel by setting a scoped slot"
+		"description": "render extra footer in panel by setting a scoped slot",
+		"optionType": "slot=\"renderExtraFooter\"",
+		"defaultValue": "-"
 	},
 	"a-range-picker/showTime": {
-		"description": "to provide an additional time selection"
+		"description": "to provide an additional time selection",
+		"optionType": "object|boolean",
+		"defaultValue": "TimePicker Options"
 	},
 	"a-range-picker/showTime.defaultValue": {
-		"description": "to set default time of selected date, demo"
+		"description": "to set default time of selected date, demo",
+		"optionType": "moment[]",
+		"defaultValue": "[moment(), moment()]"
 	},
 	"a-range-picker/value": {
-		"description": "to set date"
+		"description": "to set date",
+		"optionType": "[moment, moment]",
+		"defaultValue": "-"
 	}
 }

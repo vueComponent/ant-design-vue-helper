@@ -1,74 +1,122 @@
 {
-	"a-table/bordered": {
-		"description": "Whether to show all table borders"
+	"a-table/align": {
+		"description": "specify how content is aligned",
+		"optionType": "'left' | 'right' | 'center'",
+		"defaultValue": "'left'"
 	},
-	"a-table/childrenColumnName": {
-		"description": "The column contains children to display"
+	"a-table/colSpan": {
+		"description": "Span of this column's title",
+		"optionType": "number",
+		"defaultValue": ""
 	},
-	"a-table/columns": {
-		"description": "Columns of table"
+	"a-table/dataIndex": {
+		"description": "Display field of the data record, could be set like a.b.c",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
-	"a-table/components": {
-		"description": "Override default table elements"
+	"a-table/defaultSortOrder": {
+		"description": "Default order of sorted values: 'ascend' 'descend' null",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
-	"a-table/dataSource": {
-		"description": "Data record array to be displayed"
+	"a-table/filterDropdown": {
+		"description": "Customized filter overlay",
+		"optionType": "slot | slot-scope",
+		"defaultValue": "-"
 	},
-	"a-table/defaultExpandAllRows": {
-		"description": "Expand all rows initially"
+	"a-table/filterDropdownVisible": {
+		"description": "Whether filterDropdown is visible",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
-	"a-table/defaultExpandedRowKeys": {
-		"description": "Initial expanded row keys"
+	"a-table/filtered": {
+		"description": "Whether the dataSource is filtered",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
-	"a-table/expandedRowKeys": {
-		"description": "Current expanded row keys"
+	"a-table/filteredValue": {
+		"description": "Controlled filtered value, filter icon will highlight",
+		"optionType": "string[]",
+		"defaultValue": "-"
 	},
-	"a-table/expandedRowRender": {
-		"description": "Expanded container render for each row"
+	"a-table/filterIcon": {
+		"description": "Customized filter icon",
+		"optionType": "slot | slot-scope | (filtered: boolean, column: Column)",
+		"defaultValue": "false"
 	},
-	"a-table/expandRowByClick": {
-		"description": "Whether to expand row by clicking anywhere in the whole row"
+	"a-table/filterMultiple": {
+		"description": "Whether multiple filters can be selected",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
-	"a-table/footer": {
-		"description": "Table footer renderer"
+	"a-table/filters": {
+		"description": "Filter menu config",
+		"optionType": "object[]",
+		"defaultValue": "-"
 	},
-	"a-table/indentSize": {
-		"description": "Indent size in pixels of tree data"
+	"a-table/fixed": {
+		"description": "Set column to be fixed: true(same as left) 'left' 'right'",
+		"optionType": "boolean|string",
+		"defaultValue": "false"
 	},
-	"a-table/loading": {
-		"description": "Loading status of table"
+	"a-table/key": {
+		"description": "Unique key of this column, you can ignore this prop if you've set a unique dataIndex",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
-	"a-table/locale": {
-		"description": "i18n text including filter, sort, empty text, etc"
+	"a-table/customRender": {
+		"description": "Renderer of the table cell. The return value should be a VNode, or an object for colSpan/rowSpan config",
+		"optionType": "Function(text, record, index) {}|slot-scope",
+		"defaultValue": "-"
 	},
-	"a-table/pagination": {
-		"description": "Pagination config or [Pagination] (/ant-design-vue/components/pagination/), hide it by setting it to false"
+	"a-table/sorter": {
+		"description": "Sort function for local sort, see Array.sort's compareFunction. If you need sort buttons only, set to true",
+		"optionType": "Function|boolean",
+		"defaultValue": "-"
 	},
-	"a-table/rowClassName": {
-		"description": "Row's className"
-	},
-	"a-table/rowKey": {
-		"description": "Row's unique key, could be a string or function that returns a string"
-	},
-	"a-table/rowSelection": {
-		"description": "Row selection config"
-	},
-	"a-table/scroll": {
-		"description": "Set horizontal or vertical scrolling, can also be used to specify the width and height of the scroll area. It is recommended to set a number for x, if you want to set it to true, you need to add style .ant-table td { white-space: nowrap; }."
-	},
-	"a-table/showHeader": {
-		"description": "Whether to show table header"
-	},
-	"a-table/size": {
-		"description": "Size of table"
+	"a-table/sortOrder": {
+		"description": "Order of sorted values: 'ascend' 'descend' false",
+		"optionType": "boolean|string",
+		"defaultValue": "-"
 	},
 	"a-table/title": {
-		"description": "Table title renderer"
+		"description": "Title of this column",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
-	"a-table/customHeaderRow": {
-		"description": "Set props on per header row"
+	"a-table/width": {
+		"description": "Width of this column",
+		"optionType": "string|number",
+		"defaultValue": "-"
 	},
-	"a-table/customRow": {
-		"description": "Set props on per row"
+	"a-table/customCell": {
+		"description": "Set props on per cell",
+		"optionType": "Function(record, rowIndex)",
+		"defaultValue": "-"
+	},
+	"a-table/customHeaderCell": {
+		"description": "Set props on per header cell",
+		"optionType": "Function(column)",
+		"defaultValue": "-"
+	},
+	"a-table/onFilter": {
+		"description": "Callback executed when the confirm filter button is clicked, Use as a filter event when using template or jsx",
+		"optionType": "Function",
+		"defaultValue": "-"
+	},
+	"a-table/onFilterDropdownVisibleChange": {
+		"description": "Callback executed when filterDropdownVisible is changed, Use as a filterDropdownVisible event when using template or jsx",
+		"optionType": "function(visible) {}",
+		"defaultValue": "-"
+	},
+	"a-table/slots": {
+		"description": "When using columns, you can use this property to configure the properties that support the slot, such as slots: { filterIcon: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-table/scopedSlots": {
+		"description": "When using columns, you can use this property to configure the properties that support the slot-scope, such as scopedSlots: { customRender: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
 	}
 }

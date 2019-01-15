@@ -1,39 +1,63 @@
 {
 	"a-tooltip/arrowPointAtCenter": {
-		"description": "Whether the arrow is pointed at the center of target"
+		"description": "Whether the arrow is pointed at the center of target",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tooltip/autoAdjustOverflow": {
-		"description": "Whether to adjust popup placement automatically when popup is off screen"
+		"description": "Whether to adjust popup placement automatically when popup is off screen",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-tooltip/defaultVisible": {
-		"description": "Whether the floating tooltip card is visible by default"
+		"description": "Whether the floating tooltip card is visible by default",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tooltip/getPopupContainer": {
-		"description": "The DOM container of the tip, the default behavior is to create a div element in body."
+		"description": "The DOM container of the tip, the default behavior is to create a div element in body.",
+		"optionType": "Function(triggerNode)",
+		"defaultValue": "() => document.body"
 	},
 	"a-tooltip/mouseEnterDelay": {
-		"description": "Delay in seconds, before tooltip is shown on mouse enter"
+		"description": "Delay in seconds, before tooltip is shown on mouse enter",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-tooltip/mouseLeaveDelay": {
-		"description": "Delay in seconds, before tooltip is hidden on mouse leave"
+		"description": "Delay in seconds, before tooltip is hidden on mouse leave",
+		"optionType": "number",
+		"defaultValue": "0.1"
 	},
 	"a-tooltip/overlayClassName": {
-		"description": "Class name of the tooltip card"
+		"description": "Class name of the tooltip card",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tooltip/overlayStyle": {
-		"description": "Style of the tooltip card"
+		"description": "Style of the tooltip card",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-tooltip/placement": {
-		"description": "The position of the tooltip relative to the target, which can be one of top left right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom"
+		"description": "The position of the tooltip relative to the target, which can be one of top left right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom",
+		"optionType": "string",
+		"defaultValue": "top"
 	},
 	"a-tooltip/trigger": {
-    "options": ["hover", "focus", "click", "contextmenu"],
-		"description": "Tooltip trigger mode"
+	  "options": ["hover", "focus", "click", "contextmenu"],
+		"description": "Tooltip trigger mode",
+		"optionType": "hover | focus | click | contextmenu",
+		"defaultValue": "hover"
 	},
 	"a-tooltip/visible": {
-		"description": "Whether the floating tooltip card is visible or not"
+		"description": "Whether the floating tooltip card is visible or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tooltip/align": {
-		"description": "this value will be merged into placement's config, please refer to the settings dom-align"
+		"description": "this value will be merged into placement's config, please refer to the settings dom-align",
+		"optionType": "Object",
+		"defaultValue": "-"
 	}
 }

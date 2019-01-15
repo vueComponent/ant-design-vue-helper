@@ -1,38 +1,62 @@
 {
 	"a-input-number/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-input-number/defaultValue": {
-		"description": "initial value"
+		"description": "initial value",
+		"optionType": "number",
+		"defaultValue": ""
 	},
 	"a-input-number/disabled": {
-		"description": "disable the input"
+		"description": "disable the input",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-input-number/formatter": {
-		"description": "Specifies the format of the value presented"
+		"description": "Specifies the format of the value presented",
+		"optionType": "function(value: number | string): string",
+		"defaultValue": "-"
 	},
 	"a-input-number/max": {
-		"description": "max value"
+		"description": "max value",
+		"optionType": "number",
+		"defaultValue": "Infinity"
 	},
 	"a-input-number/min": {
-		"description": "min value"
+		"description": "min value",
+		"optionType": "number",
+		"defaultValue": "-Infinity"
 	},
 	"a-input-number/parser": {
-		"description": "Specifies the value extracted from formatter"
+		"description": "Specifies the value extracted from formatter",
+		"optionType": "function( string): number",
+		"defaultValue": "-"
 	},
 	"a-input-number/precision": {
-		"description": "precision of input value"
+		"description": "precision of input value",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-input-number/decimalSeparator": {
-		"description": "decimal separator"
+		"description": "decimal separator",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-input-number/size": {
-		"description": "width of input box"
+		"description": "width of input box",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-input-number/step": {
-		"description": "The number to which the current value is increased or decreased. It can be an integer or decimal."
+		"description": "The number to which the current value is increased or decreased. It can be an integer or decimal.",
+		"optionType": "number|string",
+		"defaultValue": "1"
 	},
 	"a-input-number/value": {
-		"description": "current value"
+		"description": "current value",
+		"optionType": "number",
+		"defaultValue": ""
 	}
 }

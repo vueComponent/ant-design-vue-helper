@@ -1,11 +1,17 @@
 {
 	"a-card-meta/avatar": {
-		"description": "avatar or icon"
+		"description": "avatar or icon",
+		"optionType": "slot",
+		"defaultValue": "-"
 	},
 	"a-card-meta/description": {
-		"description": "description content"
+		"description": "description content",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-card-meta/title": {
-		"description": "title content"
+		"description": "title content",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	}
 }

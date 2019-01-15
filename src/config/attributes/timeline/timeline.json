@@ -1,15 +1,23 @@
 {
 	"a-timeline/pending": {
-		"description": "Set the last ghost node's existence or its content"
+		"description": "Set the last ghost node's existence or its content",
+		"optionType": "boolean|string|slot",
+		"defaultValue": "false"
 	},
 	"a-timeline/pendingDot": {
-		"description": "Set the dot of the last ghost node when pending is true"
+		"description": "Set the dot of the last ghost node when pending is true",
+		"optionType": "string|slot",
+		"defaultValue": "<Icon type=\"loading\" />"
 	},
 	"a-timeline/reverse": {
-		"description": "reverse nodes or not"
+		"description": "reverse nodes or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-timeline/mode": {
-    "options": ["left", "alternate", "right"],
-		"description": "By sending alternate the timeline will distribute the nodes to the left and right."
+	  "options": ["left", "alternate", "right"],
+		"description": "By sending alternate the timeline will distribute the nodes to the left and right.",
+		"optionType": "left | alternate | right",
+		"defaultValue": "left"
 	}
 }

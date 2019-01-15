@@ -1,29 +1,62 @@
 {
-	"a-list/column": {
-		"description": "column of grid"
+	"a-list/bordered": {
+		"description": "Toggles rendering of the border around the list",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
-	"a-list/gutter": {
-		"description": "spacing between grid"
+	"a-list/footer": {
+		"description": "List footer renderer",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
-	"a-list/size": {
-		"description": "Size of list"
+	"a-list/grid": {
+		"description": "The grid type of list. You can set grid to something like {gutter: 16, column: 4}",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
-	"a-list/xs": {
-		"description": "<576px column of grid"
+	"a-list/header": {
+		"description": "List header renderer",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
-	"a-list/sm": {
-		"description": "≥576px column of grid"
+	"a-list/itemLayout": {
+		"description": "The layout of list, default is horizontal, If a vertical list is desired, set the itemLayout property to vertical",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
-	"a-list/md": {
-		"description": "≥768px column of grid"
+	"a-list/loading": {
+		"description": "Shows a loading indicator while the contents of the list are being fetched",
+		"optionType": "boolean|object",
+		"defaultValue": "false"
 	},
-	"a-list/lg": {
-		"description": "≥992px column of grid"
+	"a-list/loadMore": {
+		"description": "Shows a load more content",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
-	"a-list/xl": {
-		"description": "≥1200px column of grid"
+	"a-list/locale": {
+		"description": "i18n text including empty text",
+		"optionType": "object",
+		"defaultValue": "emptyText: 'No Data' \n"
 	},
-	"a-list/xxl": {
-		"description": "≥1600px column of grid"
+	"a-list/pagination": {
+		"description": "Pagination config, hide it by setting it to false",
+		"optionType": "boolean | object",
+		"defaultValue": "false"
+	},
+	"a-list/split": {
+		"description": "Toggles rendering of the split under the list item",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-list/renderItem": {
+		"description": "Custom item renderer, slot=\"renderItem\" and slot-scope=\"item, index\"",
+		"optionType": "(item, index) => vNode",
+		"defaultValue": ""
+	},
+	"a-list/rowKey": {
+		"description": "Specify the key that will be used for uniquely identify each element",
+		"optionType": "item => string|number",
+		"defaultValue": ""
 	}
 }

@@ -1,42 +1,68 @@
 {
 	"a-pagination/current": {
-		"description": "current page number"
+		"description": "current page number",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-pagination/defaultCurrent": {
-		"description": "default initial page number"
+		"description": "default initial page number",
+		"optionType": "number",
+		"defaultValue": "1"
 	},
 	"a-pagination/defaultPageSize": {
-		"description": "default number of data items per page"
+		"description": "default number of data items per page",
+		"optionType": "number",
+		"defaultValue": "10"
 	},
 	"a-pagination/hideOnSinglePage": {
-		"description": "Whether to hide pager on single page"
+		"description": "Whether to hide pager on single page",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-pagination/itemRender": {
-		"description": "to customize item innerHTML"
+		"description": "to customize item innerHTML",
+		"optionType": "(page, type: 'page' | 'prev' | 'next', originalElement) => vNode",
+		"defaultValue": "-"
 	},
 	"a-pagination/pageSize": {
-		"description": "number of data items per page"
+		"description": "number of data items per page",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-pagination/pageSizeOptions": {
-		"description": "specify the sizeChanger options"
+		"description": "specify the sizeChanger options",
+		"optionType": "string[]",
+		"defaultValue": "['10', '20', '30', '40']"
 	},
 	"a-pagination/showQuickJumper": {
-		"description": "determine whether you can jump to pages directly"
+		"description": "determine whether you can jump to pages directly",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-pagination/showSizeChanger": {
-		"description": "determine whether pageSize can be changed"
+		"description": "determine whether pageSize can be changed",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-pagination/showTotal": {
-		"description": "to display the total number and range"
+		"description": "to display the total number and range",
+		"optionType": "Function(total, range)",
+		"defaultValue": "-"
 	},
 	"a-pagination/simple": {
-		"description": "whether to use simple mode"
+		"description": "whether to use simple mode",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-pagination/size": {
-    "options": ["small", "large"],
-		"description": "specify the size of Pagination, can be set to small"
+	  "options": ["small", "large"],
+		"description": "specify the size of Pagination, can be set to small",
+		"optionType": "string",
+		"defaultValue": "\"\""
 	},
 	"a-pagination/total": {
-		"description": "total number of data items"
+		"description": "total number of data items",
+		"optionType": "number",
+		"defaultValue": "0"
 	}
 }

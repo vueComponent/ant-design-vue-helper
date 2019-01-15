@@ -1,26 +1,67 @@
 {
 	"a-progress/format": {
-		"description": "template function of the content"
+		"description": "template function of the content",
+		"optionType": "function(percent, successPercent)",
+		"defaultValue": "percent => percent + '%'"
+	},
+	"a-progress/gapDegree (type=circle)": {
+		"description": "the gap degree of half circle, 0 ~ 360",
+		"optionType": "number",
+		"defaultValue": "0"
+	},
+	"a-progress/gapPosition (type=circle)": {
+		"description": "the gap position, options: top bottom left right",
+		"optionType": "string",
+		"defaultValue": "top"
 	},
 	"a-progress/percent": {
-		"description": "to set the completion percentage"
+		"description": "to set the completion percentage",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-progress/showInfo": {
-		"description": "whether to display the progress value and the status icon"
+		"description": "whether to display the progress value and the status icon",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-progress/status": {
-		"description": "to set the status of the Progress, options: success exception active normal"
+		"description": "to set the status of the Progress, options: normal success exception active",
+		"optionType": "string",
+		"defaultValue": "normal"
+	},
+	"a-progress/strokeWidth (type=line)": {
+		"description": "to set the width of the progress bar, unit: px",
+		"optionType": "number",
+		"defaultValue": "10"
+	},
+	"a-progress/strokeWidth (type=circle)": {
+		"description": "to set the width of the circular progress bar, unit: percentage of the canvas width",
+		"optionType": "number",
+		"defaultValue": "6"
 	},
 	"a-progress/strokeLinecap": {
-		"description": "to set the style of the progress linecap"
+		"description": "to set the style of the progress linecap",
+		"optionType": "Enum{ 'round', 'square' }",
+		"defaultValue": "round"
 	},
 	"a-progress/strokeColor": {
-		"description": "color of progress bar"
+		"description": "color of progress bar",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-progress/successPercent": {
-		"description": "segmented success percent, works when type=\"line\""
+		"description": "segmented success percent, works when type=\"line\"",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-progress/type": {
-		"description": "to set the type, options: line circle dashboard"
+		"description": "to set the type, options: line circle dashboard",
+		"optionType": "string",
+		"defaultValue": "line"
+	},
+	"a-progress/width (type=circle)": {
+		"description": "to set the canvas width of the circular progress bar, unit: px",
+		"optionType": "number",
+		"defaultValue": "120"
 	}
 }

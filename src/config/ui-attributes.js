@@ -107,6 +107,8 @@ import * as backtop from './attributes/backtop/backtop.json'
 
 import * as divider from './attributes/divider/divider.json'
 
+import * as comment from './attributes/comment/comment.json'
+
 
 export default {
   ...form,
@@ -183,7 +185,17 @@ export default {
   ...divider,
   ...{
    "a-locale-provider/locale": {
-    "description": "language package setting, you can find the packages in this path: antd/lib/locale-provider/"
+    "description": "language package setting, you can find the packages in this path: antd/lib/locale-provider/",
+		"optionType": "object",
+		"defaultValue": "-"
    } 
-  }
+  },
+  ...{
+    "a-config-provider/getPopupContainer": {
+      "description": "to set the container of the popup element. The default is to create a div element in body.",
+      "optionType": "Function(triggerNode)",
+      "defaultValue": "() => document.body"
+    }
+  },
+  ...comment,
 }

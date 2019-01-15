@@ -1,41 +1,67 @@
 {
 	"a-card/actions": {
-		"description": "The action list, shows at the bottom of the Card."
+		"description": "The action list, shows at the bottom of the Card.",
+		"optionType": "slots",
+		"defaultValue": "-"
 	},
 	"a-card/activeTabKey": {
-		"description": "Current TabPane's key"
+		"description": "Current TabPane's key",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-card/headStyle": {
-		"description": "Inline style to apply to the card head"
+		"description": "Inline style to apply to the card head",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-card/bodyStyle": {
-		"description": "Inline style to apply to the card content"
+		"description": "Inline style to apply to the card content",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-card/bordered": {
-		"description": "Toggles rendering of the border around the card"
+		"description": "Toggles rendering of the border around the card",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-card/cover": {
-		"description": "Card cover"
+		"description": "Card cover",
+		"optionType": "slot",
+		"defaultValue": "-"
 	},
 	"a-card/defaultActiveTabKey": {
-		"description": "Initial active TabPane's key, if activeTabKey is not set."
+		"description": "Initial active TabPane's key, if activeTabKey is not set.",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-card/extra": {
-		"description": "Content to render in the top-right corner of the card"
+		"description": "Content to render in the top-right corner of the card",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-card/hoverable": {
-		"description": "Lift up when hovering card"
+		"description": "Lift up when hovering card",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-card/loading": {
-		"description": "Shows a loading indicator while the contents of the card are being fetched"
+		"description": "Shows a loading indicator while the contents of the card are being fetched",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-card/tabList": {
-		"description": "List of TabPane's head, Custom tabs can be created with the scopedSlots property"
+		"description": "List of TabPane's head, Custom tabs can be created with the scopedSlots property",
+		"optionType": "Array<{key: string, tab: any, scopedSlots: {tab: 'XXX'}}>",
+		"defaultValue": "-"
 	},
 	"a-card/title": {
-		"description": "Card title"
+		"description": "Card title",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-card/type": {
-		"description": "Card style type, can be set to inner or not set"
+		"description": "Card style type, can be set to inner or not set",
+		"optionType": "string",
+		"defaultValue": "-"
 	}
 }

@@ -1,14 +1,22 @@
 {
 	"a-tag/afterClose": {
-		"description": "Callback executed when close animation is completed"
+		"description": "Callback executed when close animation is completed",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	},
 	"a-tag/closable": {
-		"description": "Whether the Tag can be closed"
+		"description": "Whether the Tag can be closed",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tag/color": {
-		"description": "Color of the Tag"
+		"description": "Color of the Tag",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tag/visible": {
-		"description": "Whether the Tag is closed or not"
+		"description": "Whether the Tag is closed or not",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	}
 }

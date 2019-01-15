@@ -1,17 +1,27 @@
 {
 	"a-select-option/disabled": {
-		"description": "Disable this option"
+		"description": "Disable this option",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select-option/key": {
-		"description": "Same usage as value. If Vue request you to set this property, you can set it to value of option, and then omit value property."
+		"description": "Same usage as value. If Vue request you to set this property, you can set it to value of option, and then omit value property.",
+		"optionType": "string",
+		"defaultValue": ""
 	},
 	"a-select-option/title": {
-		"description": "title of Select after select this Option"
+		"description": "title of Select after select this Option",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-select-option/value": {
-		"description": "default to filter with this property"
+		"description": "default to filter with this property",
+		"optionType": "string|number",
+		"defaultValue": "-"
 	},
 	"a-select-option/class": {
-		"description": "additional class to option"
+		"description": "additional class to option",
+		"optionType": "string",
+		"defaultValue": "-"
 	}
 }

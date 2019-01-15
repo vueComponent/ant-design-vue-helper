@@ -250,14 +250,17 @@ export class AntdvCompletionItemProvider implements CompletionItemProvider {
     };
   }
 
-  buildAttrSuggestion({attr, tag, bind, method}, {description, type, version}) {
+  buildAttrSuggestion({attr, tag, bind, method}, {description, type, optionType, defaultValue}) {
     if ((method && type === "method") || (bind && type !== "method") || (!method && !bind)) {
+      let documentation = description
+      optionType && (documentation += "\n" + `type: ${optionType}`)
+      defaultValue && (documentation += "\n" + `default: ${defaultValue}`)
       return {
         label: attr,
         insertText: (type && (type === 'flag')) ? `${attr} ` : new SnippetString(`${attr}=${this.quotes}$1${this.quotes}$0`),
         kind: (type && (type === 'method')) ? CompletionItemKind.Method : CompletionItemKind.Property,
         detail: 'Ant Design Vue',
-        documentation: description
+        documentation,
       };
     } else { return; }
   }
@@ -268,13 +271,6 @@ export class AntdvCompletionItemProvider implements CompletionItemProvider {
     if (!options && attrItem) {
       if (attrItem.type === 'boolean') {
         options = ['true', 'false'];
-      } else if (attrItem.type === 'icon') {
-        options = ATTRS['icons'];
-      } else if (attrItem.type === 'shortcut-icon') {
-        options = [];
-        ATTRS['icons'].forEach(icon => {
-          options.push(icon.replace(/^el-icon-/, ''));
-        });
       }
     }
     return options || [];

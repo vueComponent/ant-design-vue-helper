@@ -1,26 +1,42 @@
 {
 	"a-anchor/affix": {
-		"description": "Fixed mode of Anchor"
+		"description": "Fixed mode of Anchor",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-anchor/bounds": {
-		"description": "Bounding distance of anchor area"
+		"description": "Bounding distance of anchor area",
+		"optionType": "number",
+		"defaultValue": "5(px)"
 	},
 	"a-anchor/getContainer": {
-		"description": "Scrolling container"
+		"description": "Scrolling container",
+		"optionType": "() => HTMLElement",
+		"defaultValue": "() => window"
 	},
 	"a-anchor/offsetBottom": {
-		"description": "Pixels to offset from bottom when calculating position of scroll"
+		"description": "Pixels to offset from bottom when calculating position of scroll",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-anchor/offsetTop": {
-		"description": "Pixels to offset from top when calculating position of scroll"
+		"description": "Pixels to offset from top when calculating position of scroll",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-anchor/showInkInFixed": {
-		"description": "Whether show ink-balls in Fixed mode"
-  },
-  "a-anchor-link/href": {
-		"description": "target of hyperlink"
+		"description": "Whether show ink-balls in Fixed mode",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
-	"a-anchor-link/showInkInFixed": {
-		"description": "content of hyperlink"
+	"a-anchor-link/href": {
+		"description": "target of hyperlink",
+		"optionType": "string",
+		"defaultValue": ""
+	},
+	"a-anchor-link/title": {
+		"description": "content of hyperlink",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	}
 }

@@ -1,24 +1,38 @@
 {
 	"a-carousel/afterChange": {
-		"description": "Callback function called after the current index changes"
+		"description": "Callback function called after the current index changes",
+		"optionType": "function(current)",
+		"defaultValue": "-"
 	},
 	"a-carousel/autoplay": {
-		"description": "Whether to scroll automatically"
+		"description": "Whether to scroll automatically",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-carousel/beforeChange": {
-		"description": "Callback function called before the current index changes"
+		"description": "Callback function called before the current index changes",
+		"optionType": "function(from, to)",
+		"defaultValue": "-"
 	},
 	"a-carousel/dots": {
-		"description": "Whether to show the dots at the bottom of the gallery"
+		"description": "Whether to show the dots at the bottom of the gallery",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-carousel/easing": {
-		"description": "Transition interpolation function name"
+		"description": "Transition interpolation function name",
+		"optionType": "string",
+		"defaultValue": "linear"
 	},
 	"a-carousel/effect": {
-    "options": ["scrollx", "fade"],
-		"description": "Transition effect"
+	  "options": ["scrollx", "fade"],
+		"description": "Transition effect",
+		"optionType": "scrollx | fade",
+		"defaultValue": "scrollx"
 	},
 	"a-carousel/vertical": {
-		"description": "Whether to use a vertical display"
+		"description": "Whether to use a vertical display",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	}
 }

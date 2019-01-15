@@ -387,4 +387,11 @@ export default {
     tag: 'a-skeleton',
     subtitle: '骨架屏',
   },
+  comment: {
+    category: 'Components',
+    type: 'Other',
+    title: 'ConfigProvider',
+    tag: 'a-config-provider',
+    subtitle: '全局化配置',
+  },
 }

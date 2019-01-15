@@ -1,56 +1,92 @@
 {
 	"a-upload/accept": {
-		"description": "File types that can be accepted. See input accept Attribute"
+		"description": "File types that can be accepted. See input accept Attribute",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-upload/action": {
-		"description": "Uploading URL"
+		"description": "Uploading URL",
+		"optionType": "string|(file) => Promise",
+		"defaultValue": "-"
 	},
 	"a-upload/directory": {
-		"description": "support upload whole directory (caniuse)"
+		"description": "support upload whole directory (caniuse)",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-upload/beforeUpload": {
-		"description": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. Warning：this function is not supported in IE9。"
+		"description": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. Warning：this function is not supported in IE9。",
+		"optionType": "(file, fileList) => boolean | Promise",
+		"defaultValue": "-"
 	},
 	"a-upload/customRequest": {
-		"description": "override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest"
+		"description": "override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest",
+		"optionType": "Function",
+		"defaultValue": "-"
 	},
 	"a-upload/data": {
-		"description": "Uploading params or function which can return uploading params."
+		"description": "Uploading params or function which can return uploading params.",
+		"optionType": "object|function(file)",
+		"defaultValue": "-"
 	},
 	"a-upload/defaultFileList": {
-		"description": "Default list of files that have been uploaded."
+		"description": "Default list of files that have been uploaded.",
+		"optionType": "object[]",
+		"defaultValue": "-"
 	},
 	"a-upload/disabled": {
-		"description": "disable upload button"
+		"description": "disable upload button",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-upload/fileList": {
-		"description": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it"
+		"description": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it",
+		"optionType": "object[]",
+		"defaultValue": "-"
 	},
 	"a-upload/headers": {
-		"description": "Set request headers, valid above IE10."
+		"description": "Set request headers, valid above IE10.",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-upload/listType": {
-		"description": "Built-in stylesheets, support for three types: text, picture or picture-card"
+		"description": "Built-in stylesheets, support for three types: text, picture or picture-card",
+		"optionType": "string",
+		"defaultValue": "'text'"
 	},
 	"a-upload/multiple": {
-		"description": "Whether to support selected multiple file. IE10+ supported. You can select multiple files with CTRL holding down while multiple is set to be true"
+		"description": "Whether to support selected multiple file. IE10+ supported. You can select multiple files with CTRL holding down while multiple is set to be true",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-upload/name": {
-		"description": "The name of uploading file"
+		"description": "The name of uploading file",
+		"optionType": "string",
+		"defaultValue": "'file'"
 	},
 	"a-upload/showUploadList": {
-		"description": "Whether to show default upload list, could be an object to specify showPreviewIcon and showRemoveIcon individually"
+		"description": "Whether to show default upload list, could be an object to specify showPreviewIcon and showRemoveIcon individually",
+		"optionType": "Boolean or { showPreviewIcon?: boolean, showRemoveIcon?: boolean }",
+		"defaultValue": "true"
 	},
 	"a-upload/supportServerRender": {
-		"description": "Need to be turned on while the server side is rendering."
+		"description": "Need to be turned on while the server side is rendering.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-upload/withCredentials": {
-		"description": "ajax upload with cookie sent"
+		"description": "ajax upload with cookie sent",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-upload/openFileDialogOnClick": {
-		"description": "click open file dialog"
+		"description": "click open file dialog",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-upload/remove": {
-		"description": "A callback function, will be executed when removing file button is clicked, remove event will be prevented when return value is false or a Promise which resolve(false) or reject."
+		"description": "A callback function, will be executed when removing file button is clicked, remove event will be prevented when return value is false or a Promise which resolve(false) or reject.",
+		"optionType": "Function(file): boolean | Promise",
+		"defaultValue": "-"
 	}
 }

@@ -1,11 +1,17 @@
 {
 	"a-textarea/autosize": {
-		"description": "Height autosize feature, can be set to true|false or an object { minRows: 2, maxRows: 6 }"
+		"description": "Height autosize feature, can be set to true|false or an object { minRows: 2, maxRows: 6 }",
+		"optionType": "boolean|object",
+		"defaultValue": "false"
 	},
 	"a-textarea/defaultValue": {
-		"description": "The initial input content"
+		"description": "The initial input content",
+		"optionType": "string",
+		"defaultValue": ""
 	},
 	"a-textarea/value": {
-		"description": "The input content value"
+		"description": "The input content value",
+		"optionType": "string",
+		"defaultValue": ""
 	}
 }

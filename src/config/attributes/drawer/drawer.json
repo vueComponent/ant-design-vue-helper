@@ -1,45 +1,73 @@
 {
 	"a-drawer/closable": {
-		"description": "Whether a close (x) button is visible on top right of the Drawer dialog or not."
+		"description": "Whether a close (x) button is visible on top right of the Drawer dialog or not.",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-drawer/destroyOnClose": {
-		"description": "Whether to unmount child components on closing drawer or not."
+		"description": "Whether to unmount child components on closing drawer or not.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-drawer/getContainer": {
-		"description": "Return the mounted node for Drawer."
+		"description": "Return the mounted node for Drawer.",
+		"optionType": "HTMLElement | () => HTMLElement | Selectors",
+		"defaultValue": "'body'"
 	},
 	"a-drawer/mask": {
-		"description": "Whether to show mask or not."
+		"description": "Whether to show mask or not.",
+		"optionType": "Boolean",
+		"defaultValue": "true"
 	},
 	"a-drawer/maskClosable": {
-		"description": "Clicking on the mask (area outside the Drawer) to close the Drawer or not."
+		"description": "Clicking on the mask (area outside the Drawer) to close the Drawer or not.",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-drawer/maskStyle": {
-		"description": "Style for Drawer's mask element."
+		"description": "Style for Drawer's mask element.",
+		"optionType": "object",
+		"defaultValue": "{}"
 	},
 	"a-drawer/title": {
-		"description": "The title for Drawer."
+		"description": "The title for Drawer.",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-drawer/visible": {
-		"description": "Whether the Drawer dialog is visible or not."
+		"description": "Whether the Drawer dialog is visible or not.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-drawer/wrapClassName": {
-		"description": "The class name of the container of the Drawer dialog."
+		"description": "The class name of the container of the Drawer dialog.",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-drawer/wrapStyle": {
+		"description": "The style of the container of the Drawer dialog.",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-drawer/width": {
-		"description": "Width of the Drawer dialog."
+		"description": "Width of the Drawer dialog.",
+		"optionType": "string|number",
+		"defaultValue": "256"
 	},
 	"a-drawer/height": {
-		"description": "placement is top or bottom, height of the Drawer dialog."
-	},
-	"a-drawer/className": {
-		"description": "The class name of the container of the Drawer dialog."
+		"description": "placement is top or bottom, height of the Drawer dialog.",
+		"optionType": "string|number",
+		"defaultValue": "-"
 	},
 	"a-drawer/zIndex": {
-		"description": "The z-index of the Drawer."
+		"description": "The z-index of the Drawer.",
+		"optionType": "Number",
+		"defaultValue": "1000"
 	},
 	"a-drawer/placement": {
-    "options": ["top", "left", "bottom", "right"],
-		"description": "The placement of the Drawer."
+	  "options": ["top", "left", "bottom", "right"],
+		"description": "The placement of the Drawer.",
+		"optionType": "'top' | 'right' | 'bottom' | 'left'",
+		"defaultValue": "'right'"
 	}
 }

@@ -1,41 +1,72 @@
 {
 	"a-slider/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-slider/defaultValue": {
-		"description": "The default value of slider. When range is false, use number, otherwise, use [number, number]"
+		"description": "The default value of slider. When range is false, use number, otherwise, use [number, number]",
+		"optionType": "number|number[]",
+		"defaultValue": "0 or [0, 0]"
 	},
 	"a-slider/disabled": {
-		"description": "If true, the slider will not be interactable."
+		"description": "If true, the slider will not be interactable.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-slider/dots": {
-		"description": "Whether the thumb can drag over tick only."
+		"description": "Whether the thumb can drag over tick only.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-slider/included": {
-		"description": "Make effect when marks not null，true means containment and false means coordinative"
+		"description": "Make effect when marks not null，true means containment and false means coordinative",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-slider/marks": {
-		"description": "Tick mark of Slider, type of key must be number, and must in closed interval [min, max] ，each mark can declare its own style."
+		"description": "Tick mark of Slider, type of key must be number, and must in closed interval [min, max] ，each mark can declare its own style.",
+		"optionType": "object",
+		"defaultValue": "{ number: string|VNode } or { number: { style: object, label: string|VNode } } or { number: () => VNode }"
 	},
 	"a-slider/max": {
-		"description": "The maximum value the slider can slide to"
+		"description": "The maximum value the slider can slide to",
+		"optionType": "number",
+		"defaultValue": "100"
 	},
 	"a-slider/min": {
-		"description": "The minimum value the slider can slide to."
+		"description": "The minimum value the slider can slide to.",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-slider/range": {
-		"description": "dual thumb mode"
+		"description": "dual thumb mode",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-slider/step": {
-		"description": "The granularity the slider can step through values. Must greater than 0, and be divided by (max - min) . When marks no null, step can be null."
+		"description": "The granularity the slider can step through values. Must greater than 0, and be divided by (max - min) . When marks no null, step can be null.",
+		"optionType": "number|null",
+		"defaultValue": "1"
 	},
 	"a-slider/tipFormatter": {
-		"description": "Slider will pass its value to tipFormatter, and display its value in Tooltip, and hide Tooltip when return value is null."
+		"description": "Slider will pass its value to tipFormatter, and display its value in Tooltip, and hide Tooltip when return value is null.",
+		"optionType": "Function|null",
+		"defaultValue": "IDENTITY"
 	},
 	"a-slider/value": {
-		"description": "The value of slider. When range is false, use number, otherwise, use [number, number]"
+		"description": "The value of slider. When range is false, use number, otherwise, use [number, number]",
+		"optionType": "number|number[]",
+		"defaultValue": ""
 	},
 	"a-slider/vertical": {
-		"description": "If true, the slider will be vertical."
+		"description": "If true, the slider will be vertical.",
+		"optionType": "Boolean",
+		"defaultValue": "false"
+	},
+	"a-slider/tooltipVisible": {
+		"description": "If true, Tooltip will show always, or it will not show anyway, even if dragging or hovering.",
+		"optionType": "Boolean",
+		"defaultValue": ""
 	}
 }

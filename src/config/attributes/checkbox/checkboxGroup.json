@@ -1,14 +1,22 @@
 {
 	"a-checkbox-group/defaultValue": {
-		"description": "Default selected value"
+		"description": "Default selected value",
+		"optionType": "string[]",
+		"defaultValue": "[]"
 	},
 	"a-checkbox-group/disabled": {
-		"description": "Disable all checkboxes"
+		"description": "Disable all checkboxes",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-checkbox-group/options": {
-		"description": "Specifies options"
+		"description": "Specifies options, you can customize label with slot = \"label\" slot-scope = \"option\"",
+		"optionType": "string[] | Array<{ label: string value: string disabled?: boolean, onChange?: function }>",
+		"defaultValue": "[]"
 	},
 	"a-checkbox-group/value": {
-		"description": "Used for setting the currently selected value."
+		"description": "Used for setting the currently selected value.",
+		"optionType": "string[]",
+		"defaultValue": "[]"
 	}
 }

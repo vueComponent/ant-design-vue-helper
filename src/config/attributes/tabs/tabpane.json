@@ -1,11 +1,17 @@
 {
 	"a-tab-pane/forceRender": {
-		"description": "Forced render of content in tabs, not lazy render after clicking on tabs"
+		"description": "Forced render of content in tabs, not lazy render after clicking on tabs",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tab-pane/key": {
-		"description": "TabPane's key"
+		"description": "TabPane's key",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tab-pane/tab": {
-		"description": "Show text in TabPane's head."
-  }
+		"description": "Show text in TabPane's head",
+		"optionType": "string|slot",
+		"defaultValue": "-"
+	}
 }

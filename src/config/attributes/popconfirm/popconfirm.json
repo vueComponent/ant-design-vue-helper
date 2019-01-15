@@ -1,17 +1,27 @@
 {
 	"a-popconfirm/cancelText": {
-		"description": "text of the Cancel button"
+		"description": "text of the Cancel button",
+		"optionType": "string|slot",
+		"defaultValue": "Cancel"
 	},
 	"a-popconfirm/okText": {
-		"description": "text of the Confirm button"
+		"description": "text of the Confirm button",
+		"optionType": "string|slot",
+		"defaultValue": "Confirm"
 	},
 	"a-popconfirm/okType": {
-		"description": "Button type of the Confirm button"
+		"description": "Button type of the Confirm button",
+		"optionType": "string",
+		"defaultValue": "primary"
 	},
 	"a-popconfirm/title": {
-		"description": "title of the confirmation box"
+		"description": "title of the confirmation box",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-popconfirm/icon": {
-		"description": "customize icon of confirmation"
+		"description": "customize icon of confirmation",
+		"optionType": "vNode|slot",
+		"defaultValue": "<Icon type=\"exclamation-circle\" />"
 	}
 }

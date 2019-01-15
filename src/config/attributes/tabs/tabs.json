@@ -1,35 +1,55 @@
 {
 	"a-tabs/activeKey": {
-		"description": "Current TabPane's key"
+		"description": "Current TabPane's key",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tabs/animated": {
-		"description": "Whether to change tabs with animation. Only works while tabPosition=\"top\"\\|\"bottom\""
+		"description": "Whether to change tabs with animation. Only works while tabPosition=\"top\"\\|\"bottom\"",
+		"optionType": "boolean | {inkBar:boolean, tabPane:boolean}",
+		"defaultValue": "true, false when type=\"card\""
 	},
 	"a-tabs/defaultActiveKey": {
-		"description": "Initial active TabPane's key, if activeKey is not set."
+		"description": "Initial active TabPane's key, if activeKey is not set.",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-tabs/hideAdd": {
-		"description": "Hide plus icon or not. Only works while type=\"editable-card\""
+		"description": "Hide plus icon or not. Only works while type=\"editable-card\"",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-tabs/size": {
-    "options": ["large", "default", "small"],
-		"description": "preset tab bar size"
+	  "options": ["large", "default", "small"],
+		"description": "preset tab bar size",
+		"optionType": "large | default | small",
+		"defaultValue": "default"
 	},
 	"a-tabs/tabBarExtraContent": {
-		"description": "Extra content in tab bar"
+		"description": "Extra content in tab bar",
+		"optionType": "slot",
+		"defaultValue": "-"
 	},
 	"a-tabs/tabBarStyle": {
-		"description": "Tab bar style object"
+		"description": "Tab bar style object",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-tabs/tabPosition": {
-    "options": ["top", "right", "bottom", "left"],
-		"description": "Position of tabs"
+	  "options": ["top", "right", "bottom", "left"],
+		"description": "Position of tabs",
+		"optionType": "top | right | bottom | left",
+		"defaultValue": "top"
 	},
 	"a-tabs/type": {
-    "options": ["line", "card", "editable-card"],
-		"description": "Basic style of tabs"
+	  "options": ["line", "card", "editable-card"],
+		"description": "Basic style of tabs",
+		"optionType": "line | card | editable-card",
+		"defaultValue": "line"
 	},
 	"a-tabs/tabBarGutter": {
-		"description": "The gap between tabs"
+		"description": "The gap between tabs",
+		"optionType": "number",
+		"defaultValue": "-"
 	}
 }

@@ -1,14 +1,22 @@
 {
 	"a-row/align": {
-		"description": "the vertical alignment of the flex layout: top middle bottom"
+		"description": "the vertical alignment of the flex layout: top middle bottom",
+		"optionType": "string",
+		"defaultValue": "top"
 	},
 	"a-row/gutter": {
-		"description": "spacing between grids, could be a number or a object like { xs: 8, sm: 16, md: 24}"
+		"description": "spacing between grids, could be a number or a object like { xs: 8, sm: 16, md: 24}",
+		"optionType": "number/object",
+		"defaultValue": "0"
 	},
 	"a-row/justify": {
-		"description": "horizontal arrangement of the flex layout: start end center space-around space-between"
+		"description": "horizontal arrangement of the flex layout: start end center space-around space-between",
+		"optionType": "string",
+		"defaultValue": "start"
 	},
 	"a-row/type": {
-		"description": "layout mode, optional flex, browser support"
+		"description": "layout mode, optional flex, browser support",
+		"optionType": "string",
+		"defaultValue": ""
 	}
 }

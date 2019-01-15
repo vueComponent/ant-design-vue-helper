@@ -1,31 +1,49 @@
 {
-  "a-button/disabled": {
-      "description": "disabled state of button"
-  },
-  "a-button/ghost": {
-      "description": "make background transparent and invert text and border colors, added in 2.7"
-  },
-  "a-button/htmlType": {
-      "description": "set the original html type of button, see: MDN"
-  },
-  "a-button/icon": {
-      "description": "set the icon of button, see: Icon component"
-  },
-  "a-button/loading": {
-      "description": "set the loading status of button"
-  },
-  "a-button/shape": {
-      "description": "can be set to circle or omitted"
-  },
-  "a-button/size": {
-    "options": ["small", "large"],
-    "description": "can be set to small large or omitted"
-  },
-  "a-button/type": {
-    "options": ["primary", "ghost", "dashed", "danger"],
-    "description": "can be set to primary ghost dashed danger(added in 2.7) or omitted (meaning default)"
-  },
-  "a-button/block": {
-      "description": "option to fit button width to its parent width"
-  }
+	"a-button/disabled": {
+		"description": "disabled state of button",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-button/ghost": {
+		"description": "make background transparent and invert text and border colors, added in 2.7",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-button/htmlType": {
+		"description": "set the original html type of button, see: MDN",
+		"optionType": "string",
+		"defaultValue": "button"
+	},
+	"a-button/icon": {
+		"description": "set the icon of button, see: Icon component",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-button/loading": {
+		"description": "set the loading status of button",
+		"optionType": "boolean | { delay: number }",
+		"defaultValue": "false"
+	},
+	"a-button/shape": {
+		"description": "can be set to circle or omitted",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-button/size": {
+        "options": ["small", "large"],
+		"description": "can be set to small large or omitted",
+		"optionType": "string",
+		"defaultValue": "default"
+	},
+	"a-button/type": {
+        "options": ["primary", "ghost", "dashed", "danger"],
+		"description": "can be set to primary ghost dashed danger(added in 2.7) or omitted (meaning default)",
+		"optionType": "string",
+		"defaultValue": "default"
+	},
+	"a-button/block": {
+		"description": "option to fit button width to its parent width",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	}
 }

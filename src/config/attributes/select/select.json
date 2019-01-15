@@ -1,90 +1,173 @@
 {
 	"a-select/allowClear": {
-		"description": "Show clear button."
+		"description": "Show clear button.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select/autoClearSearchValue": {
-		"description": "Whether the current search will be cleared on selecting an item. Only applies when mode is set to multiple or tags."
+		"description": "Whether the current search will be cleared on selecting an item. Only applies when mode is set to multiple or tags.",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-select/autoFocus": {
-		"description": "Get focus by default"
+		"description": "Get focus by default",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select/defaultActiveFirstOption": {
-		"description": "Whether active first option by default"
+		"description": "Whether active first option by default",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-select/defaultValue": {
-		"description": "Initial selected option."
+		"description": "Initial selected option.",
+		"optionType": "string|string[]\nnumber|number[]",
+		"defaultValue": "-"
 	},
 	"a-select/disabled": {
-		"description": "Whether disabled select"
+		"description": "Whether disabled select",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select/dropdownClassName": {
-		"description": "className of dropdown menu"
+		"description": "className of dropdown menu",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-select/dropdownMatchSelectWidth": {
-		"description": "Whether dropdown's width is same with select."
+		"description": "Whether dropdown's width is same with select.",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-select/dropdownRender": {
+		"description": "Customize dropdown content",
+		"optionType": "(menuNode: VNode, props) => VNode",
+		"defaultValue": "-"
 	},
 	"a-select/dropdownStyle": {
-		"description": "style of dropdown menu"
+		"description": "style of dropdown menu",
+		"optionType": "object",
+		"defaultValue": "-"
 	},
 	"a-select/filterOption": {
-		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded."
+		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded.",
+		"optionType": "boolean or function(inputValue, option)",
+		"defaultValue": "true"
 	},
 	"a-select/firstActiveValue": {
-		"description": "Value of action option by default"
+		"description": "Value of action option by default",
+		"optionType": "string|string[]",
+		"defaultValue": "-"
 	},
 	"a-select/getPopupContainer": {
-		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative."
+		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative.",
+		"optionType": "function(triggerNode)",
+		"defaultValue": "() => document.body"
 	},
 	"a-select/labelInValue": {
-		"description": "whether to embed label in value, turn the format of value from string to {key: string, label: vNodes}"
+		"description": "whether to embed label in value, turn the format of value from string to {key: string, label: vNodes}",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select/maxTagCount": {
-		"description": "Max tag count to show"
+		"description": "Max tag count to show",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-select/maxTagPlaceholder": {
-		"description": "Placeholder for not showing tags"
+		"description": "Placeholder for not showing tags",
+		"optionType": "slot/function(omittedValues)",
+		"defaultValue": "-"
 	},
 	"a-select/mode": {
-    "options": ["default", "multiple", "tags"],
-		"description": "Set mode of Select"
+	  "options": ["default", "multiple", "tags"],
+		"description": "Set mode of Select",
+		"optionType": "'default' | 'multiple' | 'tags'",
+		"defaultValue": "'default'"
 	},
 	"a-select/notFoundContent": {
-		"description": "Specify content to show when no result matches.."
+		"description": "Specify content to show when no result matches..",
+		"optionType": "string|slot",
+		"defaultValue": "'Not Found'"
 	},
 	"a-select/optionFilterProp": {
-		"description": "Which prop value of option will be used for filter if filterOption is true"
+		"description": "Which prop value of option will be used for filter if filterOption is true",
+		"optionType": "string",
+		"defaultValue": "value"
 	},
 	"a-select/optionLabelProp": {
-		"description": "Which prop value of option will render as content of select."
+		"description": "Which prop value of option will render as content of select.",
+		"optionType": "string",
+		"defaultValue": "value for combobox, children for other modes"
 	},
 	"a-select/placeholder": {
-		"description": "Placeholder of select"
+		"description": "Placeholder of select",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-select/showSearch": {
-		"description": "Whether show search input in single mode."
+		"description": "Whether show search input in single mode.",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-select/showArrow": {
-		"description": "Whether to show the drop-down arrow"
+		"description": "Whether to show the drop-down arrow",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-select/size": {
-		"description": "Size of Select input. default large small"
+		"description": "Size of Select input. default large small",
+		"optionType": "string",
+		"defaultValue": "default"
 	},
 	"a-select/suffixIcon": {
-		"description": "The custom suffix icon"
+		"description": "The custom suffix icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
+	},
+	"a-select/removeIcon": {
+		"description": "The custom remove icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
+	},
+	"a-select/clearIcon": {
+		"description": "The custom clear icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
+	},
+	"a-select/menuItemSelectedIcon": {
+		"description": "The custom menuItemSelected icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
 	},
 	"a-select/tokenSeparators": {
-		"description": "Separator used to tokenize on tag/multiple mode"
+		"description": "Separator used to tokenize on tag/multiple mode",
+		"optionType": "string[]",
+		"defaultValue": ""
 	},
 	"a-select/value": {
-		"description": "Current selected option."
+		"description": "Current selected option.",
+		"optionType": "string|number|string[]|number[]",
+		"defaultValue": "-"
 	},
 	"a-select/options": {
-		"description": "Data of the selectOption, manual construction work is no longer needed if this property has been set"
+		"description": "Data of the selectOption, manual construction work is no longer needed if this property has been set",
+		"optionType": "array<{value, label, [disabled, key, title]}>",
+		"defaultValue": "[]"
 	},
 	"a-select/defaultOpen": {
-		"description": "Initial open state of dropdown"
+		"description": "Initial open state of dropdown",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-select/open": {
-		"description": "Controlled open state of dropdown"
+		"description": "Controlled open state of dropdown",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-select/loading": {
+		"description": "indicate loading state",
+		"optionType": "Boolean",
+		"defaultValue": "false"
 	}
 }

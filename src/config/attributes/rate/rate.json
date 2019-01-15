@@ -1,26 +1,42 @@
 {
 	"a-rate/allowClear": {
-		"description": "whether to allow clear when click again"
+		"description": "whether to allow clear when click again",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-rate/allowHalf": {
-		"description": "whether to allow semi selection"
+		"description": "whether to allow semi selection",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-rate/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-rate/character": {
-		"description": "custom character of rate"
+		"description": "custom character of rate",
+		"optionType": "String or slot=\"character\"",
+		"defaultValue": "<Icon type=\"star\" />"
 	},
 	"a-rate/count": {
-		"description": "star count"
+		"description": "star count",
+		"optionType": "number",
+		"defaultValue": "5"
 	},
 	"a-rate/defaultValue": {
-		"description": "default value"
+		"description": "default value",
+		"optionType": "number",
+		"defaultValue": "0"
 	},
 	"a-rate/disabled": {
-		"description": "read only, unable to interact"
+		"description": "read only, unable to interact",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-rate/value": {
-		"description": "current value"
+		"description": "current value",
+		"optionType": "number",
+		"defaultValue": "-"
 	}
 }

@@ -1,65 +1,107 @@
 {
 	"a-modal/afterClose": {
-		"description": "Specify a function that will be called when modal is closed completely."
+		"description": "Specify a function that will be called when modal is closed completely.",
+		"optionType": "function",
+		"defaultValue": "-"
 	},
 	"a-modal/bodyStyle": {
-		"description": "Body style for modal body element. Such as height, padding etc."
+		"description": "Body style for modal body element. Such as height, padding etc.",
+		"optionType": "object",
+		"defaultValue": "{}"
 	},
 	"a-modal/cancelText": {
-		"description": "Text of the Cancel button"
+		"description": "Text of the Cancel button",
+		"optionType": "string|slot",
+		"defaultValue": "Cancel"
 	},
 	"a-modal/centered": {
-		"description": "Centered Modal"
+		"description": "Centered Modal",
+		"optionType": "Boolean",
+		"defaultValue": "false"
 	},
 	"a-modal/closable": {
-		"description": "Whether a close (x) button is visible on top right of the modal dialog or not"
+		"description": "Whether a close (x) button is visible on top right of the modal dialog or not",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-modal/confirmLoading": {
-		"description": "Whether to apply loading visual effect for OK button or not"
+		"description": "Whether to apply loading visual effect for OK button or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-modal/destroyOnClose": {
-		"description": "Whether to unmount child components on onClose"
+		"description": "Whether to unmount child components on onClose",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-modal/footer": {
-		"description": "Footer content, set as :footer=\"null\" when you don't need default buttons"
+		"description": "Footer content, set as :footer=\"null\" when you don't need default buttons",
+		"optionType": "string|slot",
+		"defaultValue": "OK and Cancel buttons"
 	},
 	"a-modal/getContainer": {
-		"description": "Return the mount node for Modal"
+		"description": "Return the mount node for Modal",
+		"optionType": "(instance): HTMLElement",
+		"defaultValue": "() => document.body"
 	},
 	"a-modal/mask": {
-		"description": "Whether show mask or not."
+		"description": "Whether show mask or not.",
+		"optionType": "Boolean",
+		"defaultValue": "true"
 	},
 	"a-modal/maskClosable": {
-		"description": "Whether to close the modal dialog when the mask (area outside the modal) is clicked"
+		"description": "Whether to close the modal dialog when the mask (area outside the modal) is clicked",
+		"optionType": "boolean",
+		"defaultValue": "true"
 	},
 	"a-modal/maskStyle": {
-		"description": "Style for modal's mask element."
+		"description": "Style for modal's mask element.",
+		"optionType": "object",
+		"defaultValue": "{}"
 	},
 	"a-modal/okText": {
-		"description": "Text of the OK button"
+		"description": "Text of the OK button",
+		"optionType": "string|slot",
+		"defaultValue": "OK"
 	},
 	"a-modal/okType": {
-		"description": "Button type of the OK button"
+		"description": "Button type of the OK button",
+		"optionType": "string",
+		"defaultValue": "primary"
 	},
 	"a-modal/okButtonProps": {
-		"description": "The ok button props, follow jsx rules"
+		"description": "The ok button props, follow jsx rules",
+		"optionType": "{props: ButtonProps, on: {}}",
+		"defaultValue": "-"
 	},
 	"a-modal/cancelButtonProps": {
-		"description": "The cancel button props, follow jsx rules"
+		"description": "The cancel button props, follow jsx rules",
+		"optionType": "{props: ButtonProps, on: {}}",
+		"defaultValue": "-"
 	},
 	"a-modal/title": {
-		"description": "The modal dialog's title"
+		"description": "The modal dialog's title",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-modal/visible": {
-		"description": "Whether the modal dialog is visible or not"
+		"description": "Whether the modal dialog is visible or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-modal/width": {
-		"description": "Width of the modal dialog"
+		"description": "Width of the modal dialog",
+		"optionType": "string|number",
+		"defaultValue": "520"
 	},
 	"a-modal/wrapClassName": {
-		"description": "The class name of the container of the modal dialog"
+		"description": "The class name of the container of the modal dialog",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-modal/zIndex": {
-		"description": "The z-index of the Modal"
+		"description": "The z-index of the Modal",
+		"optionType": "Number",
+		"defaultValue": "1000"
 	}
 }

@@ -1,30 +1,48 @@
 {
 	"a-badge/count": {
-		"description": "Number to show in badge"
+		"description": "Number to show in badge",
+		"optionType": "number|string | slot",
+		"defaultValue": ""
 	},
 	"a-badge/dot": {
-		"description": "Whether to display a red dot instead of count"
+		"description": "Whether to display a red dot instead of count",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-badge/offset": {
-		"description": "set offset of the badge dot, like [x, y]"
+		"description": "set offset of the badge dot, like [x, y]",
+		"optionType": "[number|string, number|string]",
+		"defaultValue": "-"
 	},
 	"a-badge/overflowCount": {
-		"description": "Max count to show"
+		"description": "Max count to show",
+		"optionType": "number",
+		"defaultValue": "99"
 	},
 	"a-badge/showZero": {
-		"description": "Whether to show badge when count is zero"
+		"description": "Whether to show badge when count is zero",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-badge/status": {
-    "options": ["success", "processing", "default", "error","warning"],
-		"description": "Set Badge as a status dot"
+	  "options": ["success", "processing", "default", "error","warning"],
+		"description": "Set Badge as a status dot",
+		"optionType": "success | processing | default | error | warning",
+		"defaultValue": "''"
 	},
 	"a-badge/text": {
-		"description": "If status is set, text sets the display text of the status dot"
+		"description": "If status is set, text sets the display text of the status dot",
+		"optionType": "string",
+		"defaultValue": "''"
 	},
 	"a-badge/numberStyle": {
-		"description": "sets the display style of the status dot"
+		"description": "sets the display style of the status dot",
+		"optionType": "object",
+		"defaultValue": "''"
 	},
 	"a-badge/title": {
-		"description": "Text to show when hovering over the badge"
+		"description": "Text to show when hovering over the badge",
+		"optionType": "string",
+		"defaultValue": "count"
 	}
 }

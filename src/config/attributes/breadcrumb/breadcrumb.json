@@ -1,14 +1,22 @@
 {
 	"a-breadcrumb/itemRender": {
-		"description": "Custom item renderer, slot=\"itemRender\" and slot-scope=\"{route, params, routes, paths}\""
+		"description": "Custom item renderer, slot=\"itemRender\" and slot-scope=\"{route, params, routes, paths}\"",
+		"optionType": "({route, params, routes, paths}) => vNode",
+		"defaultValue": ""
 	},
 	"a-breadcrumb/params": {
-		"description": "Routing parameters"
+		"description": "Routing parameters",
+		"optionType": "object",
+		"defaultValue": ""
 	},
 	"a-breadcrumb/routes": {
-		"description": "The routing stack information of router"
+		"description": "The routing stack information of router",
+		"optionType": "object[]",
+		"defaultValue": ""
 	},
 	"a-breadcrumb/separator": {
-		"description": "Custom separator"
+		"description": "Custom separator",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	}
 }

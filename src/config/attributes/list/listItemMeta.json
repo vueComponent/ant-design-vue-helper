@@ -1,11 +1,17 @@
 {
 	"a-list-item-meta/avatar": {
-		"description": "The avatar of list item"
+		"description": "The avatar of list item",
+		"optionType": "slot",
+		"defaultValue": "-"
 	},
 	"a-list-item-meta/description": {
-		"description": "The description of list item"
+		"description": "The description of list item",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-list-item-meta/title": {
-		"description": "The title of list item"
+		"description": "The title of list item",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	}
 }

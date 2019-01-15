@@ -1,26 +1,42 @@
 {
 	"a-switch/autoFocus": {
-		"description": "get focus when component mounted"
+		"description": "get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-switch/checked": {
-		"description": "determine whether the Switch is checked"
+		"description": "determine whether the Switch is checked",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-switch/checkedChildren": {
-		"description": "content to be shown when the state is checked"
+		"description": "content to be shown when the state is checked",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	},
 	"a-switch/defaultChecked": {
-		"description": "to set the initial state"
+		"description": "to set the initial state",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-switch/disabled": {
-		"description": "Disable switch"
+		"description": "Disable switch",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-switch/loading": {
-		"description": "loading state of switch"
+		"description": "loading state of switch",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-switch/size": {
-		"description": "the size of the Switch, options: default small"
+		"description": "the size of the Switch, options: default small",
+		"optionType": "string",
+		"defaultValue": "default"
 	},
 	"a-switch/unCheckedChildren": {
-		"description": "content to be shown when the state is unchecked"
+		"description": "content to be shown when the state is unchecked",
+		"optionType": "string|slot",
+		"defaultValue": ""
 	}
 }

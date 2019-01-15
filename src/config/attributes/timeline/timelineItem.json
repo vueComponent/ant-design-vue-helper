@@ -1,8 +1,12 @@
 {
-  "a-timeline-item/color": {
-		"description": "Set the circle's color to blue, red, green or other custom colors"
+	"a-timeline-item/color": {
+		"description": "Set the circle's color to blue, red, green or other custom colors",
+		"optionType": "string",
+		"defaultValue": "blue"
 	},
 	"a-timeline-item/dot": {
-		"description": "Customize timeline dot"
+		"description": "Customize timeline dot",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	}
 }

@@ -575,5 +575,17 @@
       "locale"
     ],
 		"description": "LocaleProvider provides a uniform localization support for built-in text of components."
+  },
+  "a-comment": {
+    "attributes": [
+      "actions","author","avatar","content","datetime"
+    ],
+		"description": "A comment displays user feedback and discussion to website content."
+  },
+  "a-config-provider": {
+    "attributes": [
+      "getPopupContainer"
+    ],
+		"description": "ConfigProvider provides a uniform configuration support for components."
 	}
 }

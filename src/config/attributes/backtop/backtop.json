@@ -1,8 +1,12 @@
 {
 	"a-back-top/target": {
-		"description": "specifies the scrollable area dom node"
+		"description": "specifies the scrollable area dom node",
+		"optionType": "() => HTMLElement",
+		"defaultValue": "() => window"
 	},
 	"a-back-top/visibilityHeight": {
-		"description": "the BackTop button will not show until the scroll height reaches this value"
+		"description": "the BackTop button will not show until the scroll height reaches this value",
+		"optionType": "number",
+		"defaultValue": "400"
 	}
 }

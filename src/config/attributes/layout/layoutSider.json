@@ -1,37 +1,58 @@
 {
 	"a-layout-sider/breakpoint": {
-    "options": ["xs", "sm", "md", "lg", "xl", "xxl"],
-		"description": "breakpoints of the responsive layout"
+		"options": ["xs", "sm", "md", "lg", "xl", "xxl"],
+		"description": "breakpoints of the responsive layout",
+		"optionType": "Enum { 'xs', 'sm', 'md', 'lg', 'xl', 'xxl' }",
+		"defaultValue": "-"
 	},
 	"a-layout-sider/class": {
-		"description": "container className"
+		"description": "container className",
+		"optionType": "string",
+		"defaultValue": "-"
 	},
 	"a-layout-sider/collapsed": {
-		"description": "to set the current status"
+		"description": "to set the current status",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-layout-sider/collapsedWidth": {
-		"description": "width of the collapsed sidebar, by setting to 0 a special trigger will appear"
+		"description": "width of the collapsed sidebar, by setting to 0 a special trigger will appear",
+		"optionType": "number",
+		"defaultValue": "80"
 	},
 	"a-layout-sider/collapsible": {
-		"description": "whether can be collapsed"
+		"description": "whether can be collapsed",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-layout-sider/defaultCollapsed": {
-		"description": "to set the initial status"
+		"description": "to set the initial status",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-layout-sider/reverseArrow": {
-		"description": "reverse direction of arrow, for a sider that expands from the right"
+		"description": "reverse direction of arrow, for a sider that expands from the right",
+		"optionType": "boolean",
+		"defaultValue": "false"
 	},
 	"a-layout-sider/style": {
-		"description": "to customize the styles"
+		"description": "to customize the styles",
+		"optionType": "object|string",
+		"defaultValue": "-"
 	},
 	"a-layout-sider/theme": {
-    "options": ["light", "dark"],
-		"description": "color theme of the sidebar"
+		"description": "color theme of the sidebar",
+		"optionType": "string: light dark",
+		"defaultValue": "dark"
 	},
 	"a-layout-sider/trigger": {
-		"description": "specify the customized trigger, set to null to hide the trigger"
+		"description": "specify the customized trigger, set to null to hide the trigger",
+		"optionType": "string|slot",
+		"defaultValue": "-"
 	},
 	"a-layout-sider/width": {
-		"description": "width of the sidebar"
+		"description": "width of the sidebar",
+		"optionType": "number|string",
+		"defaultValue": "200"
 	}
 }

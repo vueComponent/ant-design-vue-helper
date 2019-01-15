@@ -16,6 +16,8 @@ function getAttrs(tag) {
     const tdobj = {}
     const td = item.querySelector('td:nth-child(1)')
     const tdDes = item.querySelector('td:nth-child(2)')
+    const tdType = item.querySelector('td:nth-child(3)')
+    const tdDefault = item.querySelector('td:nth-child(4)')
     let text = td.innerText
     if (text.indexOf('slot') == -1 && text.indexOf('v-model') > -1) {
       text = td.innerText.split('(v-model)')[0]
@@ -24,6 +26,8 @@ function getAttrs(tag) {
     }
     a[`${tag}/${text}`] = {
       description: tdDes.innerText,
+      optionType: tdType.innerText,
+      defaultValue: tdDefault.innerText,
     }
   })
   console.dir(JSON.stringify(a))
