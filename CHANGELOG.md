@@ -3,3 +3,4 @@
 
 ## [1.0.0]
 - add components(comment configProvider)
+- add type and default prompts
