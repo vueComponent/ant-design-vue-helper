@@ -16,7 +16,7 @@
 
 * Move cursor to Ant Design Vue tag or select it
 
-* Press default hot key `ctrl + shift + z`(windows: `ctrl + shift + z`) to bring up the Command Palette and then input `antdv-helper.search`
+* Press default hot key `shift + cmd + i`(windows: `shift + win + i`) to bring up the Command Palette and then input `antdv-helper.search`
 
 * Show document view If complete matching,
     or you should select tag you want to search
@@ -28,7 +28,7 @@
 
 ### Keymap
 
-Default hot key is  `ctrl + shift + z`( windows: `ctrl + shift + z`). If it has conflicted with other software's hot key. You can customize it. see [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor)
+Default hot key is  `shift + cmd + i`( windows: `shift + win + i`). If it has conflicted with other software's hot key. You can customize it. see [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor)
 
 
 ## Autocomplete

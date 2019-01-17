@@ -387,11 +387,18 @@ export default {
     tag: 'a-skeleton',
     subtitle: '骨架屏',
   },
-  comment: {
+  "config-provider": {
     category: 'Components',
     type: 'Other',
     title: 'ConfigProvider',
     tag: 'a-config-provider',
     subtitle: '全局化配置',
+  },
+  comment: {
+    category: 'Components',
+    type: 'Data Display',
+    title: 'Comment',
+    tag: 'a-comment',
+    subtitle: '评论',
   },
 }

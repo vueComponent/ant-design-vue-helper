@@ -7,3 +7,7 @@
 
 ## [1.0.1]
 - fix table prompts
+
+## [1.0.2]
+- switch shortcuts mac(ctrl + shift + z => shift + cmd + i) win(ctrl + shift + z => shift + win + i)
+- fix Comment and ConfigProvider prompts
