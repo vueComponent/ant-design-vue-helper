@@ -21,12 +21,12 @@
   },
   "a-layout": {
     "attributes": ["class","style","hasSider"],
-    "subtags": ["a-layout-slider", "a-layout-header", "a-layout-content", "a-layout-footer"],
+    "subtags": ["a-layout-sider", "a-layout-header", "a-layout-content", "a-layout-footer"],
     "description": "layout"
   },
-  "a-layout-slider": {
+  "a-layout-sider": {
     "attributes": ["breakpoint","class","collapsed","collapsedWidth","collapsible","defaultCollapsed","reverseArrow","style","theme","trigger","width"],
-    "description": "layout slider"
+    "description": "layout sider"
   },
   "a-layout-header": {
     "description": "layout header"
