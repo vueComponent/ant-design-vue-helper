@@ -2,7 +2,7 @@
 		"name": "vscode-ant-design-vue-helper",
 		"displayName": "Ant Design Vue helper",
 		"description": "A vscode extension for Ant-Design-Vue",
-		"version": "1.0.2",
+		"version": "1.0.3",
 		"publisher": "ant-design-vue",
 		"repository": {
 			"type": "git",
