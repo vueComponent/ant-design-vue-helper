@@ -43,7 +43,7 @@
 				],
 				"configuration": {
 						"type": "object",
-						"title": "ELement Helper Configuration",
+						"title": "Antdv Helper Configuration",
 						"properties": {
 								"antdv-helper.indent-size": {
 										"type": "number",
