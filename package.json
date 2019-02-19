@@ -56,7 +56,7 @@
 								},
 								"antdv-helper.link-url": {
 									"type": "string",
-									"default": "https://ant-design-vue.gitee.io/components/"
+									"default": "https://ant-design-vue.gitee.io"
 							}
 						}
 				}

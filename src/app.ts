@@ -80,8 +80,9 @@ const HTML_CONTENT = (query: Query) => {
   const config = workspace.getConfiguration('antdv-helper');
   const linkUrl = config.get('link-url');
   const path = query.keyword;
-  const iframeSrc = linkUrl + path;
-
+  const iframeSrc = `${linkUrl}/components/${path}`;
+  console.log(iframeSrc)
+  console.log(1111)
   return `
     <body style="background-color: white">
     <iframe style="position: absolute;border: none;left: 0;top: 0;width: 100%;height: 100%;" src="${iframeSrc}"></iframe>
