@@ -77,9 +77,10 @@ export class App {
 }
 
 const HTML_CONTENT = (query: Query) => {
-
+  const config = workspace.getConfiguration('antdv-helper');
+  const linkUrl = config.get('link-url');
   const path = query.keyword;
-  const iframeSrc = 'https://tangjinzhou.gitee.io/ant-design-vue/components/' + path;
+  const iframeSrc = linkUrl + path;
 
   return `
     <body style="background-color: white">
