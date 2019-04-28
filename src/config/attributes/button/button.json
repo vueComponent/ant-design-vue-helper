@@ -25,18 +25,19 @@
 		"defaultValue": "false"
 	},
 	"a-button/shape": {
+		"options": ["circle", "round"],
 		"description": "can be set to circle or omitted",
 		"optionType": "string",
 		"defaultValue": "-"
 	},
 	"a-button/size": {
-        "options": ["small", "large"],
+    "options": ["small", "large"],
 		"description": "can be set to small large or omitted",
 		"optionType": "string",
 		"defaultValue": "default"
 	},
 	"a-button/type": {
-        "options": ["primary", "ghost", "dashed", "danger"],
+    "options": ["primary", "ghost", "dashed", "danger"],
 		"description": "can be set to primary ghost dashed danger(added in 2.7) or omitted (meaning default)",
 		"optionType": "string",
 		"defaultValue": "default"

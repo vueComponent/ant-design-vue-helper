@@ -4,7 +4,7 @@ import {
   window, commands, ViewColumn, Disposable, TextDocumentContentProvider,
   Event, Uri, CancellationToken, workspace, CompletionItemProvider, ProviderResult,
   TextDocument, Position, CompletionItem, CompletionList, CompletionItemKind,
-  SnippetString, Range, EventEmitter
+  SnippetString, Range, EventEmitter,
 } from 'vscode';
 import * as TAGS from './config/ui-tags.json';
 import ATTRS from './config/ui-attributes.js';
@@ -12,7 +12,10 @@ import ATTRS from './config/ui-attributes.js';
 const prettyHTML = require('pretty');
 
 export interface Query {
-  keyword: string
+  path: string,
+  label: string,
+  detail: string,
+  description: string,
 };
 
 export interface TagObject {
@@ -59,30 +62,56 @@ export class App {
     }
   }
 
-  openHtml(uri: Uri, title) {
-    return commands.executeCommand('vscode.previewHtml', uri, ViewColumn.Two, title)
-      .then((success) => {
-      }, (reason) => {
-          window.showErrorMessage(reason);
-      });
+  openHtml(query, title) {
+    const { label, detail } = query
+    const panel = window.createWebviewPanel(
+      label,
+      detail,
+      ViewColumn.One,
+      {
+        enableScripts: true, // 启用JS，默认禁用
+        retainContextWhenHidden: true, // webview被隐藏时保持状态，避免被重置
+      }
+    );
+
+    // And set its HTML content
+    panel.webview.html = this.getWebviewContent(query);
   }
 
   openDocs(query?: Query, title = 'antdv-helper', editor = window.activeTextEditor){
-    this.openHtml(encodeDocsUri(query), title)
+    this.openHtml(query, title)
   }
         
   dispose() {
     this._disposable.dispose();
   }
+
+  getWebviewContent(query: Query) {
+    const config = workspace.getConfiguration('antdv-helper');
+    const linkUrl = config.get('link-url');
+    const path = query.path;
+    const iframeSrc = `${linkUrl}/components/${path}`;
+    return `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cat Coding</title>
+    </head>
+    <body>
+      <iframe style="position: absolute;border: none;left: 0;top: 0;width: 100%;height: 100%;" src="${iframeSrc}"></iframe>
+    </body>
+    </html>`;
+  }
 }
+
 
 const HTML_CONTENT = (query: Query) => {
   const config = workspace.getConfiguration('antdv-helper');
   const linkUrl = config.get('link-url');
-  const path = query.keyword;
+  const path = query.path;
   const iframeSrc = `${linkUrl}/components/${path}`;
-  console.log(iframeSrc)
-  console.log(1111)
   return `
     <body style="background-color: white">
     <iframe style="position: absolute;border: none;left: 0;top: 0;width: 100%;height: 100%;" src="${iframeSrc}"></iframe>

@@ -23,5 +23,10 @@
 		"description": "Destroy Inactive Panel",
 		"optionType": "boolean",
 		"defaultValue": "false"
+	},
+	"a-collapse/expandIcon": {
+		"description": "allow to customize collapse icon",
+		"optionType": "Function(props):VNode | slot=\"expandIcon\" slot-scope=\"props\"|v-slot:expandIcon=\"props\"",
+		"defaultValue": "-"
 	}
 }

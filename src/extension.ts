@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "vscode-ant-design-vue-helper" is now active!');
     let app = new App();
-	app.setConfig();
+    app.setConfig();
 	let docs = new AntdvDocsContentProvider();
 	let completionItemProvider = new AntdvCompletionItemProvider();
 	let registration = vscode.workspace.registerTextDocumentContentProvider('antdv-helper', docs);
@@ -69,13 +69,13 @@ export function activate(context: vscode.ExtensionContext) {
         let find = items.filter(item => item.label === selection);
 
         if (find.length) {
-            app.openDocs({keyword: find[0].path}, find[0].label);
+            app.openDocs(find[0], find[0].label);
             return;
         }
 
         // cant set default value for this method? angry.
         vscode.window.showQuickPick(items).then(selected => {
-            selected && app.openDocs({keyword: selected.path}, selected.label);
+            selected && app.openDocs(selected, selected.label);
         })
     });
 

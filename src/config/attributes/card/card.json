@@ -54,6 +54,12 @@
 		"optionType": "Array<{key: string, tab: any, scopedSlots: {tab: 'XXX'}}>",
 		"defaultValue": "-"
 	},
+	"a-card/size": {
+		"options": ["default", "small"],
+		"description": "Size of card",
+		"optionType": "string",
+		"defaultValue": "default"
+	},
 	"a-card/title": {
 		"description": "Card title",
 		"optionType": "string|slot",
