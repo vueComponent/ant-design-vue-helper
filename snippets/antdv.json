@@ -106,11 +106,13 @@
   "modal-confirm": {
     "prefix": "modal-confirm",
     "body": [
-      "this.\\$success({",
+      "this.\\$confirm({",
       "\ttitle: '${1:title}',",
       "\tcontent: '${2:string|VNode|function(h)}'",
       "\tokText: '${2:string|slot}'",
       "\tcancelText: '${2:string|slot}'",
+      "\tonCancel: '${1:function}'",
+      "\tonOk: '${1:function}'",
       "});"
     ],
     "description": "modal confirm"
