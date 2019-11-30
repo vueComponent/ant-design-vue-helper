@@ -137,7 +137,7 @@ export class AntdvDocsContentProvider implements TextDocumentContentProvider {
 export class AntdvCompletionItemProvider implements CompletionItemProvider {
   private _document: TextDocument;
   private _position: Position;
-  private tagReg: RegExp = /<([\w-]+)\s+/g;
+  private tagReg: RegExp = /<([\w-]+)\s*/g;
   private attrReg: RegExp = /(?:\(|\s*)(\w+)=['"][^'"]*/;
   private tagStartReg:  RegExp = /<([\w-]*)$/;
   private pugTagStartReg: RegExp = /^\s*[\w-]*$/;
