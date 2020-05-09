@@ -1,83 +1,93 @@
 {
-		"name": "vscode-ant-design-vue-helper",
-		"displayName": "Ant Design Vue helper",
-		"description": "A vscode extension for Ant-Design-Vue",
-		"version": "1.0.6",
-		"publisher": "ant-design-vue",
-		"repository": {
-			"type": "git",
-			"url": "https://github.com/vueComponent/ant-design-vue-helper"
-		},
-		"engines": {
-				"vscode": "^1.30.0"
-		},
-		"icon": "antdv.png",
-		"categories": [
-			"Snippets",
-			"Other"
-		],
-		"activationEvents": [
-				"onLanguage:html",
-				"onLanguage:vue",
-				"onCommand:antdv-helper.search"
-		],
-		"contributes": {
-				"commands": [
-						{
-								"command": "antdv-helper.search",
-								"title": "antdv-helper.search"
-						}
-				],
-				"keybindings": [
-						{
-								"command": "antdv-helper.search",
-								"key": "shift+cmd+i",
-								"when": "editorTextFocus"
-						}
-				],
-				"snippets": [
-						{
-								"language": "javascript",
-								"path": "./snippets/antdv.json"
-						}
-				],
-				"configuration": {
-						"type": "object",
-						"title": "Antdv Helper Configuration",
-						"properties": {
-								"antdv-helper.indent-size": {
-										"type": "number",
-										"default": 2,
-										"description": "Indentation size of snippets"
-								},
-								"antdv-helper.quotes": {
-										"type": "string",
-										"default": "double"
-								},
-								"antdv-helper.link-url": {
-									"type": "string",
-									"default": "https://ant-design-vue.gitee.io"
-							}
-						}
-				}
-		},
-		"main": "./out/extension.js",
-		"scripts": {
-				"vscode:prepublish": "sh build.sh",
-				"compile": "sh build.sh",
-				"watch": "sh build.sh --watch",
-				"postinstall": "node ./node_modules/vscode/bin/install",
-				"test": "npm run compile && node ./node_modules/vscode/bin/test"
-		},
-		"devDependencies": {
-				"typescript": "^3.1.4",
-				"vscode": "^1.1.25",
-				"tslint": "^5.8.0",
-				"@types/node": "^8.10.25",
-				"@types/mocha": "^2.2.42"
-		},
-		"dependencies": {
-				"pretty": "^2.0.0",
-				"shelljs": "^0.8.3"
-		}
+  "name": "vscode-ant-design-vue-helper",
+  "displayName": "Ant Design Vue helper",
+  "description": "A vscode extension for Ant-Design-Vue",
+  "version": "1.0.6",
+  "publisher": "ant-design-vue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vueComponent/ant-design-vue-helper"
+  },
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "icon": "antdv.png",
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:vue",
+    "onCommand:antdv-helper.search"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "antdv-helper.search",
+        "title": "antdv-helper.search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "antdv-helper.search",
+        "key": "shift+cmd+i",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/antdv.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Antdv Helper Configuration",
+      "properties": {
+        "antdv-helper.indent-size": {
+          "type": "number",
+          "default": 2,
+          "description": "Indentation size of snippets"
+        },
+        "antdv-helper.quotes": {
+          "type": "string",
+          "default": "double"
+        },
+        "antdv-helper.link-url": {
+          "type": "string",
+          "default": "https://ant-design-vue.gitee.io"
+        }
+      }
+    }
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "clean": "gulp clean:all",
+    "compile": "gulp compile",
+    "watch": "tsc -watch -p ./",
+    "test": "yarn run compile & node ./out/test/index.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/gulp": "^4.0.6",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.45.0",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^5.0.1",
+    "mocha": "^6.1.4",
+    "ts-node": "^8.10.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.3.1",
+    "vscode-test": "^1.3.0"
+  },
+  "dependencies": {
+    "pretty": "^2.0.0",
+    "shelljs": "^0.8.3"
+  },
+  "__npminstall_done": false
 }
