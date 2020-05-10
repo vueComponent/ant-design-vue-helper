@@ -6,33 +6,62 @@
 	},
 	"a-dropdown-button/overlay": {
 		"description": "the dropdown menu",
-		"optionType": "Menu",
+		"optionType": "any",
 		"defaultValue": "-"
 	},
 	"a-dropdown-button/placement": {
-		"options": ["bottomLeft", "bottomCenter", "bottomRight", "topLeft", "topCenter", "topRight"],
 		"description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight",
-		"optionType": "String",
-		"defaultValue": "bottomLeft"
+		"optionType": "string",
+		"defaultValue": "'bottomLeft'",
+		"options": [
+			"bottomLeft",
+			"bottomRight",
+			"topLeft",
+			"topRight",
+			"topCenter",
+			"bottomCenter"
+		]
 	},
 	"a-dropdown-button/size": {
 		"description": "size of the button, the same as Button",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-dropdown-button/trigger": {
 		"description": "the trigger mode which executes the drop-down action",
-		"optionType": "Array<click|hover|contextmenu>",
+		"optionType": "(\"click\" | \"hover\" | \"contextmenu\")[]",
 		"defaultValue": "['hover']"
 	},
 	"a-dropdown-button/type": {
 		"description": "type of the button, the same as Button",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"default",
+			"primary",
+			"danger",
+			"dashed",
+			"ghost"
+		]
 	},
 	"a-dropdown-button/visible": {
 		"description": "whether the dropdown menu is visible",
 		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-dropdown-button/icon": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-dropdown-button/title": {
+		"description": "-",
+		"optionType": "string",
 		"defaultValue": "-"
 	}
 }

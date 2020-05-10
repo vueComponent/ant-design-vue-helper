@@ -1,0 +1,46 @@
+{
+	"a-descriptions/size": {
+		"description": "descriptions size type",
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"default",
+			"middle"
+		]
+	},
+	"a-descriptions/prefixCls": {
+		"description": "custom prefixCls",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-descriptions/bordered": {
+		"description": "whether descriptions have border",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-descriptions/title": {
+		"description": "custom title",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-descriptions/column": {
+		"description": "the number of descriptionsitem in one line",
+		"optionType": "number | object",
+		"defaultValue": "3"
+	},
+	"a-descriptions/layout": {
+		"description": "descriptions layout",
+		"optionType": "string",
+		"defaultValue": "'horizontal'",
+		"options": [
+			"horizontal",
+			"vertical"
+		]
+	},
+	"a-descriptions/colon": {
+		"description": "whether have colon in descriptionsitem",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	}
+}

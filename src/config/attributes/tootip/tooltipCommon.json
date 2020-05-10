@@ -1,0 +1,81 @@
+{
+	"a-tooltip-common/arrowPointAtCenter": {
+		"description": "Whether the arrow is pointed at the center of target",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tooltip-common/autoAdjustOverflow": {
+		"description": "Whether to adjust popup placement automatically when popup is off screen",
+		"optionType": "boolean | object",
+		"defaultValue": "true"
+	},
+	"a-tooltip-common/defaultVisible": {
+		"description": "Whether the floating tooltip card is visible by default",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tooltip-common/getPopupContainer": {
+		"description": "The DOM container of the tip, the default behavior is to create a div element in body.",
+		"optionType": "(triggerNode: any) => any",
+		"defaultValue": "() => document.body"
+	},
+	"a-tooltip-common/mouseEnterDelay": {
+		"description": "Delay in seconds, before tooltip is shown on mouse enter",
+		"optionType": "number",
+		"defaultValue": "0"
+	},
+	"a-tooltip-common/mouseLeaveDelay": {
+		"description": "Delay in seconds, before tooltip is hidden on mouse leave",
+		"optionType": "number",
+		"defaultValue": "0.1"
+	},
+	"a-tooltip-common/overlayClassName": {
+		"description": "Class name of the tooltip card",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-tooltip-common/overlayStyle": {
+		"description": "Style of the tooltip card",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-tooltip-common/placement": {
+		"description": "The position of the tooltip relative to the target, which can be one of top\nleft right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom",
+		"optionType": "string",
+		"defaultValue": "'top'",
+		"options": [
+			"left",
+			"right",
+			"top",
+			"bottom",
+			"bottomLeft",
+			"bottomRight",
+			"topLeft",
+			"topRight",
+			"leftTop",
+			"leftBottom",
+			"rightTop",
+			"rightBottom"
+		]
+	},
+	"a-tooltip-common/trigger": {
+		"description": "Tooltip trigger mode",
+		"optionType": "\"click\" | \"hover\" | \"contextmenu\" | \"focus\" | triggerType[]",
+		"defaultValue": "'hover'"
+	},
+	"a-tooltip-common/visible": {
+		"description": "Whether the floating tooltip card is visible or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tooltip-common/destroyTooltipOnHide": {
+		"description": "Whether to destroy tooltip on hide",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tooltip-common/align": {
+		"description": "this value will be merged into placement's config, please refer to the settings dom-align",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}

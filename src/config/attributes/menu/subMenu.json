@@ -1,0 +1,22 @@
+{
+	"a-sub-menu/key": {
+		"description": "unique id of the menu item",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-sub-menu/disabled": {
+		"description": "whether menu item is disabled or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-sub-menu/title": {
+		"description": "title of the sub menu",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-sub-menu/popupClassName": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	}
+}

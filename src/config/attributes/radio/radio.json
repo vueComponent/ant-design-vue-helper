@@ -12,7 +12,7 @@
 	"a-radio/defaultChecked": {
 		"description": "Specifies the initial state: whether or not the radio is selected.",
 		"optionType": "boolean",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
 	"a-radio/disabled": {
 		"description": "Disable radio",
@@ -22,6 +22,16 @@
 	"a-radio/value": {
 		"description": "According to value for comparison, to determine whether the selected",
 		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-radio/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-radio/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
 		"defaultValue": "-"
 	}
 }

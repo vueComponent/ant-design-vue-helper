@@ -1,0 +1,12 @@
+{
+	"a-button-group/size": {
+		"description": "can be set to small large or omitted",
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
+	}
+}

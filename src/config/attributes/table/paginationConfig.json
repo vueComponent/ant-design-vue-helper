@@ -1,0 +1,12 @@
+{
+	"a-pagination-config/position": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-",
+		"options": [
+			"top",
+			"bottom",
+			"both"
+		]
+	}
+}

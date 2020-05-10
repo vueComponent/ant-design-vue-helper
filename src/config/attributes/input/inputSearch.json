@@ -1,0 +1,7 @@
+{
+	"a-input-search/enterButton": {
+		"description": "to show an enter button after input",
+		"optionType": "boolean | slot",
+		"defaultValue": "false"
+	}
+}

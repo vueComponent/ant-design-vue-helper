@@ -1,22 +1,27 @@
 {
+	"a-calendar/headerRender": {
+		"description": "-",
+		"optionType": "(headerRender: RenderHeader) => any",
+		"defaultValue": "-"
+	},
 	"a-calendar/dateCellRender": {
-		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will be appended to the cell",
-		"optionType": "function(date: moment)",
+		"description": "Customize the display of the date cell by setting a scoped slot,\nthe returned content will be appended to the cell",
+		"optionType": "(date: Moment) => any",
 		"defaultValue": "-"
 	},
 	"a-calendar/dateFullCellRender": {
-		"description": "Customize the display of the date cell by setting a scoped slot, the returned content will override the cell",
-		"optionType": "function(date: moment)",
+		"description": "Customize the display of the date cell by setting a scoped slot,\nthe returned content will override the cell",
+		"optionType": "(date: Moment) => any",
 		"defaultValue": "-"
 	},
 	"a-calendar/defaultValue": {
 		"description": "The date selected by default",
-		"optionType": "moment",
+		"optionType": "string | Moment",
 		"defaultValue": "default date"
 	},
 	"a-calendar/disabledDate": {
 		"description": "Function that specifies the dates that cannot be selected",
-		"optionType": "(currentDate: moment) => boolean",
+		"optionType": "(currentDate: Moment) => boolean",
 		"defaultValue": "-"
 	},
 	"a-calendar/fullscreen": {
@@ -27,31 +32,40 @@
 	"a-calendar/locale": {
 		"description": "The calendar's locale",
 		"optionType": "object",
-		"defaultValue": "default"
+		"defaultValue": "[default]"
 	},
 	"a-calendar/mode": {
 		"description": "The display mode of the calendar",
-		"optionType": "month | year",
-		"defaultValue": "month"
+		"optionType": "string",
+		"defaultValue": "'month'",
+		"options": [
+			"month",
+			"year"
+		]
 	},
 	"a-calendar/monthCellRender": {
 		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will be appended to the cell",
-		"optionType": "function(date: moment)",
+		"optionType": "(date: Moment) => any",
 		"defaultValue": "-"
 	},
 	"a-calendar/monthFullCellRender": {
 		"description": "Customize the display of the month cell by setting a scoped slot, the returned content will override the cell",
-		"optionType": "function(date: moment)",
+		"optionType": "(date: Moment) => any",
 		"defaultValue": "-"
 	},
 	"a-calendar/validRange": {
 		"description": "to set valid range",
-		"optionType": "[moment, moment]",
+		"optionType": "[Moment, Moment]",
 		"defaultValue": "-"
 	},
 	"a-calendar/value": {
 		"description": "The current selected date",
-		"optionType": "moment",
+		"optionType": "string | Moment",
 		"defaultValue": "current date"
+	},
+	"a-calendar/valueFormat": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
 	}
 }

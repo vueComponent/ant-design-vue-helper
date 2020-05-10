@@ -6,13 +6,17 @@
 	},
 	"a-avatar/shape": {
 		"description": "the shape of avatar",
-		"optionType": "circle | square",
-		"defaultValue": "circle"
+		"optionType": "string",
+		"defaultValue": "'circle'",
+		"options": [
+			"circle",
+			"square"
+		]
 	},
 	"a-avatar/size": {
 		"description": "the size of the avatar",
-		"optionType": "number | string: large small default",
-		"defaultValue": "default"
+		"optionType": "number | \"small\" | \"large\" | \"default\"",
+		"defaultValue": "'default'"
 	},
 	"a-avatar/src": {
 		"description": "the address of the image for an image avatar",

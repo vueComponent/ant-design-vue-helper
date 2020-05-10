@@ -1,0 +1,32 @@
+{
+	"a-month-picker/defaultValue": {
+		"description": "to set default date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	},
+	"a-month-picker/defaultPickerValue": {
+		"description": "to set default picker date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	},
+	"a-month-picker/format": {
+		"description": "to set the date format, When an array is provided, all values are used for parsing and first value for display. refer to moment.js",
+		"optionType": "string | string[]",
+		"defaultValue": "'YYYY-MM'"
+	},
+	"a-month-picker/monthCellContentRender": {
+		"description": "Custom month cell content render method by setting a scoped slot",
+		"optionType": "Function",
+		"defaultValue": "-"
+	},
+	"a-month-picker/renderExtraFooter": {
+		"description": "render extra footer in panel by setting a scoped slot",
+		"optionType": "slot=\"renderExtraFooter\"",
+		"defaultValue": "-"
+	},
+	"a-month-picker/value": {
+		"description": "to set date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	}
+}

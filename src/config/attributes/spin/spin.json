@@ -1,18 +1,23 @@
 {
 	"a-spin/delay": {
 		"description": "specifies a delay in milliseconds for loading state (prevent flush)",
-		"optionType": "number (milliseconds)",
+		"optionType": "number",
 		"defaultValue": "-"
 	},
 	"a-spin/indicator": {
 		"description": "vue node of the spinning indicator",
-		"optionType": "vNode |slot",
+		"optionType": "VNode | slot",
 		"defaultValue": "-"
 	},
 	"a-spin/size": {
 		"description": "size of Spin, options: small, default and large",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-spin/spinning": {
 		"description": "whether Spin is spinning",

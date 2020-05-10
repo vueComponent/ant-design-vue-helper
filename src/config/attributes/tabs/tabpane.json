@@ -11,7 +11,7 @@
 	},
 	"a-tab-pane/tab": {
 		"description": "Show text in TabPane's head",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	}
 }

@@ -11,8 +11,8 @@
 	},
 	"a-switch/checkedChildren": {
 		"description": "content to be shown when the state is checked",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
 	},
 	"a-switch/defaultChecked": {
 		"description": "to set the initial state",
@@ -32,11 +32,26 @@
 	"a-switch/size": {
 		"description": "the size of the Switch, options: default small",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-switch/unCheckedChildren": {
 		"description": "content to be shown when the state is unchecked",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-switch/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-switch/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

@@ -1,0 +1,17 @@
+{
+	"a-empty/description": {
+		"description": "customize description",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-empty/image": {
+		"description": "customize image. Will tread as image url when string provided",
+		"optionType": "string | VNode",
+		"defaultValue": "false"
+	},
+	"a-empty/imageStyle": {
+		"description": "-",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}

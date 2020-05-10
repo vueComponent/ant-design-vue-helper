@@ -1,0 +1,7 @@
+{
+	"a-dictionary-tree/expandAction": {
+		"description": "Directory open logic, optional false 'click' 'dblclick'",
+		"optionType": "string",
+		"defaultValue": "'click'"
+	}
+}

@@ -1,17 +1,22 @@
 {
+	"a-badge/color": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
 	"a-badge/count": {
-		"description": "Number to show in badge",
-		"optionType": "number|string | slot",
-		"defaultValue": ""
+		"description": "Number to show in badge, support slot",
+		"optionType": "number | string | VNode",
+		"defaultValue": "-"
 	},
 	"a-badge/dot": {
-		"description": "Whether to display a red dot instead of count",
+		"description": "to display a red dot instead of count",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
 	"a-badge/offset": {
 		"description": "set offset of the badge dot, like [x, y]",
-		"optionType": "[number|string, number|string]",
+		"optionType": "(string | number)[]",
 		"defaultValue": "-"
 	},
 	"a-badge/overflowCount": {
@@ -25,24 +30,30 @@
 		"defaultValue": "false"
 	},
 	"a-badge/status": {
-	  "options": ["success", "processing", "default", "error","warning"],
 		"description": "Set Badge as a status dot",
-		"optionType": "success | processing | default | error | warning",
-		"defaultValue": "''"
+		"optionType": "string",
+		"defaultValue": "-",
+		"options": [
+			"success",
+			"warning",
+			"error",
+			"default",
+			"processing"
+		]
 	},
 	"a-badge/text": {
 		"description": "If status is set, text sets the display text of the status dot",
 		"optionType": "string",
-		"defaultValue": "''"
+		"defaultValue": "-"
 	},
 	"a-badge/numberStyle": {
 		"description": "sets the display style of the status dot",
 		"optionType": "object",
-		"defaultValue": "''"
+		"defaultValue": "-"
 	},
 	"a-badge/title": {
 		"description": "Text to show when hovering over the badge",
 		"optionType": "string",
-		"defaultValue": "count"
+		"defaultValue": "'count'"
 	}
 }

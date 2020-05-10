@@ -1,0 +1,142 @@
+{
+	"a-column/align": {
+		"description": "specify how content is aligned",
+		"optionType": "string",
+		"defaultValue": "'left'",
+		"options": [
+			"left",
+			"right",
+			"center"
+		]
+	},
+	"a-column/ellipsis": {
+		"description": "ellipsize cell content, not working with sorter and filters for now. \ntableLayout would be fixed when ellipsis is true.",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-column/colSpan": {
+		"description": "Span of this column's title",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-column/dataIndex": {
+		"description": "Display field of the data record, could be set like a.b.c",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-column/defaultFilteredValue": {
+		"description": "Default filtered values",
+		"optionType": "string[]",
+		"defaultValue": "-"
+	},
+	"a-column/defaultSortOrder": {
+		"description": "Default order of sorted values: 'ascend' 'descend' null",
+		"optionType": "SortOrder",
+		"defaultValue": "-"
+	},
+	"a-column/filterDropdown": {
+		"description": "Customized filter overlay",
+		"optionType": "slot",
+		"defaultValue": "-"
+	},
+	"a-column/filterDropdownVisible": {
+		"description": "Whether filterDropdown is visible",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-column/filtered": {
+		"description": "Whether the dataSource is filtered",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-column/filteredValue": {
+		"description": "Controlled filtered value, filter icon will highlight",
+		"optionType": "string[]",
+		"defaultValue": "-"
+	},
+	"a-column/filterIcon": {
+		"description": "Customized filter icon",
+		"optionType": "any",
+		"defaultValue": "false"
+	},
+	"a-column/filterMultiple": {
+		"description": "Whether multiple filters can be selected",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-column/filters": {
+		"description": "Filter menu config",
+		"optionType": "ColumnFilterItem[]",
+		"defaultValue": "-"
+	},
+	"a-column/fixed": {
+		"description": "Set column to be fixed: true(same as left) 'left' 'right'",
+		"optionType": "boolean | \"left\" | \"right\"",
+		"defaultValue": "false"
+	},
+	"a-column/key": {
+		"description": "Unique key of this column, you can ignore this prop if you've set a unique dataIndex",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-column/customRender": {
+		"description": "Renderer of the table cell. The return value should be a VNode, or an object for colSpan/rowSpan config",
+		"optionType": "Function | ScopedSlot",
+		"defaultValue": "-"
+	},
+	"a-column/sorter": {
+		"description": "Sort function for local sort, see Array.sort's compareFunction. If you need sort buttons only, set to true",
+		"optionType": "boolean | Function",
+		"defaultValue": "-"
+	},
+	"a-column/sortOrder": {
+		"description": "Order of sorted values: 'ascend' 'descend' false",
+		"optionType": "boolean | \"ascend\" | \"descend\"",
+		"defaultValue": "-"
+	},
+	"a-column/sortDirections": {
+		"description": "supported sort way, could be 'ascend', 'descend'",
+		"optionType": "string[]",
+		"defaultValue": "['ascend', 'descend']"
+	},
+	"a-column/title": {
+		"description": "Title of this column",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-column/width": {
+		"description": "Width of this column",
+		"optionType": "string | number",
+		"defaultValue": "-"
+	},
+	"a-column/customCell": {
+		"description": "Set props on per cell",
+		"optionType": "(record: any, rowIndex: number) => { props: object; attrs: object; on: object; class: object; style: object; nativeOn: object; }",
+		"defaultValue": "-"
+	},
+	"a-column/customHeaderCell": {
+		"description": "Set props on per header cell",
+		"optionType": "(column: any) => { props: object; attrs: object; on: object; class: object; style: object; nativeOn: object; }",
+		"defaultValue": "-"
+	},
+	"a-column/onFilter": {
+		"description": "Callback executed when the confirm filter button is clicked, Use as a filter event when using template or jsx",
+		"optionType": "Function",
+		"defaultValue": "-"
+	},
+	"a-column/onFilterDropdownVisibleChange": {
+		"description": "Callback executed when filterDropdownVisible is changed, Use as a filterDropdownVisible event when using template or jsx",
+		"optionType": "(visible: boolean) => void",
+		"defaultValue": "-"
+	},
+	"a-column/slots": {
+		"description": "When using columns, you can use this property to configure the properties that support the slot,\nsuch as slots: { filterIcon: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-column/scopedSlots": {
+		"description": "When using columns, you can use this property to configure the properties that support the slot-scope,\nsuch as scopedSlots: { customRender: 'XXX'}",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}

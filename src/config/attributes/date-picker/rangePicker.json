@@ -1,0 +1,42 @@
+{
+	"a-range-picker/defaultValue": {
+		"description": "to set default date",
+		"optionType": "[Moment, Moment] | [string, string]",
+		"defaultValue": "-"
+	},
+	"a-range-picker/defaultPickerValue": {
+		"description": "to set default picker date",
+		"optionType": "[Moment, Moment] | [string, string]",
+		"defaultValue": "-"
+	},
+	"a-range-picker/disabledTime": {
+		"description": "to specify the time that cannot be selected",
+		"optionType": "(dates: [Moment, Moment], partial: \"start\" | \"end\") => any",
+		"defaultValue": "-"
+	},
+	"a-range-picker/format": {
+		"description": "to set the date format, refer to moment.js",
+		"optionType": "string",
+		"defaultValue": "'YYYY-MM-DD HH:mm:ss'"
+	},
+	"a-range-picker/ranges": {
+		"description": "preseted ranges for quick selection",
+		"optionType": "{ [range: string]: Moment[]; } | { [range: string]: () => Moment[]; }",
+		"defaultValue": "-"
+	},
+	"a-range-picker/renderExtraFooter": {
+		"description": "render extra footer in panel by setting a scoped slot",
+		"optionType": "slot=\"renderExtraFooter\"",
+		"defaultValue": "-"
+	},
+	"a-range-picker/showTime": {
+		"description": "to provide an additional time selection\nshowTime.defaultValue to set default time of selected date - type Moment[]",
+		"optionType": "boolean | object",
+		"defaultValue": "TimePicker Options"
+	},
+	"a-range-picker/value": {
+		"description": "to set date",
+		"optionType": "[Moment, Moment] | [string, string]",
+		"defaultValue": "-"
+	}
+}

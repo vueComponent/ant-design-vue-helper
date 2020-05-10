@@ -1,0 +1,27 @@
+{
+	"a-result/title": {
+		"description": "result title",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-result/subTitle": {
+		"description": "result sub title",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-result/status": {
+		"description": "result status,decide icons and colors\nenum of 'success' | 'error' | 'info' | 'warning'| '404' | '403' | '500'` | 'info'",
+		"optionType": "string",
+		"defaultValue": "'info'"
+	},
+	"a-result/icon": {
+		"description": "custom back icon",
+		"optionType": "v-slot",
+		"defaultValue": "-"
+	},
+	"a-result/extra": {
+		"description": "operating area",
+		"optionType": "v-slot",
+		"defaultValue": "-"
+	}
+}

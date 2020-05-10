@@ -1,4 +1,9 @@
 {
+	"a-card/tabBarExtraContent": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
 	"a-card/actions": {
 		"description": "The action list, shows at the bottom of the Card.",
 		"optionType": "slots",
@@ -36,7 +41,7 @@
 	},
 	"a-card/extra": {
 		"description": "Content to render in the top-right corner of the card",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-card/hoverable": {
@@ -51,23 +56,22 @@
 	},
 	"a-card/tabList": {
 		"description": "List of TabPane's head, Custom tabs can be created with the scopedSlots property",
-		"optionType": "Array<{key: string, tab: any, scopedSlots: {tab: 'XXX'}}>",
+		"optionType": "{ key: string; tab: any; scopedSlots: { tab: string; }; }[]",
 		"defaultValue": "-"
-	},
-	"a-card/size": {
-		"options": ["default", "small"],
-		"description": "Size of card",
-		"optionType": "string",
-		"defaultValue": "default"
 	},
 	"a-card/title": {
 		"description": "Card title",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-card/type": {
 		"description": "Card style type, can be set to inner or not set",
 		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-card/size": {
+		"description": "Size of card",
+		"optionType": "CardSize",
 		"defaultValue": "-"
 	}
 }

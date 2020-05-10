@@ -1,7 +1,22 @@
 {
+	"a-tree/blockNode": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-tree/selectable": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
 	"a-tree/treeData": {
-		"description": "treeNode of tree, please use treeNodes before v1.1.4",
-		"optionType": "array",
+		"description": "treeNode of tree",
+		"optionType": "TreeNode[]",
+		"defaultValue": "-"
+	},
+	"a-tree/replaceFields": {
+		"description": "-",
+		"optionType": "{ children?: string; title?: string; key?: string; }",
 		"defaultValue": "-"
 	},
 	"a-tree/autoExpandParent": {
@@ -15,8 +30,8 @@
 		"defaultValue": "false"
 	},
 	"a-tree/checkedKeys": {
-		"description": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other.",
-		"optionType": "string[] | number[] | {checked: string[] | number[], halfChecked: string[] | number[]}",
+		"description": "(Controlled) Specifies the keys of the checked treeNodes\n(PS: When this specifies the key of a treeNode which is also a parent treeNode,\nall the children treeNodes of will be checked; and vice versa,\nwhen it specifies the key of a treeNode which is a child treeNode,\nits parent treeNode will also be checked. When checkable and checkStrictly is true,\nits object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked,\nthey won't impact each other.",
+		"optionType": "string[] | number[] | { checked: string[]; halfChecked: string[]; }",
 		"defaultValue": "[]"
 	},
 	"a-tree/checkStrictly": {
@@ -41,7 +56,7 @@
 	},
 	"a-tree/defaultExpandParent": {
 		"description": "auto expand parent treeNodes when init",
-		"optionType": "bool",
+		"optionType": "boolean",
 		"defaultValue": "true"
 	},
 	"a-tree/defaultSelectedKeys": {
@@ -51,7 +66,7 @@
 	},
 	"a-tree/disabled": {
 		"description": "whether disabled the tree",
-		"optionType": "bool",
+		"optionType": "boolean",
 		"defaultValue": "false"
 	},
 	"a-tree/draggable": {
@@ -65,18 +80,18 @@
 		"defaultValue": "[]"
 	},
 	"a-tree/filterTreeNode": {
-		"description": "Defines a function to filter (highlight) treeNodes. When the function returns true, the corresponding treeNode will be highlighted",
-		"optionType": "function(node)",
+		"description": "Defines a function to filter (highlight) treeNodes.\nWhen the function returns true, the corresponding treeNode will be highlighted",
+		"optionType": "(node: TreeNode) => any",
 		"defaultValue": "-"
 	},
 	"a-tree/loadData": {
 		"description": "Load data asynchronously",
-		"optionType": "function(node)",
+		"optionType": "(node: TreeNode) => any",
 		"defaultValue": "-"
 	},
 	"a-tree/loadedKeys": {
 		"description": "(Controlled) Set loaded tree nodes. Need work with loadData",
-		"optionType": "string[] | number[]",
+		"optionType": "string[]",
 		"defaultValue": "[]"
 	},
 	"a-tree/multiple": {
@@ -90,7 +105,7 @@
 		"defaultValue": "-"
 	},
 	"a-tree/showIcon": {
-		"description": "Shows the icon before a TreeNode's title. There is no default style; you must set a custom style for it if set to true",
+		"description": "Shows the icon before a TreeNode's title.\nThere is no default style; you must set a custom style for it if set to true",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},

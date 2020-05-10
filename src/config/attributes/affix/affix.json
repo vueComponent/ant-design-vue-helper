@@ -1,13 +1,13 @@
 {
-	"a-affix/offsetBottom": {
-		"description": "Pixels to offset from bottom when calculating position of scroll",
-		"optionType": "number",
-		"defaultValue": "-"
-	},
 	"a-affix/offsetTop": {
 		"description": "Pixels to offset from top when calculating position of scroll",
 		"optionType": "number",
 		"defaultValue": "0"
+	},
+	"a-affix/offsetBottom": {
+		"description": "Pixels to offset from bottom when calculating position of scroll",
+		"optionType": "number",
+		"defaultValue": "-"
 	},
 	"a-affix/target": {
 		"description": "specifies the scrollable area dom node",

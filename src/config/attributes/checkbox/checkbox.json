@@ -23,5 +23,15 @@
 		"description": "indeterminate checked state of checkbox",
 		"optionType": "boolean",
 		"defaultValue": "false"
+	},
+	"a-checkbox/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-checkbox/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

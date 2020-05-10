@@ -21,7 +21,7 @@
 	},
 	"a-select/defaultValue": {
 		"description": "Initial selected option.",
-		"optionType": "string|string[]\nnumber|number[]",
+		"optionType": "string | number | (string | number)[]",
 		"defaultValue": "-"
 	},
 	"a-select/disabled": {
@@ -41,7 +41,7 @@
 	},
 	"a-select/dropdownRender": {
 		"description": "Customize dropdown content",
-		"optionType": "(menuNode: VNode, props) => VNode",
+		"optionType": "(menu?: any, props?: object) => any",
 		"defaultValue": "-"
 	},
 	"a-select/dropdownStyle": {
@@ -50,18 +50,18 @@
 		"defaultValue": "-"
 	},
 	"a-select/filterOption": {
-		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded.",
-		"optionType": "boolean or function(inputValue, option)",
+		"description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option,\nif the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded.",
+		"optionType": "boolean | Function",
 		"defaultValue": "true"
 	},
 	"a-select/firstActiveValue": {
 		"description": "Value of action option by default",
-		"optionType": "string|string[]",
+		"optionType": "string | string[]",
 		"defaultValue": "-"
 	},
 	"a-select/getPopupContainer": {
-		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative.",
-		"optionType": "function(triggerNode)",
+		"description": "Parent Node which the selector should be rendered to. Default to body.\nWhen position issues happen, try to modify it into scrollable content and position it relative.",
+		"optionType": "(triggerNode: any) => any",
 		"defaultValue": "() => document.body"
 	},
 	"a-select/labelInValue": {
@@ -76,33 +76,42 @@
 	},
 	"a-select/maxTagPlaceholder": {
 		"description": "Placeholder for not showing tags",
-		"optionType": "slot/function(omittedValues)",
+		"optionType": "slot | Function",
+		"defaultValue": "-"
+	},
+	"a-select/maxTagTextLength": {
+		"description": "Max text length to show",
+		"optionType": "number",
 		"defaultValue": "-"
 	},
 	"a-select/mode": {
-	  "options": ["default", "multiple", "tags"],
 		"description": "Set mode of Select",
-		"optionType": "'default' | 'multiple' | 'tags'",
-		"defaultValue": "'default'"
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"default",
+			"multiple",
+			"tags"
+		]
 	},
 	"a-select/notFoundContent": {
 		"description": "Specify content to show when no result matches..",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "'Not Found'"
 	},
 	"a-select/optionFilterProp": {
 		"description": "Which prop value of option will be used for filter if filterOption is true",
 		"optionType": "string",
-		"defaultValue": "value"
+		"defaultValue": "'value'"
 	},
 	"a-select/optionLabelProp": {
 		"description": "Which prop value of option will render as content of select.",
 		"optionType": "string",
-		"defaultValue": "value for combobox, children for other modes"
+		"defaultValue": "'value' for combobox, 'children' for other modes"
 	},
 	"a-select/placeholder": {
 		"description": "Placeholder of select",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-select/showSearch": {
@@ -118,7 +127,12 @@
 	"a-select/size": {
 		"description": "Size of Select input. default large small",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-select/suffixIcon": {
 		"description": "The custom suffix icon",
@@ -143,16 +157,16 @@
 	"a-select/tokenSeparators": {
 		"description": "Separator used to tokenize on tag/multiple mode",
 		"optionType": "string[]",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
 	"a-select/value": {
 		"description": "Current selected option.",
-		"optionType": "string|number|string[]|number[]",
+		"optionType": "string | number | (string | number)[]",
 		"defaultValue": "-"
 	},
 	"a-select/options": {
 		"description": "Data of the selectOption, manual construction work is no longer needed if this property has been set",
-		"optionType": "array<{value, label, [disabled, key, title]}>",
+		"optionType": "{ value: any; label: any; disabled?: boolean; key?: any; title?: any; }[]",
 		"defaultValue": "[]"
 	},
 	"a-select/defaultOpen": {
@@ -165,9 +179,14 @@
 		"optionType": "boolean",
 		"defaultValue": "-"
 	},
-	"a-select/loading": {
-		"description": "indicate loading state",
-		"optionType": "Boolean",
-		"defaultValue": "false"
+	"a-select/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-select/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

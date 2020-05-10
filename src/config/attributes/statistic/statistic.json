@@ -1,0 +1,42 @@
+{
+	"a-statistic/decimalSeparator": {
+		"description": "decimal separator",
+		"optionType": "string",
+		"defaultValue": "'.'"
+	},
+	"a-statistic/formatter": {
+		"description": "the shape of statistic",
+		"optionType": "() => any",
+		"defaultValue": "-"
+	},
+	"a-statistic/groupSeparator": {
+		"description": "group separator",
+		"optionType": "string",
+		"defaultValue": "','"
+	},
+	"a-statistic/precision": {
+		"description": "precision of input value",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-statistic/prefix": {
+		"description": "prefix node of value",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic/suffix": {
+		"description": "suffix node of value",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic/title": {
+		"description": "Display title",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic/value": {
+		"description": "Display value",
+		"optionType": "string | number",
+		"defaultValue": "-"
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"a-form-model/hideRequiredMark": {
+		"description": "Hide required mark of all form items",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-form-model/labelCol": {
+		"description": "The layout of label. You can set span offset to something like {span: 3, offset: 12} or sm: {span: 3, offset: 12} same as with <Col>",
+		"optionType": "Col",
+		"defaultValue": "-"
+	},
+	"a-form-model/layout": {
+		"description": "Define form layout",
+		"optionType": "string",
+		"defaultValue": "'horizontal'",
+		"options": [
+			"horizontal",
+			"vertical",
+			"inline"
+		]
+	},
+	"a-form-model/wrapperCol": {
+		"description": "The layout for input controls, same as labelCol",
+		"optionType": "Col",
+		"defaultValue": "-"
+	},
+	"a-form-model/colon": {
+		"description": "change default props colon value of Form.Item (only effective when prop layout is horizontal)",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-form-model/labelAlign": {
+		"description": "text align of label of all items",
+		"optionType": "ExpandIconPosition",
+		"defaultValue": "'left'"
+	},
+	"a-form-model/model": {
+		"description": "data of form component",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-form-model/rules": {
+		"description": "validation rules of form",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-form-model/validateMessages": {
+		"description": "Default validate message. And its format is similar with newMessages's returned value",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-form-model/validateOnRuleChange": {
+		"description": "whether to trigger validation when the rules prop is changed",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-form-model/validate": {
+		"description": "validate the whole form. Takes a callback as a param. After validation,\nthe callback will be executed with two params: a boolean indicating if the validation has passed,\nand an object containing all fields that fail the validation. Returns a promise if callback is omitted",
+		"optionType": "(callback?: (boolean: Boolean, object: Object) => void) => void | Promise<any>",
+		"defaultValue": "-"
+	},
+	"a-form-model/validateField": {
+		"description": "validate one or several form items",
+		"optionType": "(props: string | string[], callback: (errorMessage: string) => void) => void",
+		"defaultValue": "-"
+	},
+	"a-form-model/resetFields": {
+		"description": "reset all the fields and remove validation result",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-form-model/clearValidate": {
+		"description": "clear validation message for certain fields.\nThe parameter is prop name or an array of prop names of the form items whose validation messages will be removed.\nWhen omitted, all fields' validation messages will be cleared",
+		"optionType": "(props: string | string[]) => void",
+		"defaultValue": "-"
+	}
+}

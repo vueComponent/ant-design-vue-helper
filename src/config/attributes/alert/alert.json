@@ -16,22 +16,22 @@
 	},
 	"a-alert/closeText": {
 		"description": "Close text to show",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-alert/description": {
-		"description": "Additional content of Alert",
-		"optionType": "string|slot",
+		"description": "additional content of Alert",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-alert/icon": {
 		"description": "Custom icon, effective when showIcon is true",
-		"optionType": "vnode | slot",
+		"optionType": "VNode | slot",
 		"defaultValue": "-"
 	},
 	"a-alert/message": {
 		"description": "Content of Alert",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-alert/showIcon": {
@@ -40,9 +40,14 @@
 		"defaultValue": "false, in banner mode default is true"
 	},
 	"a-alert/type": {
-	  "options": ["success", "info", "warning", "error"],
 		"description": "Type of Alert styles, options: success, info, warning, error",
 		"optionType": "string",
-		"defaultValue": "info, in banner mode default is warning"
+		"defaultValue": "info, in banner mode default is warning",
+		"options": [
+			"success",
+			"info",
+			"warning",
+			"error"
+		]
 	}
 }

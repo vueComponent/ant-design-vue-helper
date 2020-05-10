@@ -1,0 +1,56 @@
+{
+	"a-mentions/autoFocus": {
+		"description": "Auto get focus when component mounted",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-mentions/defaultValue": {
+		"description": "Default value",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-mentions/filterOption": {
+		"description": "Customize filter option logic",
+		"optionType": "false | ((input: string, option: Option) => boolean)",
+		"defaultValue": "-"
+	},
+	"a-mentions/notFoundContent": {
+		"description": "Set mentions content when not match",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-mentions/placement": {
+		"description": "Set popup placement",
+		"optionType": "string",
+		"defaultValue": "'top'",
+		"options": [
+			"top",
+			"bottom"
+		]
+	},
+	"a-mentions/prefix": {
+		"description": "Set trigger prefix keyword",
+		"optionType": "string | string[]",
+		"defaultValue": "'"
+	},
+	"a-mentions/split": {
+		"description": "Set split string before and after selected mention",
+		"optionType": "string",
+		"defaultValue": "' '"
+	},
+	"a-mentions/validateSearch": {
+		"description": "Customize trigger search logic",
+		"optionType": "(text: string, props: Mentions) => void",
+		"defaultValue": "-"
+	},
+	"a-mentions/value": {
+		"description": "Set value of mentions",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-mentions/getPopupContainer": {
+		"description": "Set the mount HTML node for suggestions",
+		"optionType": "(triggerNode: HTMLElement) => HTMLElement",
+		"defaultValue": "() => HTMLElement"
+	}
+}

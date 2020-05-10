@@ -6,8 +6,8 @@
 	},
 	"a-slider/defaultValue": {
 		"description": "The default value of slider. When range is false, use number, otherwise, use [number, number]",
-		"optionType": "number|number[]",
-		"defaultValue": "0 or [0, 0]"
+		"optionType": "number | number[]",
+		"defaultValue": "0 | [0, 0]"
 	},
 	"a-slider/disabled": {
 		"description": "If true, the slider will not be interactable.",
@@ -26,8 +26,8 @@
 	},
 	"a-slider/marks": {
 		"description": "Tick mark of Slider, type of key must be number, and must in closed interval [min, max] ，each mark can declare its own style.",
-		"optionType": "object",
-		"defaultValue": "{ number: string|VNode } or { number: { style: object, label: string|VNode } } or { number: () => VNode }"
+		"optionType": "{ [key: number]: any; }",
+		"defaultValue": "{ number: string|VNode } | { number: { style: object, label: string|VNode } } | { number: () => VNode }"
 	},
 	"a-slider/max": {
 		"description": "The maximum value the slider can slide to",
@@ -45,28 +45,38 @@
 		"defaultValue": "false"
 	},
 	"a-slider/step": {
-		"description": "The granularity the slider can step through values. Must greater than 0, and be divided by (max - min) . When marks no null, step can be null.",
-		"optionType": "number|null",
+		"description": "The granularity the slider can step through values.\nMust greater than 0, and be divided by (max - min) . When marks no null, step can be null.",
+		"optionType": "number",
 		"defaultValue": "1"
 	},
 	"a-slider/tipFormatter": {
 		"description": "Slider will pass its value to tipFormatter, and display its value in Tooltip, and hide Tooltip when return value is null.",
-		"optionType": "Function|null",
+		"optionType": "Function",
 		"defaultValue": "IDENTITY"
 	},
 	"a-slider/value": {
 		"description": "The value of slider. When range is false, use number, otherwise, use [number, number]",
-		"optionType": "number|number[]",
-		"defaultValue": ""
+		"optionType": "number | number[]",
+		"defaultValue": "-"
 	},
 	"a-slider/vertical": {
 		"description": "If true, the slider will be vertical.",
-		"optionType": "Boolean",
+		"optionType": "boolean",
 		"defaultValue": "false"
 	},
 	"a-slider/tooltipVisible": {
 		"description": "If true, Tooltip will show always, or it will not show anyway, even if dragging or hovering.",
-		"optionType": "Boolean",
-		"defaultValue": ""
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-slider/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-slider/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

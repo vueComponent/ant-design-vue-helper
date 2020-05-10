@@ -1,17 +1,12 @@
 {
-	"a-dropdown/disabled": {
-		"description": "whether the dropdown menu is disabled",
-		"optionType": "boolean",
-		"defaultValue": "-"
-	},
-	"a-dropdown/getPopupContainer": {
-		"description": "to set the container of the dropdown menu. The default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition. example",
-		"optionType": "Function(triggerNode)",
-		"defaultValue": "() => document.body"
+	"a-dropdown/trigger": {
+		"description": "the trigger mode which executes the drop-down action",
+		"optionType": "(\"click\" | \"hover\" | \"contextmenu\")[]",
+		"defaultValue": "['hover']"
 	},
 	"a-dropdown/overlay": {
 		"description": "the dropdown menu",
-		"optionType": "Menu",
+		"optionType": "any",
 		"defaultValue": "-"
 	},
 	"a-dropdown/overlayClassName": {
@@ -24,20 +19,32 @@
 		"optionType": "object",
 		"defaultValue": "-"
 	},
-	"a-dropdown/placement": {
-		"options": ["bottomLeft", "bottomCenter", "bottomRight", "topLeft", "topCenter", "topRight"],
-		"description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight",
-		"optionType": "String",
-		"defaultValue": "bottomLeft"
-	},
-	"a-dropdown/trigger": {
-		"description": "the trigger mode which executes the drop-down action",
-		"optionType": "Array<click|hover|contextmenu>",
-		"defaultValue": "['hover']"
-	},
 	"a-dropdown/visible": {
 		"description": "whether the dropdown menu is visible",
 		"optionType": "boolean",
 		"defaultValue": "-"
+	},
+	"a-dropdown/disabled": {
+		"description": "whether the dropdown menu is disabled",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-dropdown/getPopupContainer": {
+		"description": "to set the ontainer of the dropdown menu. The default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition.",
+		"optionType": "(triggerNode?: any) => HTMLElement",
+		"defaultValue": "() => document.body"
+	},
+	"a-dropdown/placement": {
+		"description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight",
+		"optionType": "string",
+		"defaultValue": "'bottomLeft'",
+		"options": [
+			"bottomLeft",
+			"bottomRight",
+			"topLeft",
+			"topRight",
+			"topCenter",
+			"bottomCenter"
+		]
 	}
 }

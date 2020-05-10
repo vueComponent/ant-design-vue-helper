@@ -1,0 +1,192 @@
+{
+	"a-tree-select/treeIcon": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-tree-select/notFoundContent": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-tree-select/allowClear": {
+		"description": "Whether allow clear",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/defaultValue": {
+		"description": "-",
+		"optionType": "TreeNodeValue",
+		"defaultValue": "-"
+	},
+	"a-tree-select/disabled": {
+		"description": "Disabled or not",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/dropdownClassName": {
+		"description": "className of dropdown menu",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-tree-select/dropdownMatchSelectWidth": {
+		"description": "Determine whether the dropdown menu and the select input are the same width",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-tree-select/dropdownStyle": {
+		"description": "To set the style of the dropdown menu",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-tree-select/filterTreeNode": {
+		"description": "Whether to filter treeNodes by input value. The value of treeNodeFilterProp is used for filtering by default.",
+		"optionType": "boolean | Function",
+		"defaultValue": "Function"
+	},
+	"a-tree-select/getPopupContainer": {
+		"description": "To set the container of the dropdown menu.\nThe default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition.",
+		"optionType": "(triggerNode: any) => HTMLElement",
+		"defaultValue": "() => document.body"
+	},
+	"a-tree-select/labelInValue": {
+		"description": "whether to embed label in value, turn the format of value from string to {value: string, label: VNode, halfChecked: string[]}",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/loadData": {
+		"description": "Load data asynchronously.",
+		"optionType": "(node: any) => void",
+		"defaultValue": "-"
+	},
+	"a-tree-select/maxTagCount": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-tree-select/maxTagPlaceholder": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-tree-select/multiple": {
+		"description": "Support multiple or not, will be true when enable treeCheckable.",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/placeholder": {
+		"description": "Placeholder of the select input",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-tree-select/searchPlaceholder": {
+		"description": "Placeholder of the search input",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-tree-select/searchValue": {
+		"description": "work with `search` event to make search value controlled.",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-tree-select/showCheckedStrategy": {
+		"description": "Show Checked Strategy",
+		"optionType": "string",
+		"defaultValue": "TreeSelect.SHOW_CHILD",
+		"options": [
+			"SHOW_ALL",
+			"SHOW_PARENT",
+			"SHOW_CHILD"
+		]
+	},
+	"a-tree-select/showSearch": {
+		"description": "Whether to display a search input in the dropdown menu(valid only in the single mode)",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/size": {
+		"description": "To set the size of the select input, options: large small",
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
+	},
+	"a-tree-select/treeCheckable": {
+		"description": "Whether to show checkbox on the treeNodes",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/treeCheckStrictly": {
+		"description": "Whether to check nodes precisely (in the checkable mode), means parent and\nchild nodes are not associated, and it will make labelInValue be true",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/treeData": {
+		"description": "Data of the treeNodes, manual construction work is no longer needed\nif this property has been set(ensure the Uniqueness of each value)",
+		"optionType": "TreeData[]",
+		"defaultValue": "[]"
+	},
+	"a-tree-select/treeDataSimpleMode": {
+		"description": "Enable simple mode of treeData.\n(treeData should like this: [{id:1, pId:0, value:'1', label:\"test1\",...},...], pId is parent node's id)",
+		"optionType": "boolean | { id: string; pId: string; rootPId: any; }[]",
+		"defaultValue": "false"
+	},
+	"a-tree-select/treeDefaultExpandAll": {
+		"description": "Whether to expand all treeNodes by default",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-select/treeDefaultExpandedKeys": {
+		"description": "Default expanded treeNodes",
+		"optionType": "string[] | number[]",
+		"defaultValue": "-"
+	},
+	"a-tree-select/treeExpandedKeys": {
+		"description": "Set expanded keys",
+		"optionType": "string[] | number[]",
+		"defaultValue": "-"
+	},
+	"a-tree-select/treeNodeFilterProp": {
+		"description": "Will be used for filtering if filterTreeNode returns true",
+		"optionType": "string",
+		"defaultValue": "'value'"
+	},
+	"a-tree-select/treeNodeLabelProp": {
+		"description": "Will render as content of select",
+		"optionType": "string",
+		"defaultValue": "'title'"
+	},
+	"a-tree-select/value": {
+		"description": "-",
+		"optionType": "TreeNodeValue",
+		"defaultValue": "-"
+	},
+	"a-tree-select/suffixIcon": {
+		"description": "The custom suffix icon",
+		"optionType": "VNode | slot",
+		"defaultValue": "-"
+	},
+	"a-tree-select/removeIcon": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-tree-select/clearIcon": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-tree-select/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-tree-select/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	}
+}

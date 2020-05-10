@@ -1,0 +1,32 @@
+{
+	"a-config-provider/getPopupContainer": {
+		"description": "-",
+		"optionType": "(triggerNode: HTMLElement, dialogContext?: any) => HTMLElement",
+		"defaultValue": "-"
+	},
+	"a-config-provider/getPrefixCls": {
+		"description": "-",
+		"optionType": "(suffixCls: string, customizePrefixCls?: string) => string",
+		"defaultValue": "-"
+	},
+	"a-config-provider/renderEmpty": {
+		"description": "-",
+		"optionType": "Function",
+		"defaultValue": "-"
+	},
+	"a-config-provider/csp": {
+		"description": "-",
+		"optionType": "CSPConfig",
+		"defaultValue": "-"
+	},
+	"a-config-provider/autoInsertSpaceInButton": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-config-provider/transformCellText": {
+		"description": "-",
+		"optionType": "Function",
+		"defaultValue": "-"
+	}
+}

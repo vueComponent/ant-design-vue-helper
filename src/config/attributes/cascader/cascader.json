@@ -10,43 +10,47 @@
 		"defaultValue": "false"
 	},
 	"a-cascader/changeOnSelect": {
-		"description": "change value on each selection if set to true, see above demo for details",
+		"description": "change value on each selection if set to true.",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
 	"a-cascader/defaultValue": {
 		"description": "initial selected value",
-		"optionType": "string[]",
-		"defaultValue": "[]"
+		"optionType": "(string | number)[]",
+		"defaultValue": "-"
 	},
 	"a-cascader/disabled": {
-		"description": "whether disabled select",
+		"description": "Whether disabled select",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
 	"a-cascader/displayRender": {
 		"description": "render function of displaying selected options, you can use slot=\"displayRender\" and slot-scope=\"{labels, selectedOptions}\"",
-		"optionType": "({labels, selectedOptions}) => vNode",
+		"optionType": "({ labels, selectedOptions, }: { labels: string[]; selectedOptions: CascaderOptionType[]; }) => any",
 		"defaultValue": "labels => labels.join(' / ')"
 	},
 	"a-cascader/expandTrigger": {
 		"description": "expand current item when click or hover, one of 'click' 'hover'",
 		"optionType": "string",
-		"defaultValue": "'click'"
+		"defaultValue": "'click'",
+		"options": [
+			"click",
+			"hover"
+		]
 	},
 	"a-cascader/fieldNames": {
 		"description": "custom field name for label and value and children",
-		"optionType": "object",
+		"optionType": "{ value: string; label: string; children?: string; }",
 		"defaultValue": "{ label: 'label', value: 'value', children: 'children' }"
 	},
 	"a-cascader/getPopupContainer": {
-		"description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative.",
-		"optionType": "Function(triggerNode)",
+		"description": "Parent Node which the selector should be rendered to. Default to body.\nWhen position issues happen, try to modify it into scrollable content and position it relative.",
+		"optionType": "(triggerNode: any) => HTMLElement",
 		"defaultValue": "() => document.body"
 	},
 	"a-cascader/loadData": {
 		"description": "To load option lazily, and it cannot work with showSearch",
-		"optionType": "(selectedOptions) => void",
+		"optionType": "(selectedOptions: CascaderOptionType[]) => void",
 		"defaultValue": "-"
 	},
 	"a-cascader/notFoundContent": {
@@ -56,7 +60,7 @@
 	},
 	"a-cascader/options": {
 		"description": "data options of cascade",
-		"optionType": "object",
+		"optionType": "CascaderOptionType",
 		"defaultValue": "-"
 	},
 	"a-cascader/placeholder": {
@@ -72,12 +76,18 @@
 	"a-cascader/popupStyle": {
 		"description": "additional style of popup overlay",
 		"optionType": "object",
-		"defaultValue": "{}"
+		"defaultValue": "-"
 	},
 	"a-cascader/popupPlacement": {
 		"description": "use preset popup align config from builtinPlacements：bottomLeft bottomRight topLeft topRight",
 		"optionType": "string",
-		"defaultValue": "bottomLeft"
+		"defaultValue": "'bottomLeft'",
+		"options": [
+			"bottomLeft",
+			"bottomRight",
+			"topLeft",
+			"topRight"
+		]
 	},
 	"a-cascader/popupVisible": {
 		"description": "set visible of cascader popup",
@@ -86,22 +96,37 @@
 	},
 	"a-cascader/showSearch": {
 		"description": "Whether show search input in single mode.",
-		"optionType": "boolean|object",
+		"optionType": "boolean | ShowSearchType",
 		"defaultValue": "false"
 	},
 	"a-cascader/size": {
 		"description": "input size, one of large default small",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-cascader/suffixIcon": {
 		"description": "The custom suffix icon",
-		"optionType": "string | VNode | slot",
+		"optionType": "String | VNode | slot",
 		"defaultValue": "-"
 	},
 	"a-cascader/value": {
 		"description": "selected value",
-		"optionType": "string[]",
+		"optionType": "(string | number)[]",
+		"defaultValue": "-"
+	},
+	"a-cascader/blur": {
+		"description": "remove focus",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-cascader/focus": {
+		"description": "get focus",
+		"optionType": "() => void",
 		"defaultValue": "-"
 	}
 }

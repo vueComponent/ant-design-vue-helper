@@ -11,12 +11,12 @@
 	},
 	"a-drawer/getContainer": {
 		"description": "Return the mounted node for Drawer.",
-		"optionType": "HTMLElement | () => HTMLElement | Selectors",
+		"optionType": "any",
 		"defaultValue": "'body'"
 	},
 	"a-drawer/mask": {
 		"description": "Whether to show mask or not.",
-		"optionType": "Boolean",
+		"optionType": "boolean",
 		"defaultValue": "true"
 	},
 	"a-drawer/maskClosable": {
@@ -31,7 +31,7 @@
 	},
 	"a-drawer/title": {
 		"description": "The title for Drawer.",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-drawer/visible": {
@@ -45,29 +45,58 @@
 		"defaultValue": "-"
 	},
 	"a-drawer/wrapStyle": {
-		"description": "The style of the container of the Drawer dialog.",
+		"description": "Style of wrapper element which **contains mask** compare to `drawerStyle`",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-drawer/drawerStyle": {
+		"description": "Style of the popup layer element",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-drawer/bodyStyle": {
+		"description": "Style of floating layer, typically used for adjusting its position.",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-drawer/headerStyle": {
+		"description": "-",
 		"optionType": "object",
 		"defaultValue": "-"
 	},
 	"a-drawer/width": {
 		"description": "Width of the Drawer dialog.",
-		"optionType": "string|number",
+		"optionType": "string | number",
 		"defaultValue": "256"
 	},
 	"a-drawer/height": {
 		"description": "placement is top or bottom, height of the Drawer dialog.",
-		"optionType": "string|number",
+		"optionType": "string | number",
 		"defaultValue": "-"
 	},
 	"a-drawer/zIndex": {
 		"description": "The z-index of the Drawer.",
-		"optionType": "Number",
+		"optionType": "number",
 		"defaultValue": "1000"
 	},
 	"a-drawer/placement": {
-	  "options": ["top", "left", "bottom", "right"],
 		"description": "The placement of the Drawer.",
-		"optionType": "'top' | 'right' | 'bottom' | 'left'",
+		"optionType": "DotPosition",
 		"defaultValue": "'right'"
+	},
+	"a-drawer/afterVisibleChange": {
+		"description": "-",
+		"optionType": "(visible: boolean) => void",
+		"defaultValue": "-"
+	},
+	"a-drawer/keyboard": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-drawer/close": {
+		"description": "Specify a callback that will be called when a user clicks mask, close button or Cancel button.",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

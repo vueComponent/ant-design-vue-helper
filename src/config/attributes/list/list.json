@@ -6,17 +6,17 @@
 	},
 	"a-list/footer": {
 		"description": "List footer renderer",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-list/grid": {
 		"description": "The grid type of list. You can set grid to something like {gutter: 16, column: 4}",
-		"optionType": "object",
+		"optionType": "{ gutter: number; column: ColumnCount; xs: ColumnCount; sm: ColumnCount; md: ColumnCount; lg: ColumnCount; xl: ColumnCount; xxl: ColumnCount; }",
 		"defaultValue": "-"
 	},
 	"a-list/header": {
 		"description": "List header renderer",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-list/itemLayout": {
@@ -26,22 +26,22 @@
 	},
 	"a-list/loading": {
 		"description": "Shows a loading indicator while the contents of the list are being fetched",
-		"optionType": "boolean|object",
+		"optionType": "boolean | object",
 		"defaultValue": "false"
 	},
 	"a-list/loadMore": {
 		"description": "Shows a load more content",
-		"optionType": "string|slot",
+		"optionType": "string | slot",
 		"defaultValue": "-"
 	},
 	"a-list/locale": {
 		"description": "i18n text including empty text",
 		"optionType": "object",
-		"defaultValue": "emptyText: 'No Data' \n"
+		"defaultValue": "emptyText: 'No Data'"
 	},
 	"a-list/pagination": {
 		"description": "Pagination config, hide it by setting it to false",
-		"optionType": "boolean | object",
+		"optionType": "boolean | PaginationConfig",
 		"defaultValue": "false"
 	},
 	"a-list/split": {
@@ -51,12 +51,12 @@
 	},
 	"a-list/renderItem": {
 		"description": "Custom item renderer, slot=\"renderItem\" and slot-scope=\"item, index\"",
-		"optionType": "(item, index) => vNode",
-		"defaultValue": ""
+		"optionType": "(item: any, index: number) => any",
+		"defaultValue": "null"
 	},
 	"a-list/rowKey": {
 		"description": "Specify the key that will be used for uniquely identify each element",
-		"optionType": "item => string|number",
-		"defaultValue": ""
+		"optionType": "(item: any) => string | number",
+		"defaultValue": "null"
 	}
 }

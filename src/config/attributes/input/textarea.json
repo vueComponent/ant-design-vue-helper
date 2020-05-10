@@ -1,17 +1,22 @@
 {
-	"a-textarea/autosize": {
+	"a-text-area/autosize": {
 		"description": "Height autosize feature, can be set to true|false or an object { minRows: 2, maxRows: 6 }",
-		"optionType": "boolean|object",
+		"optionType": "boolean | { minRows: number; maxRows: number; }",
 		"defaultValue": "false"
 	},
-	"a-textarea/defaultValue": {
-		"description": "The initial input content",
-		"optionType": "string",
-		"defaultValue": ""
+	"a-text-area/autoSize": {
+		"description": "-",
+		"optionType": "boolean | { minRows: number; maxRows: number; }",
+		"defaultValue": "-"
 	},
-	"a-textarea/value": {
+	"a-text-area/defaultValue": {
+		"description": "The initial input content",
+		"optionType": "string | number",
+		"defaultValue": "-"
+	},
+	"a-text-area/value": {
 		"description": "The input content value",
-		"optionType": "string",
-		"defaultValue": ""
+		"optionType": "string | number",
+		"defaultValue": "-"
 	}
 }

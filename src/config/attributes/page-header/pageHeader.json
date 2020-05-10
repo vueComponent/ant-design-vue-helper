@@ -1,0 +1,57 @@
+{
+	"a-page-header/backIcon": {
+		"description": "Custom backIcon",
+		"optionType": "string | slot",
+		"defaultValue": "<Icon type=\"arrow-left\" />"
+	},
+	"a-page-header/prefixCls": {
+		"description": "Custom prefixCls",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-page-header/title": {
+		"description": "Custom title",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-page-header/subTitle": {
+		"description": "Custom subTitle",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-page-header/breadcrumb": {
+		"description": "-",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-page-header/tags": {
+		"description": "Custom tags",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-page-header/footer": {
+		"description": "Custom footer",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-page-header/extra": {
+		"description": "Custom extra",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	},
+	"a-page-header/avatar": {
+		"description": "-",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-page-header/ghost": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-page-header/back": {
+		"description": "Specify a callback that will be called when a user clicks backIcon.",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	}
+}

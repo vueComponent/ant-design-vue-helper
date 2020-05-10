@@ -1,17 +1,31 @@
+/**
+ * Gulp file to build the ant-design-vue-helper extensions for vscode
+ * @author Zou Jian <https://github.com/chsword>
+ */
 import { task, src, dest, series } from "gulp";
 const clean = require("gulp-clean");
+import typescriptPaser from "./build/typescriptPaser";
 
+/**
+ * Clean the folder "out"
+ */
 const cleanOut = function () {
     return src('./out', { read: false, allowEmpty: true })
         .pipe(clean());
 };
 task('clean:all', cleanOut);
+
+/**
+ * copy src/config to out/config
+ */
 function preBuild() {
     return src('src/config/**')
         .pipe(dest('out/config'));
 }
 task("preBuild", series(cleanOut, preBuild));
-
+/**
+ * Compile the typescript to javascript
+ */
 async function compile() {
     var ts = require('gulp-typescript');
     var tsProject = ts.createProject('tsconfig.json');
@@ -21,26 +35,11 @@ async function compile() {
     return tsResult.js.pipe(dest('out'));
 }
 task("compile", series(cleanOut, preBuild, compile));
-import { ModuleKind, ScriptTarget, Program } from 'typescript';
-
-async function read() {
-    const typescript = require('typescript');
-    var program: Program = typescript.createProgram(["node_modules/ant-design-vue/types/index.d.ts"], {
-        rootNames: [],
-        options: {
-            "module": ModuleKind.CommonJS,
-            "target": ScriptTarget.ESNext,
-            "sourceMap": false,
-            lib: ["./node_modules/ant-design-vue/types"],
-            "allowJs": false,
-        }
-    });
-    var checker = program.getTypeChecker();
-    console.log(program.getSourceFiles().length);
-    for (var source of program.getSourceFiles()) {
-        if (source.fileName.indexOf("node_modules/ant-design-vue/") > -1) {
-            console.log(source.fileName);
-        }
-    }
+/**
+ * Sync update from node_modules/ant-design-vue to the config/*.json
+ */
+async function syncFromAntdv() {
+    typescriptPaser.run();
+    return;
 }
-task(read);
+task(syncFromAntdv);

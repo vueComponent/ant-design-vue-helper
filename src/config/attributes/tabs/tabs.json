@@ -6,7 +6,7 @@
 	},
 	"a-tabs/animated": {
 		"description": "Whether to change tabs with animation. Only works while tabPosition=\"top\"\\|\"bottom\"",
-		"optionType": "boolean | {inkBar:boolean, tabPane:boolean}",
+		"optionType": "boolean | { inkBar: boolean; tabPane: boolean; }",
 		"defaultValue": "true, false when type=\"card\""
 	},
 	"a-tabs/defaultActiveKey": {
@@ -20,14 +20,18 @@
 		"defaultValue": "false"
 	},
 	"a-tabs/size": {
-	  "options": ["large", "default", "small"],
 		"description": "preset tab bar size",
-		"optionType": "large | default | small",
-		"defaultValue": "default"
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-tabs/tabBarExtraContent": {
 		"description": "Extra content in tab bar",
-		"optionType": "slot",
+		"optionType": "any",
 		"defaultValue": "-"
 	},
 	"a-tabs/tabBarStyle": {
@@ -36,16 +40,19 @@
 		"defaultValue": "-"
 	},
 	"a-tabs/tabPosition": {
-	  "options": ["top", "right", "bottom", "left"],
 		"description": "Position of tabs",
-		"optionType": "top | right | bottom | left",
-		"defaultValue": "top"
+		"optionType": "DotPosition",
+		"defaultValue": "'top'"
 	},
 	"a-tabs/type": {
-	  "options": ["line", "card", "editable-card"],
 		"description": "Basic style of tabs",
-		"optionType": "line | card | editable-card",
-		"defaultValue": "line"
+		"optionType": "string",
+		"defaultValue": "'line'",
+		"options": [
+			"line",
+			"card",
+			"editable-card"
+		]
 	},
 	"a-tabs/tabBarGutter": {
 		"description": "The gap between tabs",

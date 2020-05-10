@@ -1,0 +1,12 @@
+{
+	"a-breadcrumb-item/href": {
+		"description": "add navigation",
+		"optionType": "String",
+		"defaultValue": "''"
+	},
+	"a-breadcrumb-item/overlay": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
+	}
+}

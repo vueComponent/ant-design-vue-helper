@@ -1,7 +1,22 @@
 {
-	"a-carousel/afterChange": {
-		"description": "Callback function called after the current index changes",
-		"optionType": "function(current)",
+	"a-carousel/accessibility": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/adaptiveHeight": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/arrows": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/autoplaySpeed": {
+		"description": "-",
+		"optionType": "number",
 		"defaultValue": "-"
 	},
 	"a-carousel/autoplay": {
@@ -9,9 +24,24 @@
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-carousel/beforeChange": {
-		"description": "Callback function called before the current index changes",
-		"optionType": "function(from, to)",
+	"a-carousel/centerMode": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/centerPadding": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-carousel/cssEase": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-carousel/dotsClass": {
+		"description": "-",
+		"optionType": "string",
 		"defaultValue": "-"
 	},
 	"a-carousel/dots": {
@@ -19,20 +49,183 @@
 		"optionType": "boolean",
 		"defaultValue": "true"
 	},
+	"a-carousel/draggable": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
 	"a-carousel/easing": {
 		"description": "Transition interpolation function name",
 		"optionType": "string",
-		"defaultValue": "linear"
+		"defaultValue": "'linear'"
 	},
-	"a-carousel/effect": {
-	  "options": ["scrollx", "fade"],
-		"description": "Transition effect",
-		"optionType": "scrollx | fade",
-		"defaultValue": "scrollx"
+	"a-carousel/edgeFriction": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/fade": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/focusOnSelect": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/infinite": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/initialSlide": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/pauseOnDotsHover": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/pauseOnFocus": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/pauseOnHover": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/responsive": {
+		"description": "-",
+		"optionType": "ResponsiveObject[]",
+		"defaultValue": "-"
+	},
+	"a-carousel/rows": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/rtl": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/slide": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-carousel/slidesPerRow": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/slidesToScroll": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/slidesToShow": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/speed": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/swipeToSlide": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/swipe": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/touchMove": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/touchThreshold": {
+		"description": "-",
+		"optionType": "number",
+		"defaultValue": "-"
+	},
+	"a-carousel/useCSS": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/useTransform": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/variableWidth": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	},
 	"a-carousel/vertical": {
 		"description": "Whether to use a vertical display",
 		"optionType": "boolean",
 		"defaultValue": "false"
+	},
+	"a-carousel/verticalSwiping": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/waitForAnimate": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-carousel/dotPosition": {
+		"description": "-",
+		"optionType": "DotPosition",
+		"defaultValue": "-"
+	},
+	"a-carousel/afterChange": {
+		"description": "Callback function called after the current index changes",
+		"optionType": "(current: number) => any",
+		"defaultValue": "-"
+	},
+	"a-carousel/beforeChange": {
+		"description": "Callback function called before the current index changes",
+		"optionType": "(from: number, to: number) => any",
+		"defaultValue": "-"
+	},
+	"a-carousel/effect": {
+		"description": "Transition effect",
+		"optionType": "string",
+		"defaultValue": "'scrollx'",
+		"options": [
+			"scrollx",
+			"fade"
+		]
+	},
+	"a-carousel/goTo": {
+		"description": "Go to slide index, if dontAnimate=true, it happens without animation",
+		"optionType": "(slideNumber: number, dontAnimate: boolean) => void",
+		"defaultValue": "-"
+	},
+	"a-carousel/next": {
+		"description": "Next",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	},
+	"a-carousel/prev": {
+		"description": "Previous",
+		"optionType": "() => void",
+		"defaultValue": "-"
 	}
 }

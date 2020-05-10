@@ -1,0 +1,47 @@
+{
+	"a-notification/success": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/warning": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/warn": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/info": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/error": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/open": {
+		"description": "-",
+		"optionType": "(config: NotificationOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/config": {
+		"description": "-",
+		"optionType": "(options: NotificationConfigOptions) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/close": {
+		"description": "-",
+		"optionType": "(key: string) => void",
+		"defaultValue": "-"
+	},
+	"a-notification/destroy": {
+		"description": "-",
+		"optionType": "() => void",
+		"defaultValue": "-"
+	}
+}

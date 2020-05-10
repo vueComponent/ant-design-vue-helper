@@ -1,22 +1,22 @@
 {
 	"a-upload/accept": {
-		"description": "File types that can be accepted. See input accept Attribute",
+		"description": "File types that can be accepted.",
 		"optionType": "string",
 		"defaultValue": "-"
 	},
 	"a-upload/action": {
 		"description": "Uploading URL",
-		"optionType": "string|(file) => Promise",
+		"optionType": "string | Function",
 		"defaultValue": "-"
 	},
 	"a-upload/directory": {
-		"description": "support upload whole directory (caniuse)",
+		"description": "support upload whole directory",
 		"optionType": "boolean",
-		"defaultValue": "false"
+		"defaultValue": "-"
 	},
 	"a-upload/beforeUpload": {
-		"description": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. Warning：this function is not supported in IE9。",
-		"optionType": "(file, fileList) => boolean | Promise",
+		"description": "Hook function which will be executed before uploading.\nUploading will be stopped with false or a rejected Promise returned.\nWarning：this function is not supported in IE9.",
+		"optionType": "(file: any, fileList: any) => boolean | Promise<boolean>",
 		"defaultValue": "-"
 	},
 	"a-upload/customRequest": {
@@ -26,12 +26,23 @@
 	},
 	"a-upload/data": {
 		"description": "Uploading params or function which can return uploading params.",
-		"optionType": "object|function(file)",
+		"optionType": "object | Function",
 		"defaultValue": "-"
+	},
+	"a-upload/method": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-",
+		"options": [
+			"POST",
+			"PUT",
+			"post",
+			"put"
+		]
 	},
 	"a-upload/defaultFileList": {
 		"description": "Default list of files that have been uploaded.",
-		"optionType": "object[]",
+		"optionType": "UploadFile<any>[]",
 		"defaultValue": "-"
 	},
 	"a-upload/disabled": {
@@ -40,8 +51,8 @@
 		"defaultValue": "false"
 	},
 	"a-upload/fileList": {
-		"description": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it",
-		"optionType": "object[]",
+		"description": "List of files that have been uploaded (controlled)",
+		"optionType": "UploadFile<any>[]",
 		"defaultValue": "-"
 	},
 	"a-upload/headers": {
@@ -52,10 +63,15 @@
 	"a-upload/listType": {
 		"description": "Built-in stylesheets, support for three types: text, picture or picture-card",
 		"optionType": "string",
-		"defaultValue": "'text'"
+		"defaultValue": "'text'",
+		"options": [
+			"text",
+			"picture",
+			"picture-card"
+		]
 	},
 	"a-upload/multiple": {
-		"description": "Whether to support selected multiple file. IE10+ supported. You can select multiple files with CTRL holding down while multiple is set to be true",
+		"description": "Whether to support selected multiple file. IE10+ supported.\n  You can select multiple files with CTRL holding down while multiple is set to be true",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
@@ -66,7 +82,7 @@
 	},
 	"a-upload/showUploadList": {
 		"description": "Whether to show default upload list, could be an object to specify showPreviewIcon and showRemoveIcon individually",
-		"optionType": "Boolean or { showPreviewIcon?: boolean, showRemoveIcon?: boolean }",
+		"optionType": "boolean | ShowUploadList",
 		"defaultValue": "true"
 	},
 	"a-upload/supportServerRender": {
@@ -85,8 +101,28 @@
 		"defaultValue": "true"
 	},
 	"a-upload/remove": {
-		"description": "A callback function, will be executed when removing file button is clicked, remove event will be prevented when return value is false or a Promise which resolve(false) or reject.",
-		"optionType": "Function(file): boolean | Promise",
+		"description": "A callback function, will be executed when removing file button is clicked,\nremove event will be prevented when return value is false or a Promise which resolve(false) or reject.",
+		"optionType": "(file: any) => boolean | Promise<boolean>",
+		"defaultValue": "-"
+	},
+	"a-upload/locale": {
+		"description": "-",
+		"optionType": "UploadLocale",
+		"defaultValue": "-"
+	},
+	"a-upload/id": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-upload/previewFile": {
+		"description": "-",
+		"optionType": "PreviewFileHandler",
+		"defaultValue": "-"
+	},
+	"a-upload/transformFile": {
+		"description": "-",
+		"optionType": "TransformFileHandler",
 		"defaultValue": "-"
 	}
 }

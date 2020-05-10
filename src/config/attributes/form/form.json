@@ -1,28 +1,67 @@
 {
 	"a-form/form": {
-		"description": "Decorated by Form.create() will be automatically set this.form property, so just pass to form. If you use the template syntax, you can use this.$form.createForm(this, options)",
-		"optionType": "object",
+		"description": "Decorated by Form.create() will be automatically set this.form property, so just pass to form.\nIf you use the template syntax, you can use this.$form.createForm(this, options)",
+		"optionType": "WrappedFormUtils",
 		"defaultValue": "n/a"
 	},
 	"a-form/hideRequiredMark": {
 		"description": "Hide required mark of all form items",
-		"optionType": "Boolean",
+		"optionType": "boolean",
 		"defaultValue": "false"
 	},
+	"a-form/labelCol": {
+		"description": "The layout of label. You can set span offset to something like {span: 3, offset: 12} or sm: {span: 3, offset: 12} same as with <Col>",
+		"optionType": "Col",
+		"defaultValue": "-"
+	},
 	"a-form/layout": {
-		"options": ["horizontal", "vertical", "inline"],
 		"description": "Define form layout",
-		"optionType": "'horizontal'|'vertical'|'inline'",
-		"defaultValue": "'horizontal'"
+		"optionType": "string",
+		"defaultValue": "'horizontal'",
+		"options": [
+			"horizontal",
+			"vertical",
+			"inline"
+		]
 	},
-	"a-form/autoFormCreate(deprecated)": {
-		"description": "Automate Form.create, Recommended for use under the template component, and cannot be used with Form.create(). You should use $form.createForm to instead it after 1.1.9.",
-		"optionType": "Function(form)",
-		"defaultValue": ""
+	"a-form/wrapperCol": {
+		"description": "The layout for input controls, same as labelCol",
+		"optionType": "Col",
+		"defaultValue": "-"
 	},
-	"a-form/options(deprecated)": {
+	"a-form/autoFormCreate": {
+		"description": "Automate Form.create, Recommended for use under the template component, and cannot be used with Form.create().\nYou should use $form.createForm to instead it after 1.1.9.",
+		"optionType": "(form: any) => any",
+		"defaultValue": "-"
+	},
+	"a-form/options": {
 		"description": "The options corresponding to Form.create(options). You should use $form.createForm to instead it after 1.1.9.",
-		"optionType": "Object",
-		"defaultValue": "{}"
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-form/createForm": {
+		"description": "-",
+		"optionType": "(context: any, options?: IformCreateOption) => WrappedFormUtils",
+		"defaultValue": "-"
+	},
+	"a-form/createFormField": {
+		"description": "Convert props to field value",
+		"optionType": "(field: any) => any",
+		"defaultValue": "-"
+	},
+	"a-form/colon": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
+	},
+	"a-form/labelAlign": {
+		"description": "-",
+		"optionType": "ExpandIconPosition",
+		"defaultValue": "-"
+	},
+	"a-form/selfUpdate": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	}
 }

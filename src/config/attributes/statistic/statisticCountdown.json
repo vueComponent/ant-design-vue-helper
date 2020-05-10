@@ -1,0 +1,32 @@
+{
+	"a-statistic-countdown/format": {
+		"description": "-",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-statistic-countdown/prefix": {
+		"description": "prefix node of value",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic-countdown/suffix": {
+		"description": "suffix node of value",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic-countdown/title": {
+		"description": "Display title",
+		"optionType": "string | VNode",
+		"defaultValue": "-"
+	},
+	"a-statistic-countdown/value": {
+		"description": "Display value",
+		"optionType": "string | number",
+		"defaultValue": "-"
+	},
+	"a-statistic-countdown/valueStyle": {
+		"description": "-",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}

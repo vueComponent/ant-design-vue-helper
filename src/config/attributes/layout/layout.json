@@ -2,11 +2,11 @@
 	"a-layout/class": {
 		"description": "container className",
 		"optionType": "string",
-		"defaultValue": "-"
+		"defaultValue": "undefined"
 	},
 	"a-layout/style": {
 		"description": "to customize the styles",
-		"optionType": "object|string",
+		"optionType": "string | object",
 		"defaultValue": "-"
 	},
 	"a-layout/hasSider": {

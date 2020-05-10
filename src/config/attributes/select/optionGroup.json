@@ -1,0 +1,12 @@
+{
+	"a-option-group/key": {
+		"description": "Key",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-option-group/label": {
+		"description": "Group label",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	}
+}

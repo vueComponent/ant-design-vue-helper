@@ -1,73 +1,83 @@
 {
-	"a-menu/defaultOpenKeys": {
-		"description": "array with the keys of default opened sub menus",
-		"optionType": "",
-		"defaultValue": ""
-	},
-	"a-menu/defaultSelectedKeys": {
-		"description": "array with the keys of default selected menu items",
-		"optionType": "string[]",
-		"defaultValue": ""
-	},
-	"a-menu/forceSubMenuRender": {
-		"description": "render submenu into DOM before it shows",
-		"optionType": "boolean",
-		"defaultValue": "false"
-	},
-	"a-menu/inlineCollapsed": {
-		"description": "specifies the collapsed status when menu is inline mode",
-		"optionType": "boolean",
-		"defaultValue": "-"
-	},
-	"a-menu/inlineIndent": {
-		"description": "indent px of inline menu item on each level",
-		"optionType": "number",
-		"defaultValue": "24"
-	},
-	"a-menu/mode": {
-		"description": "type of the menu; vertical, horizontal, and inline modes are supported",
-		"optionType": "string: vertical | vertical-right | horizontal | inline",
-		"defaultValue": "vertical"
-	},
 	"a-menu/multiple": {
 		"description": "Allow selection of multiple items",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-menu/openKeys": {
-		"description": "array with the keys of currently opened sub menus",
-		"optionType": "string[]",
-		"defaultValue": ""
-	},
-	"a-menu/selectable": {
-		"description": "allow selecting menu items",
-		"optionType": "boolean",
-		"defaultValue": "true"
-	},
 	"a-menu/selectedKeys": {
 		"description": "array with the keys of currently selected menu items",
 		"optionType": "string[]",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
-	"a-menu/style": {
-		"description": "style of the root node",
-		"optionType": "object",
-		"defaultValue": ""
+	"a-menu/defaultSelectedKeys": {
+		"description": "array with the keys of default selected menu items",
+		"optionType": "string[]",
+		"defaultValue": "-"
 	},
-	"a-menu/subMenuCloseDelay": {
-		"description": "delay time to hide submenu when mouse leave, unit: second",
-		"optionType": "number",
-		"defaultValue": "0.1"
+	"a-menu/defaultOpenKeys": {
+		"description": "array with the keys of default opened sub menus",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-menu/openKeys": {
+		"description": "array with the keys of currently opened sub menus",
+		"optionType": "string[]",
+		"defaultValue": "-"
+	},
+	"a-menu/mode": {
+		"description": "type of the menu; vertical, horizontal, and inline modes are supported",
+		"optionType": "string",
+		"defaultValue": "'vertical'",
+		"options": [
+			"horizontal",
+			"vertical",
+			"vertical-left",
+			"vertical-right",
+			"inline"
+		]
 	},
 	"a-menu/subMenuOpenDelay": {
 		"description": "delay time to show submenu when mouse enter, unit: second",
 		"optionType": "number",
 		"defaultValue": "0"
 	},
+	"a-menu/subMenuCloseDelay": {
+		"description": "delay time to hide submenu when mouse leave, unit: second",
+		"optionType": "Number",
+		"defaultValue": "0.1"
+	},
+	"a-menu/inlineIndent": {
+		"description": "indent px of inline menu item on each level",
+		"optionType": "number",
+		"defaultValue": "24"
+	},
+	"a-menu/style": {
+		"description": "style of the root node",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
 	"a-menu/theme": {
-	  "options": ["light", "dark"],
 		"description": "color theme of the menu",
-		"optionType": "string: light dark",
-		"defaultValue": "light"
+		"optionType": "string",
+		"defaultValue": "'light'",
+		"options": [
+			"light",
+			"dark"
+		]
+	},
+	"a-menu/forceSubMenuRender": {
+		"description": "render submenu into DOM before it shows",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-menu/selectable": {
+		"description": "allow selecting menu items",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-menu/inlineCollapsed": {
+		"description": "specifies the collapsed status when menu is inline mode",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	}
 }

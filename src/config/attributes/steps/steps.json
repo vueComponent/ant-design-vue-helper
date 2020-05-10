@@ -1,22 +1,60 @@
 {
-	"a-step/description": {
-		"description": "description of the step, optional property",
-		"optionType": "string|slot",
-		"defaultValue": "-"
-	},
-	"a-step/icon": {
-		"description": "icon of the step, optional property",
-		"optionType": "string|slot",
-		"defaultValue": "-"
-	},
-	"a-step/status": {
-		"description": "to specify the status. It will be automatically set by current of Steps if not configured. Optional values are: wait process finish error",
+	"a-steps/type": {
+		"description": "-",
 		"optionType": "string",
-		"defaultValue": "wait"
+		"defaultValue": "-",
+		"options": [
+			"default",
+			"navigation"
+		]
 	},
-	"a-step/title": {
-		"description": "title of the step",
-		"optionType": "string|slot",
-		"defaultValue": "-"
+	"a-steps/current": {
+		"description": "to set the current step, counting from 0. You can overwrite this state by using status of Step",
+		"optionType": "number",
+		"defaultValue": "0"
+	},
+	"a-steps/initial": {
+		"description": "set the initial step, counting from 0",
+		"optionType": "number",
+		"defaultValue": "0"
+	},
+	"a-steps/labelPlacement": {
+		"description": "support vertial title and description",
+		"optionType": "string",
+		"defaultValue": "'horizontal'",
+		"options": [
+			"horizontal",
+			"vertical"
+		]
+	},
+	"a-steps/status": {
+		"description": "to specify the status of current step, can be set to one of the following values: wait process finish error",
+		"optionType": "string",
+		"defaultValue": "'process'",
+		"options": [
+			"error",
+			"wait",
+			"process",
+			"finish"
+		]
+	},
+	"a-steps/size": {
+		"description": "to specify the size of the step bar, default and small are currently supported",
+		"optionType": "CardSize",
+		"defaultValue": "'default'"
+	},
+	"a-steps/direction": {
+		"description": "to specify the direction of the step bar, horizontal and vertical are currently supported",
+		"optionType": "string",
+		"defaultValue": "'horizontal'",
+		"options": [
+			"horizontal",
+			"vertical"
+		]
+	},
+	"a-steps/progressDot": {
+		"description": "Steps with progress dot style, customize the progress dot by setting a scoped slot. labelPlacement will be vertical",
+		"optionType": "boolean | Function",
+		"defaultValue": "false"
 	}
 }

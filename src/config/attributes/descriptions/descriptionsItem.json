@@ -1,0 +1,12 @@
+{
+	"a-descriptions-item/label": {
+		"description": "the label of descriptions item",
+		"optionType": "any",
+		"defaultValue": "-"
+	},
+	"a-descriptions-item/span": {
+		"description": "can be set to small large or omitted",
+		"optionType": "number",
+		"defaultValue": "1"
+	}
+}

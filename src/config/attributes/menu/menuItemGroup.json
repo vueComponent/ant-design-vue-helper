@@ -1,0 +1,12 @@
+{
+	"a-menu-item-group/children": {
+		"description": "sub menu items",
+		"optionType": "MenuItem[]",
+		"defaultValue": "-"
+	},
+	"a-menu-item-group/title": {
+		"description": "title of the group",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	}
+}

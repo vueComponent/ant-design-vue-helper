@@ -1,7 +1,7 @@
 {
 	"a-transfer/dataSource": {
-		"description": "Used for setting the source data. The elements that are part of this array will be present the left column. Except the elements whose keys are included in targetKeys prop.",
-		"optionType": "[{key: string.isRequired,title: string.isRequired,description: string,disabled: bool}]",
+		"description": "Used for setting the source data. The elements that are part of this array will be present the left column.\nExcept the elements whose keys are included in targetKeys prop.",
+		"optionType": "TransferItem[]",
 		"defaultValue": "[]"
 	},
 	"a-transfer/disabled": {
@@ -11,27 +11,27 @@
 	},
 	"a-transfer/filterOption": {
 		"description": "A function to determine whether an item should show in search result list",
-		"optionType": "(inputValue, option): boolean",
-		"defaultValue": ""
+		"optionType": "(inputValue: any, option: any) => boolean",
+		"defaultValue": "-"
 	},
 	"a-transfer/footer": {
 		"description": "customize the progress dot by setting a scoped slot",
 		"optionType": "slot=\"footer\" slot-scope=\"props\"",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
 	"a-transfer/lazy": {
 		"description": "property of vc-lazy-load for lazy rendering items. Turn off it by set to false.",
-		"optionType": "object|boolean",
+		"optionType": "boolean | object",
 		"defaultValue": "{ height: 32, offset: 32 }"
 	},
 	"a-transfer/listStyle": {
 		"description": "A custom CSS style used for rendering the transfer columns.",
 		"optionType": "object",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
 	"a-transfer/locale": {
 		"description": "i18n text including filter, empty text, item unit, etc",
-		"optionType": "object",
+		"optionType": "{ itemUnit: string; itemsUnit: string; notFoundContent: string; searchPlaceholder: string; }",
 		"defaultValue": "{ itemUnit: 'item', itemsUnit: 'items', notFoundContent: 'The list is empty', searchPlaceholder: 'Search here' }"
 	},
 	"a-transfer/operations": {
@@ -40,9 +40,9 @@
 		"defaultValue": "['>', '<']"
 	},
 	"a-transfer/render": {
-		"description": "The function to generate the item shown on a column. Based on an record (element of the dataSource array), this function should return a element which is generated from that record. Also, it can return a plain object with value and label, label is a element and value is for title",
-		"optionType": "Function(record)",
-		"defaultValue": ""
+		"description": "The function to generate the item shown on a column.\nBased on an record (element of the dataSource array),\nthis function should return a element which is generated from that record.\nAlso, it can return a plain object with value and label, label is a element and value is for title",
+		"optionType": "(record: TransferItem) => void",
+		"defaultValue": "-"
 	},
 	"a-transfer/selectedKeys": {
 		"description": "A set of keys of selected items.",

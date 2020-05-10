@@ -1,0 +1,22 @@
+{
+	"a-week-picker/defaultValue": {
+		"description": "to set default date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	},
+	"a-week-picker/defaultPickerValue": {
+		"description": "to set default picker date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	},
+	"a-week-picker/format": {
+		"description": "to set the date format, refer to moment.js",
+		"optionType": "string",
+		"defaultValue": "'YYYY-wos'"
+	},
+	"a-week-picker/value": {
+		"description": "to set date",
+		"optionType": "string | Moment",
+		"defaultValue": "-"
+	}
+}

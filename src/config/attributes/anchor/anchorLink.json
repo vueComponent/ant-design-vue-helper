@@ -1,0 +1,12 @@
+{
+	"a-anchor-link/href": {
+		"description": "target of hyperlink",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-anchor-link/title": {
+		"description": "content of hyperlink",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	}
+}

@@ -1,18 +1,18 @@
 {
 	"a-input/addonAfter": {
 		"description": "The label text displayed after (on the right side of) the input field.",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
 	},
 	"a-input/addonBefore": {
 		"description": "The label text displayed before (on the left side of) the input field.",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
 	},
 	"a-input/defaultValue": {
 		"description": "The initial input content",
-		"optionType": "string",
-		"defaultValue": ""
+		"optionType": "string | number",
+		"defaultValue": "-"
 	},
 	"a-input/disabled": {
 		"description": "Whether the input is disabled.",
@@ -22,31 +22,41 @@
 	"a-input/id": {
 		"description": "The ID for input",
 		"optionType": "string",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
 	"a-input/prefix": {
 		"description": "The prefix icon for the Input.",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
 	},
 	"a-input/size": {
 		"description": "The size of the input box. Note: in the context of a form, the large size is used. Available: large default small",
 		"optionType": "string",
-		"defaultValue": "default"
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-input/suffix": {
 		"description": "The suffix icon for the Input.",
-		"optionType": "string|slot",
-		"defaultValue": ""
+		"optionType": "string | slot",
+		"defaultValue": "-"
 	},
 	"a-input/type": {
-		"description": "The type of input, see: MDN(use Input.TextArea instead of type=\"textarea\")",
+		"description": "The type of input, see: MDN (use Input.TextArea instead of type=\"textarea\")",
 		"optionType": "string",
-		"defaultValue": "text"
+		"defaultValue": "'text'"
 	},
 	"a-input/value": {
 		"description": "The input content value",
-		"optionType": "string",
-		"defaultValue": ""
+		"optionType": "string | number",
+		"defaultValue": "-"
+	},
+	"a-input/allowClear": {
+		"description": "-",
+		"optionType": "boolean",
+		"defaultValue": "-"
 	}
 }

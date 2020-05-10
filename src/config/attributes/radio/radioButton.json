@@ -1,0 +1,14 @@
+{
+	"a-radio-button/type": {
+		"description": "Type of radio button",
+		"optionType": "string",
+		"defaultValue": "-",
+		"options": [
+			"default",
+			"primary",
+			"danger",
+			"dashed",
+			"ghost"
+		]
+	}
+}

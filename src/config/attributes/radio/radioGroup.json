@@ -1,11 +1,11 @@
 {
 	"a-radio-group/defaultValue": {
-		"description": "Default selected value",
-		"optionType": "any",
+		"description": "Specifies the initial state: whether or not the radio is selected.",
+		"optionType": "boolean",
 		"defaultValue": "-"
 	},
 	"a-radio-group/disabled": {
-		"description": "Disable all radio buttons",
+		"description": "Disable radio",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
@@ -16,13 +16,18 @@
 	},
 	"a-radio-group/options": {
 		"description": "set children optional",
-		"optionType": "string[] | Array<{ label: string value: string disabled?: boolean }>",
+		"optionType": "(string | { label: string; value: string; disabled?: boolean; })[]",
 		"defaultValue": "-"
 	},
 	"a-radio-group/size": {
 		"description": "size for radio button style",
-		"optionType": "large | default | small",
-		"defaultValue": "default"
+		"optionType": "string",
+		"defaultValue": "'default'",
+		"options": [
+			"small",
+			"large",
+			"default"
+		]
 	},
 	"a-radio-group/value": {
 		"description": "Used for setting the currently selected value.",
@@ -31,7 +36,11 @@
 	},
 	"a-radio-group/buttonStyle": {
 		"description": "style type of radio button",
-		"optionType": "outline | solid",
-		"defaultValue": "outline"
+		"optionType": "string",
+		"defaultValue": "'outline'",
+		"options": [
+			"outline",
+			"solid"
+		]
 	}
 }

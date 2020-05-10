@@ -1,0 +1,42 @@
+{
+	"a-date-picker/defaultValue": {
+		"description": "Defualt Value",
+		"optionType": "string | Moment",
+		"defaultValue": "undefined"
+	},
+	"a-date-picker/defaultPickerValue": {
+		"description": "Default Picker Value",
+		"optionType": "string | Moment",
+		"defaultValue": "undefined"
+	},
+	"a-date-picker/disabledTime": {
+		"description": "Disabled Time",
+		"optionType": "Function",
+		"defaultValue": "undefined"
+	},
+	"a-date-picker/format": {
+		"description": "Format",
+		"optionType": "string",
+		"defaultValue": "'YYYY-MM-DD'"
+	},
+	"a-date-picker/renderExtraFooter": {
+		"description": "Render Extra Footer",
+		"optionType": "slot=\"renderExtraFooter\"",
+		"defaultValue": "undefined"
+	},
+	"a-date-picker/showTime": {
+		"description": "Show Time",
+		"optionType": "boolean | object",
+		"defaultValue": "TimePicker Options"
+	},
+	"a-date-picker/showToday": {
+		"description": "Show Today",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-date-picker/value": {
+		"description": "Value",
+		"optionType": "string | Moment",
+		"defaultValue": "undefined"
+	}
+}

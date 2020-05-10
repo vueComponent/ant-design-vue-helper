@@ -1,0 +1,7 @@
+{
+	"a-tooltip/title": {
+		"description": "The text shown in the tooltip",
+		"optionType": "string | slot",
+		"defaultValue": "-"
+	}
+}

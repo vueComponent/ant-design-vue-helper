@@ -23,5 +23,10 @@
 		"description": "If false, panel will not show arrow icon",
 		"optionType": "boolean",
 		"defaultValue": "true"
+	},
+	"a-collapse-panel/extra": {
+		"description": "-",
+		"optionType": "any",
+		"defaultValue": "-"
 	}
 }

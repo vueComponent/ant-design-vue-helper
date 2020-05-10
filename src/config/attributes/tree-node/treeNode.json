@@ -1,0 +1,62 @@
+{
+	"a-tree-node/class": {
+		"description": "Class",
+		"optionType": "string",
+		"defaultValue": "-"
+	},
+	"a-tree-node/style": {
+		"description": "Style",
+		"optionType": "string | object",
+		"defaultValue": "-"
+	},
+	"a-tree-node/disableCheckbox": {
+		"description": "Disable Checkbox",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-node/disabled": {
+		"description": "Disabled",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-node/icon": {
+		"description": "Icon",
+		"optionType": "slot | slot-scope",
+		"defaultValue": "-"
+	},
+	"a-tree-node/isLeaf": {
+		"description": "Is Leaf?",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-tree-node/key": {
+		"description": "Key",
+		"optionType": "string | number",
+		"defaultValue": "internal calculated position of treeNode or undefined"
+	},
+	"a-tree-node/selectable": {
+		"description": "Selectable",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-tree-node/title": {
+		"description": "Title",
+		"optionType": "string | slot",
+		"defaultValue": "'---'"
+	},
+	"a-tree-node/value": {
+		"description": "Value",
+		"optionType": "string",
+		"defaultValue": "undefined"
+	},
+	"a-tree-node/slots": {
+		"description": "Slots",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-tree-node/scopedSlots": {
+		"description": "Scoped Slots",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}

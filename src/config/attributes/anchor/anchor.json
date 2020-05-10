@@ -7,7 +7,7 @@
 	"a-anchor/bounds": {
 		"description": "Bounding distance of anchor area",
 		"optionType": "number",
-		"defaultValue": "5(px)"
+		"defaultValue": "5"
 	},
 	"a-anchor/getContainer": {
 		"description": "Scrolling container",
@@ -29,14 +29,14 @@
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-anchor-link/href": {
-		"description": "target of hyperlink",
+	"a-anchor/wrapperClass": {
+		"description": "The class name of the container",
 		"optionType": "string",
-		"defaultValue": ""
+		"defaultValue": "-"
 	},
-	"a-anchor-link/title": {
-		"description": "content of hyperlink",
-		"optionType": "string|slot",
-		"defaultValue": ""
+	"a-anchor/wrapperStyle": {
+		"description": "The style of the container",
+		"optionType": "object",
+		"defaultValue": "-"
 	}
 }

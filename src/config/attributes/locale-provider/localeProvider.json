@@ -1,0 +1,7 @@
+{
+	"a-locale-provider/locale": {
+		"description": "language package setting, you can find the packages in this path: antd/lib/locale-provider/",
+		"optionType": "object",
+		"defaultValue": "-"
+	}
+}
