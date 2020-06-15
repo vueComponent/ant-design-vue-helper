@@ -86,16 +86,14 @@ class TypescriptParser {
         if (kind !== SyntaxKind.ClassDeclaration) {
           continue;
         }
-        var antdTag = this.getAntdTag(exportKey);
-        var members = this.getMembers(
-          antdTag,
-          symbol.exports.get(exportKey).members
-        );
+        var exportMembers = symbol.exports.get(exportKey).members;
         if (exportKey === "default") {
           // fixed : use "export default " in layout, but export declare in other files
           // so when use the keywords "export declare", can get the class name directly, but "export default" get the key="default"
           exportKey = (val.declarations[0] as any).name.text;
         }
+        var antdTag = this.getAntdTag(exportKey);
+        var members = this.getMembers(antdTag, exportMembers);
         var camelName = this.getCamelCase(exportKey);
         var fileName = `${camelName}.json`;
         this.writeAttributeJSONFile(folder, fileName, members);

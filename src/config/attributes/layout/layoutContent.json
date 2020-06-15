@@ -1,15 +1,15 @@
 {
-	"adefault/class": {
+	"a-layout-content/class": {
 		"description": "container className",
 		"optionType": "string",
 		"defaultValue": "undefined"
 	},
-	"adefault/style": {
+	"a-layout-content/style": {
 		"description": "to customize the styles",
 		"optionType": "string | object",
 		"defaultValue": "-"
 	},
-	"adefault/hasSider": {
+	"a-layout-content/hasSider": {
 		"description": "whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering",
 		"optionType": "boolean",
 		"defaultValue": "-"
