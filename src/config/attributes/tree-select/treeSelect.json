@@ -179,6 +179,11 @@
 		"optionType": "any",
 		"defaultValue": "-"
 	},
+	"a-tree-select/replaceFields": {
+		"description": "-",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
 	"a-tree-select/blur": {
 		"description": "remove focus",
 		"optionType": "() => void",

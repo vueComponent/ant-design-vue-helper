@@ -1,60 +1,60 @@
 {
-	"a-datepicker-common/allowClear": {
+	"a-date-picker/allowClear": {
 		"description": "Whether to show clear button",
 		"optionType": "boolean",
 		"defaultValue": "true"
 	},
-	"a-datepicker-common/autoFocus": {
+	"a-date-picker/autoFocus": {
 		"description": "get focus when component mounted",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-datepicker-common/dateRender": {
+	"a-date-picker/dateRender": {
 		"description": "custom rendering function for date cells by setting a scoped slot",
 		"optionType": "slot=\"dateRender\" slot-scope=\"current, today\"",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/disabled": {
+	"a-date-picker/disabled": {
 		"description": "determine whether the DatePicker is disabled",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-datepicker-common/disabledDate": {
+	"a-date-picker/disabledDate": {
 		"description": "specify the date that cannot be selected",
 		"optionType": "(currentDate: Moment) => boolean",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/getCalendarContainer": {
+	"a-date-picker/getCalendarContainer": {
 		"description": "to set the container of the floating layer, while the default is to create a div element in body",
 		"optionType": "(trigger: any) => any",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/locale": {
+	"a-date-picker/locale": {
 		"description": "localization configuration",
 		"optionType": "any",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/open": {
+	"a-date-picker/open": {
 		"description": "open state of picker",
 		"optionType": "boolean",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/placeholder": {
+	"a-date-picker/placeholder": {
 		"description": "placeholder of date input",
 		"optionType": "string | string[]",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/popupStyle": {
+	"a-date-picker/popupStyle": {
 		"description": "to customize the style of the popup calendar",
 		"optionType": "object",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/dropdownClassName": {
+	"a-date-picker/dropdownClassName": {
 		"description": "to customize the className of the popup calendar",
 		"optionType": "string",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/size": {
+	"a-date-picker/size": {
 		"description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
 		"optionType": "string",
 		"defaultValue": "-",
@@ -64,17 +64,17 @@
 			"default"
 		]
 	},
-	"a-datepicker-common/suffixIcon": {
+	"a-date-picker/suffixIcon": {
 		"description": "The custom suffix icon",
 		"optionType": "VNode | slot",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/inputReadOnly": {
+	"a-date-picker/inputReadOnly": {
 		"description": "-",
 		"optionType": "boolean",
 		"defaultValue": "-"
 	},
-	"a-datepicker-common/valueFormat": {
+	"a-date-picker/valueFormat": {
 		"description": "-",
 		"optionType": "string",
 		"defaultValue": "-"
