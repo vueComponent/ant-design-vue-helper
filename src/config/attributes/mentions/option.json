@@ -1,5 +1,5 @@
 {
-	"a-option/value": {
+	"a-mentions-option/value": {
 		"description": "value of suggestion, the value will insert into input filed while selected",
 		"optionType": "string",
 		"defaultValue": "''"

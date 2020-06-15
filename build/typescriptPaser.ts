@@ -99,7 +99,7 @@ class TypescriptParser {
         }
         var antdTag = this.getAntdTag(exportKey);
 
-        var members = this.getMembers(antdTag, exportMembers);
+        var members = this.getMembers(folder, antdTag, exportMembers);
         var camelName = this.getCamelCase(exportKey);
         var fileName = `${camelName}.json`;
         this.writeAttributeJSONFile(folder, fileName, members);
@@ -200,11 +200,13 @@ ${exportArray.join("\n")}
     }
     return { type: typeString };
   }
-  getMembers(prefix: string, members: SymbolTable): any {
+  getMembers(folder: string, prefix: string, members: SymbolTable): any {
     if (specialAttributesMap[prefix]) {
       prefix = specialAttributesMap[prefix];
     }
-
+    if (specialAttributesMap[`${folder}/${prefix}`]) {
+      prefix = specialAttributesMap[`${folder}/${prefix}`];
+    }
     var returnMembers: any = {};
     for (var key of this.getKeys(members)) {
       var member = members.get(key);
