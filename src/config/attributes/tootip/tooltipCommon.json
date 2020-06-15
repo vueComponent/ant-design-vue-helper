@@ -1,45 +1,45 @@
 {
-	"a-tooltip-common/arrowPointAtCenter": {
+	"a-tooltip/arrowPointAtCenter": {
 		"description": "Whether the arrow is pointed at the center of target",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-tooltip-common/autoAdjustOverflow": {
+	"a-tooltip/autoAdjustOverflow": {
 		"description": "Whether to adjust popup placement automatically when popup is off screen",
 		"optionType": "boolean | object",
 		"defaultValue": "true"
 	},
-	"a-tooltip-common/defaultVisible": {
+	"a-tooltip/defaultVisible": {
 		"description": "Whether the floating tooltip card is visible by default",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-tooltip-common/getPopupContainer": {
+	"a-tooltip/getPopupContainer": {
 		"description": "The DOM container of the tip, the default behavior is to create a div element in body.",
 		"optionType": "(triggerNode: any) => any",
 		"defaultValue": "() => document.body"
 	},
-	"a-tooltip-common/mouseEnterDelay": {
+	"a-tooltip/mouseEnterDelay": {
 		"description": "Delay in seconds, before tooltip is shown on mouse enter",
 		"optionType": "number",
 		"defaultValue": "0"
 	},
-	"a-tooltip-common/mouseLeaveDelay": {
+	"a-tooltip/mouseLeaveDelay": {
 		"description": "Delay in seconds, before tooltip is hidden on mouse leave",
 		"optionType": "number",
 		"defaultValue": "0.1"
 	},
-	"a-tooltip-common/overlayClassName": {
+	"a-tooltip/overlayClassName": {
 		"description": "Class name of the tooltip card",
 		"optionType": "string",
 		"defaultValue": "-"
 	},
-	"a-tooltip-common/overlayStyle": {
+	"a-tooltip/overlayStyle": {
 		"description": "Style of the tooltip card",
 		"optionType": "object",
 		"defaultValue": "-"
 	},
-	"a-tooltip-common/placement": {
+	"a-tooltip/placement": {
 		"description": "The position of the tooltip relative to the target, which can be one of top\nleft right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom",
 		"optionType": "string",
 		"defaultValue": "'top'",
@@ -58,22 +58,22 @@
 			"rightBottom"
 		]
 	},
-	"a-tooltip-common/trigger": {
+	"a-tooltip/trigger": {
 		"description": "Tooltip trigger mode",
 		"optionType": "\"click\" | \"hover\" | \"contextmenu\" | \"focus\" | triggerType[]",
 		"defaultValue": "'hover'"
 	},
-	"a-tooltip-common/visible": {
+	"a-tooltip/visible": {
 		"description": "Whether the floating tooltip card is visible or not",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-tooltip-common/destroyTooltipOnHide": {
+	"a-tooltip/destroyTooltipOnHide": {
 		"description": "Whether to destroy tooltip on hide",
 		"optionType": "boolean",
 		"defaultValue": "false"
 	},
-	"a-tooltip-common/align": {
+	"a-tooltip/align": {
 		"description": "this value will be merged into placement's config, please refer to the settings dom-align",
 		"optionType": "object",
 		"defaultValue": "-"

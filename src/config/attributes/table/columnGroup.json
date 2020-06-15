@@ -1,10 +1,10 @@
 {
-	"a-column-group/title": {
+	"a-table-column-group/title": {
 		"description": "Title of the column group",
 		"optionType": "any",
 		"defaultValue": "-"
 	},
-	"a-column-group/slots": {
+	"a-table-column-group/slots": {
 		"description": "When using columns, you can use this property to configure the properties that support the slot,\nsuch as slots: { title: 'XXX'}",
 		"optionType": "object",
 		"defaultValue": "-"

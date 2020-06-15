@@ -1,10 +1,10 @@
 {
-	"a-option-group/key": {
+	"a-select-opt-group/key": {
 		"description": "Key",
 		"optionType": "string",
 		"defaultValue": "-"
 	},
-	"a-option-group/label": {
+	"a-select-opt-group/label": {
 		"description": "Group label",
 		"optionType": "string | slot",
 		"defaultValue": "-"
