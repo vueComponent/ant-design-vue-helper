@@ -62,7 +62,6 @@ import * as layoutFooter from './attributes/layout/layoutFooter.json';
 import * as layout from './attributes/layout/layout.json';
 import * as pagination from './attributes/pagination/pagination.json';
 import * as listItem from './attributes/list/listItem.json';
-import * as paginationConfig from './attributes/list/paginationConfig.json';
 import * as list from './attributes/list/list.json';
 import * as option from './attributes/mentions/option.json';
 import * as mentions from './attributes/mentions/mentions.json';
@@ -91,7 +90,6 @@ import * as steps from './attributes/steps/steps.json';
 import * as switchJson from './attributes/switch/switch.json';
 import * as column from './attributes/table/column.json';
 import * as columnGroup from './attributes/table/columnGroup.json';
-import * as paginationConfig from './attributes/table/paginationConfig.json';
 import * as table from './attributes/table/table.json';
 import * as transfer from './attributes/transfer/transfer.json';
 import * as dictionaryTree from './attributes/tree/dictionaryTree.json';
@@ -169,7 +167,6 @@ export default {
   ...layout,
   ...pagination,
   ...listItem,
-  ...paginationConfig,
   ...list,
   ...option,
   ...mentions,
@@ -198,7 +195,6 @@ export default {
   ...switchJson,
   ...column,
   ...columnGroup,
-  ...paginationConfig,
   ...table,
   ...transfer,
   ...dictionaryTree,

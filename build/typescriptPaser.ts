@@ -19,6 +19,7 @@ import {
 } from "typescript";
 import { file, dir } from "./fileManager";
 import specialAttributesMap from "./specialAttributesMap";
+import specialExcludeMap from "./specialExcludeMap";
 const _ = require("lodash");
 class TypescriptParser {
   checker: TypeChecker;
@@ -92,12 +93,20 @@ class TypescriptParser {
           // so when use the keywords "export declare", can get the class name directly, but "export default" get the key="default"
           exportKey = (val.declarations[0] as any).name.text;
         }
+        // The type specified in specialExcludeMap is ignored
+        if (specialExcludeMap.has(`${folder}/${exportKey}`)) {
+          continue;
+        }
         var antdTag = this.getAntdTag(exportKey);
+
         var members = this.getMembers(antdTag, exportMembers);
         var camelName = this.getCamelCase(exportKey);
         var fileName = `${camelName}.json`;
         this.writeAttributeJSONFile(folder, fileName, members);
-        fileList.push({ fileName: camelName, folder });
+        fileList.push({
+          fileName: camelName,
+          folder,
+        });
         memberTable[antdTag] = members;
       }
     }

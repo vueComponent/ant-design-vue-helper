@@ -92,13 +92,28 @@
 		"description": "layout sider"
 	},
 	"a-layout-header": {
-		"description": "layout header"
+		"description": "layout header",
+		"attributes": [
+			"class",
+			"style",
+			"hasSider"
+		]
 	},
 	"a-layout-content": {
-		"description": "layout content"
+		"description": "layout content",
+		"attributes": [
+			"class",
+			"style",
+			"hasSider"
+		]
 	},
 	"a-layout-footer": {
-		"description": "layout footer"
+		"description": "layout footer",
+		"attributes": [
+			"class",
+			"style",
+			"hasSider"
+		]
 	},
 	"a-affix": {
 		"attributes": [
@@ -683,6 +698,7 @@
 			"suffixIcon",
 			"removeIcon",
 			"clearIcon",
+			"replaceFields",
 			"blur",
 			"focus"
 		],
@@ -1298,21 +1314,21 @@
 	"a-datepicker-common": {
 		"description": "datepicker common",
 		"attributes": [
-			"allowClear",
-			"autoFocus",
-			"dateRender",
-			"disabled",
-			"disabledDate",
-			"getCalendarContainer",
-			"locale",
-			"open",
-			"placeholder",
-			"popupStyle",
-			"dropdownClassName",
-			"size",
-			"suffixIcon",
-			"inputReadOnly",
-			"valueFormat"
+			"a-date-picker/allowClear",
+			"a-date-picker/autoFocus",
+			"a-date-picker/dateRender",
+			"a-date-picker/disabled",
+			"a-date-picker/disabledDate",
+			"a-date-picker/getCalendarContainer",
+			"a-date-picker/locale",
+			"a-date-picker/open",
+			"a-date-picker/placeholder",
+			"a-date-picker/popupStyle",
+			"a-date-picker/dropdownClassName",
+			"a-date-picker/size",
+			"a-date-picker/suffixIcon",
+			"a-date-picker/inputReadOnly",
+			"a-date-picker/valueFormat"
 		]
 	},
 	"a-menu-item-group": {
@@ -1386,20 +1402,6 @@
 		"description": "password",
 		"attributes": [
 			"visibilityToggle"
-		]
-	},
-	"adefault": {
-		"description": "efault",
-		"attributes": [
-			"class",
-			"style",
-			"hasSider"
-		]
-	},
-	"a-pagination-config": {
-		"description": "pagination config",
-		"attributes": [
-			"position"
 		]
 	},
 	"a-option": {
