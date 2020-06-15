@@ -344,6 +344,21 @@
 	},
 	"a-date-picker": {
 		"attributes": [
+			"allowClear",
+			"autoFocus",
+			"dateRender",
+			"disabled",
+			"disabledDate",
+			"getCalendarContainer",
+			"locale",
+			"open",
+			"placeholder",
+			"popupStyle",
+			"dropdownClassName",
+			"size",
+			"suffixIcon",
+			"inputReadOnly",
+			"valueFormat",
 			"defaultValue",
 			"defaultPickerValue",
 			"disabledTime",
@@ -441,11 +456,7 @@
 		"description": "A basic widget for getting the user input is a text field."
 	},
 	"a-textarea": {
-		"attributes": [
-			"autosize",
-			"defaultValue",
-			"value"
-		],
+		"attributes": [],
 		"description": "A basic widget for getting the user textarea is a text field."
 	},
 	"a-input-group": {
@@ -709,16 +720,7 @@
 			"key",
 			"value"
 		],
-		"attributes": [
-			"selectable",
-			"disableCheckbox",
-			"disabled",
-			"isLeaf",
-			"key",
-			"title",
-			"value",
-			"scopedSlots"
-		],
+		"attributes": [],
 		"description": "tree select node"
 	},
 	"a-upload": {
@@ -815,11 +817,7 @@
 		"description": "Simple rectangular container."
 	},
 	"a-card-meta": {
-		"attributes": [
-			"avatar",
-			"description",
-			"title"
-		],
+		"attributes": [],
 		"description": "use Card.Meta to support more flexible content."
 	},
 	"a-carousel": {
@@ -949,6 +947,19 @@
 	},
 	"a-tooltip": {
 		"attributes": [
+			"arrowPointAtCenter",
+			"autoAdjustOverflow",
+			"defaultVisible",
+			"getPopupContainer",
+			"mouseEnterDelay",
+			"mouseLeaveDelay",
+			"overlayClassName",
+			"overlayStyle",
+			"placement",
+			"trigger",
+			"visible",
+			"destroyTooltipOnHide",
+			"align",
 			"title"
 		],
 		"description": "A simple text popup tip."
@@ -1294,60 +1305,31 @@
 		"description": "ConfigProvider provides a uniform configuration support for components."
 	},
 	"a-breadcrumb-separator": {
-		"description": "breadcrumb separator",
-		"attributes": []
+		"attributes": [],
+		"description": "breadcrumb separator"
 	},
 	"a-button-group": {
-		"description": "button group",
 		"attributes": [
 			"size"
-		]
-	},
-	"a-meta": {
-		"description": "meta",
-		"attributes": [
-			"avatar",
-			"description",
-			"title"
-		]
-	},
-	"a-datepicker-common": {
-		"description": "datepicker common",
-		"attributes": [
-			"a-date-picker/allowClear",
-			"a-date-picker/autoFocus",
-			"a-date-picker/dateRender",
-			"a-date-picker/disabled",
-			"a-date-picker/disabledDate",
-			"a-date-picker/getCalendarContainer",
-			"a-date-picker/locale",
-			"a-date-picker/open",
-			"a-date-picker/placeholder",
-			"a-date-picker/popupStyle",
-			"a-date-picker/dropdownClassName",
-			"a-date-picker/size",
-			"a-date-picker/suffixIcon",
-			"a-date-picker/inputReadOnly",
-			"a-date-picker/valueFormat"
-		]
+		],
+		"description": "button group"
 	},
 	"a-menu-item-group": {
-		"description": "menu item group",
 		"attributes": [
 			"children",
 			"title"
-		]
+		],
+		"description": "menu item group"
 	},
 	"a-empty": {
-		"description": "empty",
 		"attributes": [
 			"description",
 			"image",
 			"imageStyle"
-		]
+		],
+		"description": "empty"
 	},
 	"a-form-model-item": {
-		"description": "form model item",
 		"attributes": [
 			"colon",
 			"extra",
@@ -1362,10 +1344,10 @@
 			"prop",
 			"rules",
 			"autoLink"
-		]
+		],
+		"description": "form model item"
 	},
 	"a-form-model": {
-		"description": "form model",
 		"attributes": [
 			"hideRequiredMark",
 			"labelCol",
@@ -1381,41 +1363,31 @@
 			"validateField",
 			"resetFields",
 			"clearValidate"
-		]
+		],
+		"description": "form model"
 	},
 	"a-input-search": {
-		"description": "input search",
 		"attributes": [
 			"enterButton"
-		]
+		],
+		"description": "input search"
 	},
 	"a-text-area": {
-		"description": "text area",
 		"attributes": [
 			"autosize",
 			"autoSize",
 			"defaultValue",
 			"value"
-		]
+		],
+		"description": "text area"
 	},
 	"a-password": {
-		"description": "password",
 		"attributes": [
 			"visibilityToggle"
-		]
-	},
-	"a-option": {
-		"description": "option",
-		"attributes": [
-			"disabled",
-			"key",
-			"title",
-			"value",
-			"class"
-		]
+		],
+		"description": "password"
 	},
 	"a-mentions": {
-		"description": "mentions",
 		"attributes": [
 			"autoFocus",
 			"defaultValue",
@@ -1427,10 +1399,10 @@
 			"validateSearch",
 			"value",
 			"getPopupContainer"
-		]
+		],
+		"description": "mentions"
 	},
 	"a-notification": {
-		"description": "notification",
 		"attributes": [
 			"success",
 			"warning",
@@ -1441,41 +1413,23 @@
 			"config",
 			"close",
 			"destroy"
-		]
-	},
-	"a-tooltip-common": {
-		"description": "tooltip common",
-		"attributes": [
-			"arrowPointAtCenter",
-			"autoAdjustOverflow",
-			"defaultVisible",
-			"getPopupContainer",
-			"mouseEnterDelay",
-			"mouseLeaveDelay",
-			"overlayClassName",
-			"overlayStyle",
-			"placement",
-			"trigger",
-			"visible",
-			"destroyTooltipOnHide",
-			"align"
-		]
+		],
+		"description": "notification"
 	},
 	"a-radio-button": {
-		"description": "radio button",
 		"attributes": [
 			"type"
-		]
+		],
+		"description": "radio button"
 	},
-	"a-option-group": {
-		"description": "option group",
+	"a-select-opt-group": {
 		"attributes": [
 			"key",
 			"label"
-		]
+		],
+		"description": "select opt group"
 	},
 	"a-statistic-countdown": {
-		"description": "statistic countdown",
 		"attributes": [
 			"format",
 			"prefix",
@@ -1483,10 +1437,10 @@
 			"title",
 			"value",
 			"valueStyle"
-		]
+		],
+		"description": "statistic countdown"
 	},
 	"a-statistic": {
-		"description": "statistic",
 		"attributes": [
 			"decimalSeparator",
 			"formatter",
@@ -1496,10 +1450,10 @@
 			"suffix",
 			"title",
 			"value"
-		]
+		],
+		"description": "statistic"
 	},
-	"a-column": {
-		"description": "column",
+	"a-table-column": {
 		"attributes": [
 			"align",
 			"ellipsis",
@@ -1528,40 +1482,40 @@
 			"onFilterDropdownVisibleChange",
 			"slots",
 			"scopedSlots"
-		]
+		],
+		"description": "table column"
 	},
-	"a-column-group": {
-		"description": "column group",
+	"a-table-column-group": {
 		"attributes": [
 			"title",
 			"slots"
-		]
+		],
+		"description": "table column group"
 	},
 	"a-dictionary-tree": {
-		"description": "dictionary tree",
 		"attributes": [
 			"expandAction"
-		]
+		],
+		"description": "dictionary tree"
 	},
 	"a-result": {
-		"description": "result",
 		"attributes": [
 			"title",
 			"subTitle",
 			"status",
 			"icon",
 			"extra"
-		]
+		],
+		"description": "result"
 	},
 	"a-descriptions-item": {
-		"description": "descriptions item",
 		"attributes": [
 			"label",
 			"span"
-		]
+		],
+		"description": "descriptions item"
 	},
 	"a-descriptions": {
-		"description": "descriptions",
 		"attributes": [
 			"size",
 			"prefixCls",
@@ -1570,10 +1524,10 @@
 			"column",
 			"layout",
 			"colon"
-		]
+		],
+		"description": "descriptions"
 	},
 	"a-page-header": {
-		"description": "page header",
 		"attributes": [
 			"backIcon",
 			"prefixCls",
@@ -1586,6 +1540,7 @@
 			"avatar",
 			"ghost",
 			"back"
-		]
+		],
+		"description": "page header"
 	}
 }

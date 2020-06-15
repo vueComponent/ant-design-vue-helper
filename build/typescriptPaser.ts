@@ -3,6 +3,10 @@
  * @author Zou Jian <https://github.com/chsword>
  */
 import * as def from "./def";
+
+import specialAttributesMap from "./specialAttributesMap";
+import specialExcludeMap from "./specialExcludeMap";
+
 import {
   ModuleKind,
   ScriptTarget,
@@ -18,9 +22,7 @@ import {
   JSDocType,
 } from "typescript";
 import { file, dir } from "./fileManager";
-import specialAttributesMap from "./specialAttributesMap";
-import specialExcludeMap from "./specialExcludeMap";
-const _ = require("lodash");
+import * as _ from "lodash";
 class TypescriptParser {
   checker: TypeChecker;
   program: Program;
@@ -118,18 +120,29 @@ class TypescriptParser {
       "./build/ui-tags-template.json"
     );
     var template = JSON.parse(templateJson);
+    // 清理模板
+    for (var tempKey in template) {
+      template[tempKey].attributes = [];
+    }
     for (var key in memberTable) {
       var members = memberTable[key];
+      var allSubKeys = _.keys(members).map((c) => c.split("/")[0]);
+      if (_.uniq(allSubKeys).length === 1) {
+        key = allSubKeys[0];
+      }
       var attributes = _.keys(members).map((c) => c.replace(`${key}/`, ""));
       if (!template[key]) {
         template[key] = {
+          attributes: [],
           description: key
             .substr(2, key.length - 1)
             .split("-")
             .join(" "),
         };
       }
-      template[key].attributes = attributes;
+      template[key].attributes = _.uniq(
+        template[key].attributes.concat(attributes)
+      );
     }
     var jsonFilePath = "./src/config/ui-tags.json";
     file.writeFile(
